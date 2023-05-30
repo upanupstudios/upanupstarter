@@ -1,0 +1,14 @@
+.header__menu-search {
+  > .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    @include max($breakpoint--m) {
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: flex-start;
+    }
+  }
+}

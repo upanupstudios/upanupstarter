@@ -1,0 +1,31 @@
+.footer {
+  &__top {
+    background-color: $bg--medium;
+    padding: clamp(32px,calc(#{$container-padding} / 2),48px) 0 
+  }
+  &__bottom {
+    background-color: $bg;
+    padding: 24px 0;
+    > .container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px 40px;
+      @include max($breakpoint--m) {
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+    }
+    &-left {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 24px 40px;
+    }
+  }
+}

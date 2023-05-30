@@ -1,0 +1,13 @@
+.nav--header {
+  nav {
+    ul:not(.contextual-links) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: flex-end;
+      gap: 16px clamp(40px,4.6vw,64px);
+      margin-right: clamp(40px,4.6vw,64px);
+    }
+  }
+}

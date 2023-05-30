@@ -1,0 +1,4 @@
+.hours-block {
+  > * {margin: 0;}
+  + .hours-block {margin-top: 16px;}
+}

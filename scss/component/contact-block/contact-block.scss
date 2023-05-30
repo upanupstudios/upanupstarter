@@ -1,0 +1,11 @@
+.contact-block {
+  padding-left: 32px;
+  position: relative;
+  + .contact-block {margin-top: 16px;}
+  &__icon {
+    color: $ui-icon;
+    left: 0;
+    position: absolute;
+    top: 4px;
+  }
+}

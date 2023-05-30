@@ -1,0 +1,64 @@
+.submenu-trigger {
+  background-color: $int-bgc;
+  border: 1px solid transparent;
+  color: $int-c;
+  cursor: pointer;
+  display: inline-block;
+  min-height: 42px;
+  min-width: 42px;
+  position: relative;
+  @include transition("background-color, border-color, color");
+  &::before {
+    @include icon('\f0da');
+    font-size: 18px;
+    font-weight: $icon-weight--solid;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%) rotate(0deg);
+    transform-origin: center;
+    @include transition("transform");
+  }
+  &::after {
+    background-color: $graphics;
+    content:'';
+    height: calc(100% - 8px);
+    left: -4px;
+    position: absolute;
+    top: 4px;
+    width: 2px;
+  }
+  &[aria-expanded="true"],
+  .is-open > .menu__item-link-wrapper > & {
+    background-color: darken($bg--medium,10%);
+    &:hover {
+      background-color: $int-bgc--hover;
+      border-color: $int-bdc--hover;
+      color: $int-c--hover;
+      &:focus {outline: none;}
+    }
+    &:focus {@include focus;}
+    &:active {
+      background-color: $int-bgc--active;
+      border-color: $int-bdc--active;
+      color: $int-c--active;
+      &:focus {outline: none;}
+    }
+  }
+  &[aria-expanded="true"] {
+    &::before {transform: translate(-50%,-50%) rotate(90deg);}
+  }
+  &:hover {
+    background-color: $int-bgc--hover;
+    border-color: $int-bdc--hover;
+    color: $int-c--hover;
+    &:focus {outline: none;}
+  }
+  &:focus {@include focus;}
+  &:active {
+    background-color: $int-bgc--active;
+    border-color: $int-bdc--active;
+    color: $int-c--active;
+    &:focus {outline: none;}
+  }
+}

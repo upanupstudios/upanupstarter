@@ -1,0 +1,56 @@
+.search-form {
+  @include max($breakpoint--m) {
+    display: none;
+    margin: 24px 0;
+    width: 100%;
+  }
+  .views-exposed-form {
+    margin: 0;
+    form {
+      .form--inline {
+        border: 1px solid $graphics;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        justify-content: flex-end;
+        gap: 0;
+      }
+      .form-item {
+        margin: 0;
+        @include max($breakpoint--l) {width: 100%;}
+        label {@include visually-hidden;}
+        input {
+          border: 0;
+          width: 100%;
+          &:focus {
+            @include focus-input($offset:-2px);
+          }
+        }
+      }
+      .form-actions {
+        @include button--emphasis;
+        min-width: 44px;
+        padding: 0;
+        position: relative;
+        width: 44px;
+        &:focus-within {@include focus;}
+        &::before {
+          @include icon('\f002');
+          left: 50%;
+          position: absolute;
+          top: 50%;
+          transform: translate(-50%,-50%);
+        }
+        input {
+          height: 100%;
+          left: 0;
+          opacity: 0;
+          position: absolute;
+          top: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

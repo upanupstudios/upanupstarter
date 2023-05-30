@@ -1,0 +1,48 @@
+@mixin link {
+  color: $link;
+  font-weight: $font-weight--semibold;
+  @include underline;
+  @include transition("color");
+  &:hover {
+    color: $link--hover;
+    @include underline-hover;
+    &:focus {outline: none;}
+  }
+  &:focus {
+    @include focus;
+  }
+  &:active {
+    color: $link--active;
+    @include underline-hover;
+    &:focus {outline: none;}
+  }
+  &[target="_blank"] {
+    &::after {
+      @include icon('\f08e');
+    }
+  }
+}
+@mixin link--dark {
+  color: $link--dark;
+  font-weight: $font-weight--semibold;
+  @include underline;
+  @include transition("color");
+  &:hover {
+    color: $link--dark--hover;
+    @include underline-hover;
+    &:focus {outline: none;}
+  }
+  &:focus {
+    @include focus-light;
+  }
+  &:active {
+    color: $link--dark--active;
+    @include underline-hover;
+    &:focus {outline: none;}
+  }
+  &[target="_blank"] {
+    &::after {
+      @include icon('\f08e');
+    }
+  }
+}

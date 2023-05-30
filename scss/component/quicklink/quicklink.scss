@@ -1,0 +1,45 @@
+.quicklink {
+  background-color: $int-bgc;
+  border: 1px solid $int-bdc;
+  color: $int-c;
+  padding: 16px;
+  position: relative;
+  @include transition("background-color, border-color, color");
+  @include max($breakpoint--m) {
+    hyphens: auto;
+    word-break: break-word;
+  }
+  .icon {
+    font-size: 24px;
+    line-height: 24px;
+    margin: 0 0 6px 0;
+  }
+  a {
+    &::before {
+      content:'';
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+    &:focus {
+      outline: none;
+      &::before {@include focus;}
+    }
+    &:hover,
+    &:active {
+      &:focus::before {outline: none;}
+    }
+  }
+  &:hover {
+    background-color: $int-bgc--hover;
+    border-color: $int-bdc--hover;
+    color: $int-c--hover;
+  }
+  &:active {
+    background-color: $int-bgc--active;
+    border-color: $int-bdc--active;
+    color: $int-c--active;
+  }
+}

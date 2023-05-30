@@ -1,0 +1,20 @@
+.header__logo {
+  a.site-logo {
+    &:hover {
+      outline: 2px solid $link--hover;
+      outline-offset: 4px;
+      &:focus {
+        outline: 2px solid $link--hover;
+        outline-offset: 4px;
+      }
+    }
+    &:active {
+      outline: 2px solid $link--active;
+      outline-offset: 4px;
+      &:focus {
+        outline: 2px solid $link--active;
+        outline-offset: 4px;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+main {
+  margin: clamp(48px,12.5vw,64px) 0;
+  > .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: calc(#{$container-padding} / 2);
+    @include max($breakpoint--l) {
+      flex-wrap: wrap;
+      padding-left: $container-padding;
+    }
+  }
+  > .banner {
+    margin-bottom: clamp(48px,12.5vw,64px);
+    margin-top: clamp(-64px,-12.5vw,-48px);
+  }
+}

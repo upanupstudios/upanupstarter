@@ -1,0 +1,75 @@
+.pager {
+  line-height: 1.5;
+  margin: clamp(16px,calc(#{$container-padding} / 2),48px) 16px;
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+    li {
+      a {
+        text-decoration: none;
+        &:hover,
+        &:active {@include underline-hover;}
+      }
+      &:not([class*="--"]) {
+        a {
+          background-color: $int-bgc;
+          border: 1px solid $int-bdc;
+          color: $int-c;
+          display: inline-block;
+          min-height: 44px;
+          min-width: 44px;
+          padding: 11px 4px 10px 4px;
+          text-align: center;
+          @include transition("background-color, border-color, color");
+          &:hover {
+            background-color: $int-bgc--hover;
+            border-color: $int-bdc--hover;
+            color: $int-c--hover;
+            &:focus {outline: none;}
+          }
+          &:active {
+            background-color: $int-bgc--active;
+            border-color: $int-bdc--active;
+            color: $int-c--active;
+            &:focus {outline: none;}
+          }
+        }
+        &.is-active a {
+          @include is-selected;
+          &:hover {
+            background-color: $int-bgc--hover;
+            border-color: $int-bdc--hover;
+            color: $int-c--hover;
+            &:focus {outline: none;}
+          }
+          &:active {
+            background-color: $int-bgc--active;
+            border-color: $int-bdc--active;
+            color: $int-c--active;
+            &:focus {outline: none;}
+          }
+        }
+      }
+      &.pager__item--ellipsis {
+        background-color: $int-bgc;
+        display: inline-block;
+        min-height: 44px;
+        min-width: 44px;
+        padding: 11px 4px 10px 4px;
+        text-align: center;
+      }
+      &.pager__item--first,
+      &.pager__item--previous,
+      &.pager__item--next,
+      &.pager__item--last {
+        a {
+          @include button--ui(null);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.messages {
+  background-image: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  border-radius: 0px;
+  color: $font !important;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px 24px;
+  overflow-wrap: break-word;
+  padding: 16px 16px 16px 52px;
+  position: relative;
+  word-wrap: break-word;
+  &::before {
+    font-size: 18px;
+    font-weight: $icon-weight--solid;
+    left: 24px;
+    position: absolute;
+    top: 16px;
+  }
+  [dir="rtl"] & {
+    padding: 16px 44px 16px 16px;
+    text-align: right;
+    &::before {
+      left: auto;
+      right: 16px;
+    }
+  }
+  .webform-message__link {
+    opacity: 1;
+    @include link;
+  }
+}

@@ -1,0 +1,59 @@
+.accordion,
+details,
+.webform-element-more {
+  &__trigger,
+  summary,
+  .webform-element-more--link {
+    @include button--ui(null,true);
+    @include button--default;
+    max-width: $line-width;
+    position: relative;
+    padding-right: 48px;
+    width: 100%;
+    > * {display: inline-block;}
+    &::after {
+      font-size: 21px;
+      line-height: 1;
+    }
+  }
+  .webform-element-more--link {
+    padding-left: 48px;
+    position: relative;
+    &::before {
+      @include icon('\f059' !important);
+      font-size: 21px;
+      font-weight: $icon-weight--solid;
+      left: 16px;
+      line-height: 21px;
+      position: absolute;
+      top: 14px;
+    }
+    a {display: block;}
+  }
+  &__content {
+    border: 1px solid $int-bdc;
+    display: none;
+    max-width: $line-width;
+    padding: 16px;
+    width: 100%;
+    > .field__item > *:last-child {margin-bottom: 0;}
+  }
+  .details-wrapper,
+  .webform-element-more--content {
+    border: 1px solid $int-bdc;
+    max-width: $line-width;
+    overflow: auto;
+    padding: 16px;
+    width: 100%;
+  }
+}
+
+.webform-element-more.is-open .webform-element-more--link,
+summary[aria-expanded="true"],
+.accordion__trigger[aria-expanded="true"] {
+  &::after {transform: rotate(90deg);}
+}
+
+details {
+  summary::before {display: none;}
+}

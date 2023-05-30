@@ -1,0 +1,109 @@
+table {
+  border-bottom: 2px solid $bg--dark;
+  margin: 0 0 $default-margin 0;
+  width: 100%;
+  thead {border: 0;}
+  tbody {border: 0;}
+  tfoot {border: 0;}
+  tr {
+    border: 0;
+    border-bottom: 1px solid $graphics;
+    &.drag-previous,
+    &.drag {
+      background-color: $active-bgc;
+    }
+    &.selected {
+      background-color: $active-bgc;
+      outline: 2px solid $active-bdc;
+      outline-offset: -2px;
+      td {background-color: $active-bgc;}
+    }
+  }
+  th {
+    border: 0;
+    background: $bg--dark;
+    color: $white;
+    font-weight: $font-weight--normal;
+    padding: 15px 32px 14px 32px;
+    text-align: left;
+    @include max($breakpoint--l) {padding: 16px 24px;}
+    @include max($breakpoint--m) {padding: 16px;}
+    a {
+      @include link--dark;
+    }
+  }
+  td {
+    border: 0;
+    color: $font;
+    padding: 15px 32px 14px 32px;
+    text-align: left;
+    @include max($breakpoint--l) {padding: 16px 24px;}
+    @include max($breakpoint--m) {padding: 16px;}
+  }
+  >*:last-child {border-bottom: 0;}
+  caption {
+    margin: 16px 0;
+    text-align: left;
+  }
+}
+
+.tablesort {
+  position: relative;
+  margin-left: 8px;
+  &--asc {
+    background-image: none;
+    &::before {@include icon('\f0d8');}
+  }
+  &--desc {
+    background-image: none;
+    &::before {@include icon('\f0d7');}
+  }
+}
+
+/* [ SCROLLABLE ] ----------*/
+.scrollable {
+  float: left;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  table {margin: 0;}
+  > div {
+    overflow-x:auto;
+    &::-webkit-scrollbar {
+      height: 12px;
+      &-track {
+        box-shadow:0 0 2px rgba(0,0,0,0.15) inset;
+        background:#f0f0f0;
+      }
+      &-thumb {
+        border-radius: 6px;
+        background: #cccccc;
+      }
+    }
+    &:focus {outline: none;}
+  }
+  &.has-scroll > div:after {
+    border-radius:10px 0 0 10px / 50% 0 0 50%;
+    box-shadow:-5px 0 10px rgba(0, 0, 0, 0.25);
+    content:'';
+    height:100%;
+    left:100%;
+    overflow: hidden;
+    position:absolute;
+    top:0;
+    width:50px;
+  }
+}
+
+.tabledrag {
+  &-handle {
+    padding: 0 12px;
+    &::before {
+      @include icon('\e411');
+      font-size: 1.125rem;
+      font-weight: $icon-weight--normal;
+    }
+    .handle {display: none;}
+  }
+}

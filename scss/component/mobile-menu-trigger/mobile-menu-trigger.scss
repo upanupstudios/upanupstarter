@@ -1,0 +1,17 @@
+.mobile-menu-trigger {
+  display: none;
+  padding-right: 50px;
+  position: relative;
+  &::after {
+    @include icon('\f0c9');
+    font-size: 21px;
+    font-weight: $icon-weight--normal;
+    line-height: 1.19;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &[aria-expanded="true"]::after {@include icon('\f00d');}
+  @include max($breakpoint--l) {display: inline-block;}
+}

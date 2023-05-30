@@ -1,0 +1,16 @@
+.nav--social {
+  li {
+    margin-bottom: 0;
+    + li {margin-top: 13px;}
+    a {
+      padding-left: 26px;
+      position: relative;
+      span {
+        left: 0;
+        position: absolute;
+        top: 50%;
+        transform: translate(0,-50%);
+      }
+    }
+  }
+}

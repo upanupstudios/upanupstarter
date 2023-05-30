@@ -1,0 +1,35 @@
+.view-filters,
+.views-exposed-form:not(form) {
+  clear: both;
+  display: block;
+  margin: 0 0 clamp(16px,calc(#{$container-padding} / 2),48px) 0;
+  form {
+    > .form--inline {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 16px;
+      > .form-item {margin: 0;}
+    }
+    .form-actions {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 16px;
+      margin: 0;
+      width: 100%;
+      input {
+        &[data-drupal-selector*="edit-submit"] {@include button--emphasis;}
+        &[data-drupal-selector*="edit-reset"] {@include button--default;}
+      }
+    }
+    &.inline-submit {
+      > .form--inline {align-items: flex-end;}
+      .form-actions {width: auto;}
+    }
+  }
+}

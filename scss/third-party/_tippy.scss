@@ -1,0 +1,12 @@
+.tippy {
+  &-box {
+    background: $bg--medium;
+    border-radius: 0px;
+    color: $font;
+    padding: 12px;
+    &[data-placement^='top'] .tippy-arrow::before {border-top-color:$bg--medium;}
+    &[data-placement^='bottom'] .tippy-arrow::before {border-bottom-color:$bg--medium;}
+    &[data-placement^='left'] .tippy-arrow::before {border-left-color:$bg--medium;}
+    &[data-placement^='right'] .tippy-arrow::before {border-right-color:$bg--medium;}
+  }
+}

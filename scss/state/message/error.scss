@@ -1,0 +1,7 @@
+.messages--error {
+  background-color: $error--light;
+  &::before {
+    @include icon('\f071');
+    color: $error;
+  }
+}

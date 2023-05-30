@@ -1,0 +1,27 @@
+.cc_banner {
+  background-color: $bg--medium;
+  border: 1px solid $graphics;
+  bottom: 16px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  left: 50%;
+  padding: 11px calc(#{$container-padding} / 2);
+  position: fixed;
+  transform: translateX(-50%);
+  max-width: Min(calc(100vw - #{$container-padding}),calc(#{$container-width} - #{$container-padding}));
+  width: 100%;
+  z-index: 1000;
+  @include max($breakpoint--m) {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px calc(#{$container-padding} / 2);
+  }
+}
+.cc_message {margin: 0;}
+.cc_btn {
+  @include button--ui('\f00d');
+}

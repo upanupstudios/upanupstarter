@@ -1,0 +1,48 @@
+.sidebar-accordion {
+  &__trigger {
+    @include button--ui(null,true);
+    background-color: $bg--medium;
+    border: 1px solid transparent;
+    padding-left: 16px;
+    width: 100%;
+    &::before {
+      background-color: $graphics;
+      bottom: 0;
+      content:'';
+      left: 0;
+      height: 1px;
+      position: absolute;
+      width: 100%;
+    }
+    &:hover {
+      background-color: $int-bgc--hover;
+      border-color: $int-bdc--hover;
+      color: $int-c--hover;
+      &:focus {outline: none;}
+    }
+    &:active {
+      background-color: $int-bgc--active;
+      border-color: $int-bdc--active;
+      color: $int-c--active;
+      &:focus {outline: none;}
+    }
+    h2 {
+      @include reset-heading;
+      font-weight: inherit;
+    }
+  }
+  &__content {
+    background-color: $bg--medium;
+    > *:not(.contextual) {
+      padding: clamp(24px,4vw,32px);
+      &.field__items {
+        padding: 0;
+        > * {
+          border-bottom: 1px solid $graphics;
+          padding: clamp(24px,4vw,32px);
+          &:last-child {border-bottom: 0;}
+        }
+      }
+    }
+  }
+}

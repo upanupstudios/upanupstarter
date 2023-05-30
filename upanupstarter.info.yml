@@ -1,0 +1,33 @@
+#required mappings
+name: Upanup Starter Theme
+description: Upanup starter theme
+type: theme
+core_version_requirement: ^8.8 || ^9
+# Defines the base theme
+base theme: upanupbase
+
+regions:
+  alerts: 'Alerts'
+  logo: 'Logo'
+  nav__main: 'Nav -- main'
+  nav__section: 'Nav -- section'
+  nav__header: 'Nav -- header'
+  nav__footer: 'Nav -- footer'
+  nav__breadcrumbs: 'Nav-- breadcrumbs'
+  search: 'Search form'
+  banner: 'Banner'
+  banner__content: 'Banner -- content'
+  banner__sidebar: 'Banner -- sidebar'
+  sidebar: 'Sidebar'
+  content: 'Content'
+  footer: 'Footer'
+  highlighted: 'Highlighted'
+  help: 'help'  
+  
+libraries:
+  - upanupstarter/global
+  - upanupstarter/fonts
+
+ckeditor_stylesheets:
+  - https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap
+  - css/third-party/ckeditor.styles.css

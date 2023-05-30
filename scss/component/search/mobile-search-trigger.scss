@@ -1,0 +1,21 @@
+.mobile-search-trigger {
+  @include button--emphasis;
+  display: none;
+  font-size: 16px;
+  height: 44px;
+  padding: 0;
+  position: relative;
+  width: 44px;
+  @include max($breakpoint--m) {display: block;}
+  &::before {
+    @include icon('\f002');
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+  &[aria-expanded="true"] {
+    &::before {@include icon('\f00d');}
+    + .search-form {display: block;}
+  }
+}

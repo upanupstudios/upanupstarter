@@ -1,0 +1,79 @@
+.form-type-checkbox {
+  display: block;
+  margin: 0 !important;
+  position: relative;
+  width: 100%;
+  label.option {
+    background-color: transparent;
+    color:$font;
+    display: inline-block;
+    font-weight: $font-weight--normal;
+    margin-bottom:0;
+    padding: 0.5rem 0.5rem 0.5rem 2rem;
+    position:relative;
+    &::after {
+      @include icon('\f0c8');
+      color:$font;
+      display:inline-block;
+      font-size: 1.125rem;
+      font-weight: $font-weight--normal;
+      left: 0;
+      position:absolute;
+      top: 0.35rem;
+    }
+  }
+}
+
+input[type=checkbox] {
+  appearance: none;
+  border: 0;
+  height: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 0;
+  &:focus ~ label.option::after {
+    @include focus;
+  }
+  &.error {
+    border: 0;
+    ~ label.option::after {
+      color: $error;
+    }
+  }
+  &:hover, &:active {
+    &:focus {outline: none;}
+  }
+  &:checked ~ label.option {
+    &::after {
+      @include icon("\f14a");
+      display:inline-block;
+      font-weight: $font-weight--normal;
+    }
+  }
+  &[disabled] ~ label.option::after {
+    color: $ui-icon;
+    font-weight: $icon-weight--solid;
+  }
+  &[disabled],
+  &.disabled,
+  fieldset[disabled] & {
+    cursor: not-allowed;
+  }
+}
+
+.form-no-label {
+  input[type=checkbox] {
+    appearance: checkbox;
+    height: auto;
+    left: auto;
+    position: relative;
+    top: auto;
+    width: auto;
+    &:focus {
+      @include focus;
+      ~ label {outline: none;}
+    }
+  }
+}

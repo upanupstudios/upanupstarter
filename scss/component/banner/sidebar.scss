@@ -1,0 +1,26 @@
+.sidebar .banner {
+  display: block;
+  margin: 0 auto;
+  max-width: $container-width;
+  position: relative;
+  z-index: 0;
+  img {display: block;}
+  &__caption {
+    background-color: $bg--medium;
+    display: block;
+    padding: 13px 24px 13px 50px;
+    position: relative;
+    width: 100%;
+    @include max($breakpoint--l) {padding: 13px $container-padding 13px calc(#{$container-padding} + 23px);}
+    &::before {
+      @include icon('\f030');
+      color: $ui-icon;
+      font-weight: $icon-weight--solid;
+      left: 24px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      @include max($breakpoint--l) {left: $container-padding;}
+    }
+  }
+}

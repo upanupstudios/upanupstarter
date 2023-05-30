@@ -1,0 +1,6 @@
+@mixin icon($icon) {
+  font-family: 'Font Awesome 6 Pro';
+  @if($icon) {
+    content: $icon;
+  }
+}

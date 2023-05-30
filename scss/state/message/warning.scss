@@ -1,0 +1,7 @@
+.messages--warning {
+  background-color: $warning--light;
+  &::before {
+    @include icon('\f06a');
+    color: $warning;
+  }
+}

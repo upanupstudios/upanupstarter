@@ -1,0 +1,11 @@
+.accordion-group {
+  max-width: $line-width;
+  > .field__items > .field__item:not(:first-child) {
+    margin-top: 8px;
+    @include max($breakpoint--m) {margin-top: 16px;}
+  }
+  &__toggle {
+    @include button--ui('\f0d7',true,180deg);
+    transform: translateX(-13px);
+  }
+}

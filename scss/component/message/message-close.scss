@@ -1,0 +1,4 @@
+.messages__close {
+  @include button--ui($icon: '\f00d');
+  margin: -13px 0 - 13px -16px;
+}

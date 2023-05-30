@@ -1,0 +1,7 @@
+.messages--status {
+  background-color: $valid--light;
+  &::before {
+    @include icon('\f058');
+    color: $valid;
+  }
+}

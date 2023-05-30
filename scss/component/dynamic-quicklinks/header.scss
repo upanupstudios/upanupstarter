@@ -1,0 +1,15 @@
+.dynamic-quicklinks__header {
+  background-color: $bg--dark;
+  border: 1px solid $graphics;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: clamp(208px,15vw,400px);
+  max-width: clamp(208px,15vw,400px);
+  padding: 16px;
+  @include max($breakpoint--l) {
+    flex: 0 0 auto;
+    max-width: 100%;
+    padding: 16px $container-padding;
+    width: 100%;
+  }
+}

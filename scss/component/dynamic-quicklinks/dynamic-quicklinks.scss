@@ -1,0 +1,13 @@
+.dynamic-quicklinks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  @include max($breakpoint--l) {
+    flex-direction: column;
+    transform: translateX(calc(#{$container-padding--negative} *1.5));
+    width: calc(100% + (#{$container-padding} * 3));
+  }
+}

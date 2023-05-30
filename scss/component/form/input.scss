@@ -1,0 +1,52 @@
+input[type="search"] {box-sizing:border-box;}
+
+input[type="file"] {display: block;}
+
+select[multiple],
+select[size] {
+  height: auto;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="decimal"],
+input[type="tel"],
+input[type="date"],
+input[type="search"],
+input[type="time"],
+input[type="number"],
+input[type="url"],
+select,
+textarea {
+  appearance: none;
+  background: $bg--light;
+  border: 1px solid $graphics;
+  border-radius: 0px;
+  font-family: $font-family--primary;
+  padding: 13px;
+  max-width: 100%;
+  &:focus {
+    @include focus-input;
+  }
+  &.error {
+    border-color: $error;
+  }
+}
+
+select {
+  background:url(../images/select.png),$bg--light;
+  background-position: calc(100% - 13px) 50%;
+  background-repeat: no-repeat;
+  background-size: 12px;
+  line-height: normal;
+  padding: 13px 48px 13px 13px;
+  &:focus {@include focus-input;}
+}
+
+select::-ms-expand {display: none;}
+
+// Search inputs in iOS
+input[type="search"] {
+  -webkit-appearance: none;
+}

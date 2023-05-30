@@ -1,0 +1,10 @@
+@import "./blockquote";
+@import "./copy";
+@import "./headings";
+@import "./links";
+@import "./lists";
+
+html {
+  font-family: $font-family--primary;
+  line-height: 1.5;
+}

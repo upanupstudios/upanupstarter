@@ -1,0 +1,7 @@
+.dynamic-quicklinks__content {
+  background-color: $bg--medium;
+  border: 1px solid $graphics;
+  flex: 1 1 auto;
+  width: 100%;
+  padding: clamp(24px,4vw,32px);
+}

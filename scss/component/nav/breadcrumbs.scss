@@ -1,0 +1,27 @@
+.nav--breadcrumbs {
+  clear: both;
+  display: block;
+  margin: 0 0 $default-margin 0;
+  max-width: 100%;
+  width: 100%;
+  ol {
+    @include unset-list;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+    li {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      + li::before {
+        @include icon('\f105');
+        color: $graphics;
+        font-weight: $icon-weight--normal;
+        margin-right: 16px;
+      }
+    }
+  }
+}

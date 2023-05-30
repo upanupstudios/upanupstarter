@@ -1,0 +1,21 @@
+.slider-controls {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  &--hidden {
+    display: none;
+  }
+  &__index {
+    margin: 0 16px;
+  }
+  &__button {
+    @include button--default;
+    font-size: 1.3125rem;
+    height: Min(44px, 2.75rem);
+    padding: 0;
+    text-align: center;
+    width: Min(44px, 2.75rem);
+  }
+}

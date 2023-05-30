@@ -1,0 +1,21 @@
+.alerts-banner {
+  background-color: $bg;
+  border: 1px solid $graphics;
+  padding: 0px max(32px,calc(#{$container-padding} / 2));
+  &__updated-level {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 18px;
+    &-wrapper {
+      padding-right: 11rem;
+      @media only screen and (max-width: $breakpoint--m) {padding-right: 0;}
+    }
+  }
+  &__title {margin-bottom: 12px;}
+  &__snippet {
+    margin-top: 12px;
+    padding-right: 11rem;
+    p {margin-bottom: 0;}
+    @media only screen and (max-width: $breakpoint--m) {padding-right: 0;}
+  }
+}

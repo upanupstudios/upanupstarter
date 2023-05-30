@@ -1,0 +1,13 @@
+global:
+  version: 1.x
+  css:
+    theme:
+      css/main.css: {}
+  dependencies:
+    - core/jquery
+fonts:
+  css:
+    theme:
+      '//fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap': { type: external, minified: true }
+  js:
+    https://kit.fontawesome.com/5cfddd6fef.js: {}

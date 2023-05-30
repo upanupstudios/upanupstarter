@@ -1,0 +1,231 @@
+<?php
+
+function upanupstarter_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\FormStateInterface &$form_state, $form_id = NULL) {
+  // Work-around for a core bug affecting admin themes. See issue #943212.
+  if (isset($form_id)) {
+    return;
+  }
+  $form['social_links'] = array(
+    '#type' =>  'fieldset',
+    '#title'  => t('Social media')
+  );
+  $form['social_links']['social_link_1'] = array(
+    '#type' =>  'fieldset',
+    '#title'  =>  t('Social link 1')
+  );
+  $form['social_links']['social_link_1']['social_link_1_icon'] = array(
+    '#type' =>  'textfield',
+    '#title'  =>  t('Icon'),
+    '#description'  =>  'Find a <a href="https://fontawesome.com/icons" target="_blank" title="Font Awesome icons. This link opens in a new tab.">Font Awesome</a> icon and copy the icon class (e.g. <code>fa-brands fa-instagram</code>).',
+    '#required' =>  FALSE,
+    '#default_value'  =>  theme_get_setting('social_link_1_icon')
+  );
+  $form['social_links']['social_link_1']['social_link_1_link'] = array(
+    '#type' =>  'url',
+    '#title'  =>  t('Link'),
+    '#required' =>  FALSE,
+    '#default_value'  =>  theme_get_setting('social_link_1_link')
+  );
+  $form['social_links']['social_link_1']['social_link_1_text'] = array(
+    '#type' =>  'textfield',
+    '#title'  =>  t('Link text'),
+    '#required' =>  FALSE,
+    '#default_value'  =>  theme_get_setting('social_link_1_text')
+  );
+  $form['social_links']['social_link_2'] = array(
+    '#type' =>  'fieldset',
+    '#title'  =>  t('Social link 2')
+  );
+  $form['social_links']['social_link_2']['social_link_2_icon'] = array(
+    '#type' =>  'textfield',
+    '#title'  =>  t('Icon'),
+    '#description'  =>  'Find a <a href="https://fontawesome.com/icons" target="_blank" title="Font Awesome icons. This link opens in a new tab.">Font Awesome</a> icon and copy the icon class (e.g. <code>fa-brands fa-instagram</code>).',
+    '#required' =>  FALSE,
+    '#default_value'  =>  theme_get_setting('social_link_2_icon')
+  );
+  $form['social_links']['social_link_2']['social_link_2_link'] = array(
+    '#type' =>  'url',
+    '#title'  =>  t('Link'),
+    '#required' =>  FALSE,
+    '#default_value'  =>  theme_get_setting('social_link_2_link')
+  );
+  $form['social_links']['social_link_2']['social_link_2_text'] = array(
+    '#type' =>  'textfield',
+    '#title'  =>  t('Link text'),
+    '#required' =>  FALSE,
+    '#default_value'  =>  theme_get_setting('social_link_2_text')
+  );
+  $form['social_links']['social_link_3'] = array(
+    '#type' =>  'fieldset',
+    '#title'  =>  t('Social link 3')
+  );
+  $form['social_links']['social_link_3']['social_link_3_icon'] = array(
+    '#type' =>  'textfield',
+    '#title'  =>  t('Icon'),
+    '#description'  =>  'Find a <a href="https://fontawesome.com/icons" target="_blank" title="Font Awesome icons. This link opens in a new tab.">Font Awesome</a> icon and copy the icon class (e.g. <code>fa-brands fa-instagram</code>).',
+    '#required' =>  FALSE,
+    '#default_value'  =>  theme_get_setting('social_link_3_icon')
+  );
+  $form['social_links']['social_link_3']['social_link_3_link'] = array(
+    '#type' =>  'url',
+    '#title'  =>  t('Link'),
+    '#required' =>  FALSE,
+    '#default_value'  =>  theme_get_setting('social_link_3_link')
+  );
+  $form['social_links']['social_link_3']['social_link_3_text'] = array(
+    '#type' =>  'textfield',
+    '#title'  =>  t('Link text'),
+    '#required' =>  FALSE,
+    '#default_value'  =>  theme_get_setting('social_link_3_text')
+  );
+  $form['social_links']['social_link_4'] = array(
+    '#type' =>  'fieldset',
+    '#title'  =>  t('Social link 4')
+  );
+  $form['social_links']['social_link_4']['social_link_4_icon'] = array(
+    '#type' =>  'textfield',
+    '#title'  =>  t('Icon'),
+    '#description'  =>  'Find a <a href="https://fontawesome.com/icons" target="_blank" title="Font Awesome icons. This link opens in a new tab.">Font Awesome</a> icon and copy the icon class (e.g. <code>fa-brands fa-instagram</code>).',
+    '#required' =>  FALSE,
+    '#default_value'  =>  theme_get_setting('social_link_4_icon')
+  );
+  $form['social_links']['social_link_4']['social_link_4_link'] = array(
+    '#type' =>  'url',
+    '#title'  =>  t('Link'),
+    '#required' =>  FALSE,
+    '#default_value'  =>  theme_get_setting('social_link_4_link')
+  );
+  $form['social_links']['social_link_4']['social_link_4_text'] = array(
+    '#type' =>  'textfield',
+    '#title'  =>  t('Link text'),
+    '#required' =>  FALSE,
+    '#default_value'  =>  theme_get_setting('social_link_4_text')
+  );
+  $form['social_links']['social_link_5'] = array(
+    '#type' =>  'fieldset',
+    '#title'  =>  t('Social link 5')
+  );
+  $form['social_links']['social_link_5']['social_link_5_icon'] = array(
+    '#type' =>  'textfield',
+    '#title'  =>  t('Icon'),
+    '#description'  =>  'Find a <a href="https://fontawesome.com/icons" target="_blank" title="Font Awesome icons. This link opens in a new tab.">Font Awesome</a> icon and copy the icon class (e.g. <code>fa-brands fa-instagram</code>).',
+    '#required' =>  FALSE,
+    '#default_value'  =>  theme_get_setting('social_link_5_icon')
+  );
+  $form['social_links']['social_link_5']['social_link_5_link'] = array(
+    '#type' =>  'url',
+    '#title'  =>  t('Link'),
+    '#required' =>  FALSE,
+    '#default_value'  =>  theme_get_setting('social_link_5_link')
+  );
+  $form['social_links']['social_link_5']['social_link_5_text'] = array(
+    '#type' =>  'textfield',
+    '#title'  =>  t('Link text'),
+    '#required' =>  FALSE,
+    '#default_value'  =>  theme_get_setting('social_link_5_text')
+  );
+  $form['contact'] = array(
+    '#type' =>  'fieldset',
+    '#title'  => t('Contact')
+  );
+  $form['contact']['address'] = array(
+    '#type' =>  'fieldset',
+    '#title'  => t('Address')
+  );
+  $form['contact']['address']['address'] = array(
+    '#type' =>  'textarea',
+    '#title'  =>  t('Address'),
+    '#required' =>  FALSE,
+    '#default_value'  =>  theme_get_setting('address')
+  );
+  $form['contact']['address']['phone_1'] = array(
+    '#type' =>  'textfield',
+    '#title'  => t('Phone one'),
+    '#required' =>  FALSE,
+    '#default_value'  =>  theme_get_setting('phone_1')
+  );
+  $form['contact']['address']['phone_2'] = array(
+    '#type' =>  'textfield',
+    '#title'  => t('Phone two'),
+    '#required' =>  FALSE,
+    '#default_value'  =>  theme_get_setting('phone_2')
+  );
+  $form['contact']['address']['email_1'] = array(
+    '#type' =>  'textfield',
+    '#title'  => t('Email one'),
+    '#required' =>  FALSE,
+    '#default_value'  =>  theme_get_setting('email_1')
+  );
+  $form['contact']['address']['email_2'] = array(
+    '#type' =>  'textfield',
+    '#title'  => t('Email two'),
+    '#required' =>  FALSE,
+    '#default_value'  =>  theme_get_setting('email_2')
+  );
+  $form['hours'] = array(
+    '#type' =>  'fieldset',
+    '#title'  => t('Hours')
+  );
+  $form['hours']['hours_1_label'] = array(
+    '#type' =>  'textfield',
+    '#title'  =>  t('Hours row one, label'),
+    '#required' =>  FALSE,
+    '#default_value'  =>  theme_get_setting('hours_1_label')
+  );
+  $form['hours']['hours_1'] = array(
+    '#type' =>  'textfield',
+    '#title'  =>  t('Hours row one'),
+    '#required' =>  FALSE,
+    '#default_value'  =>  theme_get_setting('hours_1')
+  );
+  $form['hours']['hours_2_label'] = array(
+    '#type' =>  'textfield',
+    '#title'  =>  t('Hours row two, label'),
+    '#required' =>  FALSE,
+    '#default_value'  =>  theme_get_setting('hours_2_label')
+  );
+  $form['hours']['hours_2'] = array(
+    '#type' =>  'textfield',
+    '#title'  =>  t('Hours row two'),
+    '#required' =>  FALSE,
+    '#default_value'  =>  theme_get_setting('hours_2')
+  );
+  $form['hours']['hours_3_label'] = array(
+    '#type' =>  'textfield',
+    '#title'  =>  t('Hours row three, label'),
+    '#required' =>  FALSE,
+    '#default_value'  =>  theme_get_setting('hours_3_label')
+  );
+  $form['hours']['hours_3'] = array(
+    '#type' =>  'textfield',
+    '#title'  =>  t('Hours row three'),
+    '#required' =>  FALSE,
+    '#default_value'  =>  theme_get_setting('hours_3')
+  );
+  $form['theme_options'] = array(
+    '#type' =>  'fieldset',
+    '#title'  => t('Theme options')
+  );
+  $form['theme_options']['row_fade'] = array(
+    '#type' =>  'checkbox',
+    '#title'  =>  t('Row fade'),
+    '#default_value'  =>  theme_get_setting('row_fade'),
+    '#description'  =>  t('When checked, content rows will fade in as the user scrolls. Note that this only applies to users who have not set a preference for reduced motion in their operating system and/or browser.'),
+  );
+}
+
+function upanupstarter_preprocess_html(&$variables) {
+  $row_fade = theme_get_setting('row_fade');
+  $variables['row_fade'] = $row_fade;
+  if($row_fade == 1) {
+    $variables['#attached']['library'][] = 'upanupbase/row_fade';
+  }
+}
+
+function upanupstarter_preprocess_block(&$variables) {
+  $variables_array = array('social_link_1_icon','social_link_1_link','social_link_1_text','social_link_2_icon','social_link_2_link','social_link_2_text','social_link_3_icon','social_link_3_link','social_link_3_text','social_link_4_icon','social_link_4_link','social_link_4_text','social_link_5_icon','social_link_5_link','social_link_5_text','address','phone_1','phone_2','email_1','email_2','hours_1_label','hours_1','hours_2_label','hours_2','hours_3_label','hours_3');
+  foreach($variables_array as &$value) {
+    ${$value} = theme_get_setting($value);
+    $variables[$value] = ${$value};
+  }
+}

@@ -1,0 +1,33 @@
+.image-text {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap:32px;
+  @include max($breakpoint--m) {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  &__image {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: Min(40%, 352px);
+    max-width: Min(40%, 352px);
+    width: 100%;
+    @include max($breakpoint--m) {
+      flex: 0 0 auto;
+      max-width: 352px;
+    }
+    img {display: block;}
+  }
+  &__text {
+    flex: 1 1 auto;
+    max-width: 100%;
+    width: 100%;
+    @include max($breakpoint--m) {flex: 0 0 auto;}
+    > .field__item > *:last-child {margin-bottom: 0;}
+  }
+}
+
+.field--name-field-image-and-text > .field__item + .field__item {margin-top: $default-margin;}
