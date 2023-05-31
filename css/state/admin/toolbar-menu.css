@@ -1,0 +1,11 @@
+.toolbar-menu-administration ul {
+  margin: 0;
+  padding: 0;
+}
+.toolbar-menu-administration ul ul {
+  margin: 0;
+  padding: 0;
+}
+.toolbar-menu-administration ul li {
+  margin: 0;
+}

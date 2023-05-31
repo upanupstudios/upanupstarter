@@ -1,3 +1,14 @@
+@import "../../base/variables/color";
+@import "../../base/mixins/icon";
+
+.messages--error {
+  background-color: $error--light;
+  &::before {
+    @include icon('\f071');
+    color: $error;
+  }
+}
+
 .messages--status {
   background-color: $valid--light;
   &::before {

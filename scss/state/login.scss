@@ -1,3 +1,5 @@
+@import "../base/mixins/button";
+
 .user-login.path-user {
   .sidebar {display: none;}
   .user-login-form .form-submit {@include button--default;}

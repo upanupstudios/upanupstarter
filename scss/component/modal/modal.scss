@@ -1,3 +1,6 @@
+@import "../../base/variables/color";
+@import "../../base/mixins/button";
+
 .ui-widget-overlay {
   background: rgba(0,0,0,0.1);
   opacity: 1;

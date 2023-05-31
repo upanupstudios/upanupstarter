@@ -1,3 +1,7 @@
+@import "../../base/variables/color";
+@import "../../base/mixins/button";
+@import "../../base/mixins/media-queries";
+
 .nav--main {  
   @include max($breakpoint--l) {
     display: none;

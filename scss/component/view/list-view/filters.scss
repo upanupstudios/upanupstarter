@@ -1,3 +1,6 @@
+@import "../../../base/variables/container";
+@import "../../../base/mixins/button";
+
 .view-filters,
 .views-exposed-form:not(form) {
   clear: both;

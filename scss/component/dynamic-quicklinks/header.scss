@@ -1,3 +1,7 @@
+@import "../../base/variables/color";
+@import "../../base/variables/container";
+@import "../../base/mixins/media-queries";
+
 .dynamic-quicklinks__header {
   background-color: $bg--dark;
   border: 1px solid $graphics;

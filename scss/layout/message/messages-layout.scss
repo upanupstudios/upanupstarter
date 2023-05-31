@@ -1,3 +1,8 @@
+@import "../../base/variables/container";
+@import "../../base/variables/line-width";
+@import "../../base/mixins/media-queries";
+@import "../../base/mixins/unset-list";
+
 .messages {
   &__message {
     margin: auto 0;

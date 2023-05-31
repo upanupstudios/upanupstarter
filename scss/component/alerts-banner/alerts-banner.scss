@@ -1,3 +1,7 @@
+@import "../../base/variables/color";
+@import "../../base/variables/container";
+@import "../../base/mixins/media-queries";
+
 .alerts-banner {
   background-color: $bg;
   border: 1px solid $graphics;

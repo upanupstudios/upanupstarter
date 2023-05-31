@@ -245,3 +245,19 @@ view:
       css/component/view/filters.css: {}
       css/component/view/list-view--compact.css: {}
       css/component/view/list-view.css: {}
+# Third-party
+cookie-consent:
+  version: 1.x
+  css:
+    component:
+      css/third-party/cookie-consent.css: {}
+full-calendar:
+  version: 1.x
+  css:
+    component:
+      css/third-party/full-calendar.css: {}
+tippy:
+  version: 1.x
+  css:
+    component:
+      css/third-party/tippy.css: {}

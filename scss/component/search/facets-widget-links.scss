@@ -1,3 +1,5 @@
+@import "../../base/mixins/unset-list";
+
 .facets-widget-links {
   ul {
     @include unset-list;

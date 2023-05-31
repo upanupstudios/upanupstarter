@@ -1,3 +1,9 @@
+@import "../base/variables/color";
+@import "../base/mixins/button";
+@import "../base/mixins/focus";
+@import "../base/mixins/media-queries";
+@import "../base/mixins/transition";
+
 .fc {
   &-button-primary {
     background-color: $int-bgc;

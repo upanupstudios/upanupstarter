@@ -1,3 +1,8 @@
+@import "../../base/variables/color";
+@import "../../base/mixins/button";
+@import "../../base/mixins/media-queries";
+@import "../../base/mixins/unset-list";
+
 .links-block {
   &__title {margin-bottom: 16px;}
   &__links {

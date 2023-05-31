@@ -1,3 +1,7 @@
+@import "../../base/mixins/button";
+@import "../../base/variables/color";
+@import "../../base/utility/typography/headings";
+
 .sidebar-accordion {
   &__trigger {
     @include button--ui(null,true);

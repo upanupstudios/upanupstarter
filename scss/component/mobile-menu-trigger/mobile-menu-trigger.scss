@@ -1,3 +1,7 @@
+@import "../../base/variables/font-weight";
+@import "../../base/mixins/icon";
+@import "../../base/mixins/media-queries";
+
 .mobile-menu-trigger {
   display: none;
   padding-right: 50px;

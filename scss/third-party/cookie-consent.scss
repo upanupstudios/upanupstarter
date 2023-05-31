@@ -1,3 +1,8 @@
+@import "../base/variables/color";
+@import "../base/variables/container";
+@import "../base/mixins/button";
+@import "../base/mixins/media-queries";
+
 .cc_banner {
   background-color: $bg--medium;
   border: 1px solid $graphics;

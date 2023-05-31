@@ -1,3 +1,6 @@
+@import "../../base/variables/container";
+@import "../../base/mixins/media-queries";
+
 .dynamic-quicklinks {
   display: flex;
   flex-direction: row;

@@ -1,3 +1,7 @@
+@import "../../base/variables/color";
+@import "../../base/mixins/underline";
+@import "../../base/utility/typography/headings";
+
 .sidebar nav {
   .menu__item-link-wrapper {
     display: flex;

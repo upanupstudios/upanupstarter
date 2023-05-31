@@ -1,3 +1,9 @@
+@import "../../base/variables/color";
+@import "../../base/variables/container";
+@import "../../base/mixins/button";
+@import "../../base/mixins/underline";
+@import "../../base/mixins/transition";
+
 .pager {
   line-height: 1.5;
   margin: clamp(16px,calc(#{$container-padding} / 2),48px) 16px;

@@ -1,3 +1,6 @@
+@import "../../base/variables/color";
+@import "../../base/mixins/media-queries";
+
 .images-slider {
 	border: 1px solid $graphics;
 	@media only screen and (max-width: 72.875rem) {max-width: 63.5vw;}

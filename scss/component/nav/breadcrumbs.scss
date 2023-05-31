@@ -1,3 +1,9 @@
+@import "../../base/variables/color";
+@import "../../base/variables/font-weight";
+@import "../../base/variables/margin";
+@import "../../base/mixins/icon";
+@import "../../base/mixins/unset-list";
+
 .nav--breadcrumbs {
   clear: both;
   display: block;

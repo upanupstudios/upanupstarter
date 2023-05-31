@@ -1,3 +1,9 @@
+@import "../../base/variables/color";
+@import "../../base/variables/margin";
+@import "../../base/utility/typography/headings";
+@import "../../base/mixins/media-queries";
+@import "../../base/mixins/underline";
+
 .card {
   background-color: $bg;
   display: flex;

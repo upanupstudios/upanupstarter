@@ -1,3 +1,9 @@
+@import "../../base/variables/color";
+@import "../../base/variables/font-weight";
+@import "../../base/variables/margin";
+@import "../../base/mixins/icon";
+@import "../../base/utility/typography/headings";
+
 .emphasis {
   background-color: $bg--medium;
   padding: 90px clamp(24px,4vw,32px) clamp(24px,4vw,32px) clamp(24px,4vw,32px);
