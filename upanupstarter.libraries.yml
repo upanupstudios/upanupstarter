@@ -1,8 +1,38 @@
 global:
   version: 1.x
   css:
-    theme:
-      css/main.css: {}
+    base:
+      css/base/elements/button.css: {}
+      css/base/elements/figure.css: {}
+      css/base/elements/iframe.css: {}
+      css/base/elements/img.css: {}
+      css/base/elements/table.css: {}
+      css/base/typography/blockquote.css: {}
+      css/base/typography/copy.css: {}
+      css/base/typography/headings.css: {}
+      css/base/typography/links.css: {}
+      css/base/typography/lists.css: {}
+      css/base/utility/typography/headings.css: {}
+      css/base/utility/typography/line-width.css: {}
+      css/base/body.css: {}
+      css/base/html.css: {}
+      css/base/form/captcha.css: {}
+      css/base/form/checkbox.css: {}
+      css/base/form/fieldset.css: {}
+      css/base/form/form-elements.css: {}
+      css/base/form/form-item.css: {}
+      css/base/form/input.css: {}
+      css/base/form/label.css: {}
+      css/base/form/radio.css: {}
+      css/base/form/submit.css: {}
+    layout:
+      css/layout/container.css: {}
+      css/layout/content.css: {}
+      css/layout/header.css: {}
+      css/layout/main.css: {}
+      css/layout/sidebar.css: {}
+    state:
+      css/state/login.css: {}
   dependencies:
     - core/jquery
 fonts:
@@ -11,3 +41,207 @@ fonts:
       '//fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap': { type: external, minified: true }
   js:
     https://kit.fontawesome.com/5cfddd6fef.js: {}
+accordion:
+  version: 1.x
+  css:
+    component:
+      css/component/accordion/accordion-group.css: {}
+      css/component/accordion/accordion.css: {}
+alerts-banner:
+  version: 1.x
+  css:
+    component:
+      css/component/alerts-banner/alerts-banner.css: {}
+      css/component/alerts-banner/controls.css: {}
+      css/component/alerts-banner/header.css: {}
+      css/component/alerts-banner/slider-wrapper.css: {}
+      css/component/alerts-banner/trigger.css: {}
+banner--content:
+  version: 1.x
+  css:
+    component:
+      css/component/banner/content.css: {}
+banner--fullwidth:
+  version: 1.x
+  css:
+    component:
+      css/component/banner/fullwidth.css: {}
+banner--sidebar:
+  version: 1.x
+  css:
+    component:
+      css/component/banner/sidebar.css: {}
+card:
+  version: 1.x
+  css:
+    component:
+      css/component/card/card.css: {}
+contact-block:
+  version: 1.x
+  css:
+    component:
+      css/component/contact-block/contact-block.css: {}
+content-row:
+  version: 1.x
+  css:
+    component:
+      css/component/content-row/content-row.css: {}
+dynamic-quicklinks:
+  version: 1.x
+  css:
+    component:
+      css/component/dynamic-quicklinks/content.css: {}
+      css/component/dynamic-quicklinks/dynamic-quicklinks.css: {}
+      css/component/dynamic-quicklinks/filter.css: {}
+      css/component/dynamic-quicklinks/header.css: {}
+      css/component/dynamic-quicklinks/section.css: {}
+    state:
+      css/state/dynamic-quicklinks/is-active.css: {}
+emphasis:
+  version: 1.x
+  css:
+    component:
+      css/component/emphasis/emphasis.css: {}
+footer:
+  version: 1.x
+  css:
+    component:
+      css/component/footer/copyright.css: {}
+      css/component/footer/credit.css: {}
+      css/component/footer/footer.css: {}
+      css/component/footer/region.css: {}
+header:
+  version: 1.x
+  css:
+    component:
+      css/component/header/header.css: {}
+      css/component/header/logo.css: {}
+      css/component/header/menu-search.css: {}
+      css/component/header/menu-wrapper.css: {}
+      css/component/header/nav-search-trigger.css: {}
+      css/component/header/row.css: {}
+    layout:
+      css/layout/header.css: {}
+hours-block:
+  version: 1.x
+  css:
+    component:
+      css/component/hours-block/hours-block.css: {}
+image-text:
+  version: 1.x
+  css:
+    component:
+      css/component/image-text/image-text.css: {}
+images-slider:
+  version: 1.x
+  css:
+    component:
+      css/component/images-slider/controls.css: {}
+      css/component/images-slider/slide.css: {}
+      css/component/images-slider/slider.css: {}
+links-block:
+  version: 1.x
+  css:
+    component:
+      css/component/links-block/links-block.css: {}
+message:
+  version: 1.x
+  css:
+    component:
+      css/component/message/message-close.css: {}
+      css/component/message/message.css: {}
+    state:
+      css/state/message/error.css: {}
+      css/state/message/info.css: {}
+      css/state/message/status.css: {}
+      css/state/message/warning.css: {}
+mobile-menu-trigger:
+  version: 1.x
+  css:
+    component:
+      css/component/mobile-menu-trigger/mobile-menu-trigger.css: {}
+modal:
+  version: 1.x
+  css:
+    component:
+      css/component/modal/modal.css: {}
+nav--breadcrumbs:
+  version: 1.x
+  css:
+    component:
+      css/component/nav/breadcrumbs.css: {}
+nav--footer-block:
+  version: 1.x
+  css:
+    component:
+      css/component/nav/footer-block.css: {}
+nav--footer:
+  version: 1.x
+  css:
+    component:
+      css/component/nav/footer.css: {}
+nav--header:
+  version: 1.x
+  css:
+    component:
+      css/component/nav/header.css: {}
+nav--main:
+  version: 1.x
+  css:
+    component:
+      css/component/nav/main.css: {}
+nav--pager:
+  version: 1.x
+  css:
+    component:
+      css/component/nav/pager.css: {}
+nav--section:
+  version: 1.x
+  css:
+    component:
+      css/component/nav/section.css: {}
+nav--social:
+  version: 1.x
+  css:
+    component:
+      css/component/nav/social.css: {}
+nav--submenu-trigger:
+  version: 1.x
+  css:
+    component:
+      css/component/nav/submenu-trigger.css: {}
+nav--tabs:
+  version: 1.x
+  css:
+    component:
+      css/component/nav/tabs.css: {}
+quicklink:
+  version: 1.x
+  css:
+    component:
+      css/component/quicklink/quicklink.css: {}
+search:
+  version: 1.x
+  css:
+    component:
+      css/component/search/autocomplete.css: {}
+      css/component/search/facets-widget-links.css: {}
+      css/component/search/form.css: {}
+      css/component/search/mobile-search-trigger.css: {}
+sidebar-accordion:
+  version: 1.x
+  css:
+    component:
+      css/component/sidebar-accordion/sidebar-accordion.css: {}
+slider:
+  version: 1.x
+  css:
+    component:
+      css/component/slider/controls.css: {}
+view:
+  version: 1.x
+  css:
+    component:
+      css/component/view/filters.css: {}
+      css/component/view/list-view--compact.css: {}
+      css/component/view/list-view.css: {}

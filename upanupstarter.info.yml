@@ -27,6 +27,36 @@ regions:
 libraries:
   - upanupstarter/global
   - upanupstarter/fonts
+  - upanupstarter/links-block
+  - upanupstarter/quicklink
+  - upanupstarter/search
+
+libraries-extend:
+  upanupbase/accordion:
+    - upanupstarter/accordion
+  upanupbase/alert:
+    - upanupstarter/alerts-banner
+  upanupbase/dynamic_quicklinks:
+    - upanupstarter/dynamic-quicklinks
+  upanupbase/dynamic_quicklinks_storage:
+    - upanupstarter/dynamic-quicklinks
+  upanupbase/message:
+    - upanupstarter/message
+  upanupbase/nav:
+    - upanupstarter/nav--breadcrumbs
+    - upanupstarter/nav--footer-block
+    - upanupstarter/nav--footer
+    - upanupstarter/nav--header
+    - upanupstarter/nav--main
+    - upanupstarter/nav--pager
+    - upanupstarter/nav--section
+    - upanupstarter/nav--social
+    - upanupstarter/nav--submenu-trigger
+    - upanupstarter/nav--tabs
+  upanupbase/sidebar_block:
+    - upanupstarter/sidebar-accordion
+  upanupbase/swiper:
+    - upanupstarter/slider
 
 ckeditor_stylesheets:
   - https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap

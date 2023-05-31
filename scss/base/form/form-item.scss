@@ -1,0 +1,46 @@
+@import "../variables/color";
+@import "../variables/font-weight";
+@import "../mixins/icon";
+
+.form-item {
+  margin: 32px 0;
+  max-width: 100%;
+  label,
+  legend {
+    clear: both;
+    color:$font;
+    display: block;
+    font-weight: $font-weight--bold;
+    margin: 0 0 8px 0;
+    &.button {
+      display: inline-block;
+    }
+  }
+  &--error-message {
+    background-color: $error--light;
+    padding: 13px 12px 12px 36px;
+    position: relative;
+    width: 100%;
+    &::before {
+      background: transparent;
+      @include icon('\f06a');
+      color: $error;
+      font-weight: $icon-weight--solid;
+      height: auto;
+      left: 12px;
+      position: absolute;
+      top: 13px;
+      vertical-align: unset;
+      width: auto;
+    }
+  }
+}
+
+.form--inline {
+  > .form-item {
+    clear: both;
+    display: block;
+    float: none;
+    margin: 24px 0;
+  }
+}

@@ -1,0 +1,15 @@
+@import "../mixins/unset-button";
+@import "../mixins/button";
+
+button {@include unset-button;}
+
+.button,
+.btn {
+  &--ui {
+    @include button--ui(null);
+    &--dark {@include button--ui--dark(null);}
+  }
+  &--default {@include button--default;}
+  &--emphasis,
+  &--em {@include button--emphasis;}
+}
