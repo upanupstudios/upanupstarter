@@ -25,6 +25,8 @@ global:
       css/base/form/label.css: {}
       css/base/form/radio.css: {}
       css/base/form/submit.css: {}
+    component:
+      css/component/nav/nav.css: {}
     layout:
       css/layout/container.css: {}
       css/layout/content.css: {}
@@ -243,8 +245,8 @@ view:
   css:
     component:
       css/component/view/filters.css: {}
-      css/component/view/list-view--compact.css: {}
-      css/component/view/list-view.css: {}
+      css/component/view/list-view/list-view--compact.css: {}
+      css/component/view/list-view/list-view.css: {}
 # Third-party
 cookie-consent:
   version: 1.x

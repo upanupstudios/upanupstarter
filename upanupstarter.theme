@@ -229,3 +229,7 @@ function upanupstarter_preprocess_block(&$variables) {
     $variables[$value] = ${$value};
   }
 }
+
+function upanupstarter_preprocess_views_view(&$variables) {
+  $variables['#attached']['library'][] = 'upanupstarter/view';
+}

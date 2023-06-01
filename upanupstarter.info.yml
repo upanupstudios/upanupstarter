@@ -1,6 +1,6 @@
 #required mappings
 name: Upanup Starter Theme
-description: Upanup starter theme
+description: Upanup's starter theme
 type: theme
 core_version_requirement: ^8.8 || ^9
 # Defines the base theme
@@ -36,10 +36,20 @@ libraries-extend:
     - upanupstarter/accordion
   upanupbase/alert:
     - upanupstarter/alerts-banner
+  upanupbase/card:
+    - upanupstarter/card
+  upanupbase/content-row:
+    - upanupstarter/content-row
   upanupbase/dynamic_quicklinks:
     - upanupstarter/dynamic-quicklinks
   upanupbase/dynamic_quicklinks_storage:
     - upanupstarter/dynamic-quicklinks
+  upanupbase/emphasis:
+    - upanupstarter/emphasis
+  upanupbase/image-text:
+    - upanupstarter/image-text
+  upanupbase/images-slider:
+    - upanupstarter/images-slider
   upanupbase/message:
     - upanupstarter/message
   upanupbase/nav:
