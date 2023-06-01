@@ -30,6 +30,7 @@ libraries:
   - upanupstarter/links-block
   - upanupstarter/quicklink
   - upanupstarter/search
+  - upanupstarter/tippy
 
 libraries-extend:
   upanupbase/accordion:
@@ -67,7 +68,12 @@ libraries-extend:
     - upanupstarter/sidebar-accordion
   upanupbase/swiper:
     - upanupstarter/slider
-
+  cookieconsent/cookieconsent:
+    - upanupstarter/cookie-consent
+  cookieconsent/cookieconsent-min:
+    - upanupstarter/cookie-consent
+  fullcalendar_view/libraries.fullcalendar:
+    - upanupstarter/full-calendar
 ckeditor_stylesheets:
   - https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap
   - css/third-party/ckeditor.styles.css
