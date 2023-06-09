@@ -1,5 +1,4 @@
 @import "../../base/variables/line-width";
-@import "../../base/mixins/button";
 @import "../../base/mixins/media-queries";
 
 .accordion-group {
@@ -7,9 +6,5 @@
   > .field__items > .field__item:not(:first-child) {
     margin-top: 8px;
     @include max($breakpoint--m) {margin-top: 16px;}
-  }
-  &__toggle {
-    @include button--ui('\f0d7',true,180deg);
-    transform: translateX(-13px);
   }
 }

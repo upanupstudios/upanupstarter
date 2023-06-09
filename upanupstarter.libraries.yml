@@ -25,8 +25,6 @@ global:
       css/base/form/label.css: {}
       css/base/form/radio.css: {}
       css/base/form/submit.css: {}
-    component:
-      css/component/nav/nav.css: {}
     layout:
       css/layout/container.css: {}
       css/layout/content.css: {}
@@ -49,15 +47,21 @@ accordion:
     component:
       css/component/accordion/accordion-group.css: {}
       css/component/accordion/accordion.css: {}
+accordion-group-toggle:
+  version: 1.x
+  css:
+    component:
+      css/component/accordion/accordion-group-toggle.css: {}
 alerts-banner:
   version: 1.x
   css:
     component:
       css/component/alerts-banner/alerts-banner.css: {}
-      css/component/alerts-banner/controls.css: {}
       css/component/alerts-banner/header.css: {}
       css/component/alerts-banner/slider-wrapper.css: {}
       css/component/alerts-banner/trigger.css: {}
+    theme:
+      css/component/alerts-banner/controls.css: {}
 banner--content:
   version: 1.x
   css:

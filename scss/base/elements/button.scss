@@ -1,7 +1,4 @@
-@import "../mixins/unset-button";
 @import "../mixins/button";
-
-button {@include unset-button;}
 
 .button,
 .btn {

@@ -1,9 +1,0 @@
-@import "../../base/mixins/unset-list";
-
-nav,
-.nav {
-  ul, ol {
-    @include unset-list;
-    li {margin: 0;}
-  }
-}

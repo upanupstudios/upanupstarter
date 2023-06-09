@@ -35,6 +35,8 @@ libraries:
 libraries-extend:
   upanupbase/accordion:
     - upanupstarter/accordion
+  upanupbase/accordion-group-toggle:
+    - upanupstarter/accordion-group-toggle
   upanupbase/alert:
     - upanupstarter/alerts-banner
   upanupbase/card:
@@ -63,14 +65,13 @@ libraries-extend:
     - upanupstarter/nav--section
     - upanupstarter/nav--social
     - upanupstarter/nav--submenu-trigger
+  upanupbase/nav--tabs:
     - upanupstarter/nav--tabs
   upanupbase/sidebar_block:
     - upanupstarter/sidebar-accordion
   upanupbase/swiper:
     - upanupstarter/slider
-  cookieconsent/cookieconsent:
-    - upanupstarter/cookie-consent
-  cookieconsent/cookieconsent-min:
+  upanupbase/cookie-consent:
     - upanupstarter/cookie-consent
   fullcalendar_view/libraries.fullcalendar:
     - upanupstarter/full-calendar

@@ -1,21 +1,10 @@
 @import "../../base/mixins/button";
-@import "../../base/mixins/unset-list";
 
 nav.tabs {
   ul {
-    @include unset-list;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
     li {
-      margin: 0 16px 16px 0;
-      &.is-active {
-        > * {@include button--disabled;}
-      }
-      > * {
-        @include button--emphasis;
-      }
+      &.is-active > * {@include button--disabled;}
+      > * {@include button--emphasis;}
     }
   }
 }
