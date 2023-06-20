@@ -1,6 +1,6 @@
-@import "../../base/mixins/button";
-@import "../../base/variables/color";
-@import "../../base/utility/typography/headings";
+@import "../../mixins/button";
+@import "../../variables/color";
+@import "../../mixins/headings";
 
 .sidebar-accordion {
   &__trigger {

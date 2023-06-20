@@ -29,7 +29,6 @@ libraries:
   - upanupstarter/fonts
   - upanupstarter/links-block
   - upanupstarter/quicklink
-  - upanupstarter/search
   - upanupstarter/tippy
 
 libraries-extend:
@@ -55,18 +54,24 @@ libraries-extend:
     - upanupstarter/images-slider
   upanupbase/message:
     - upanupstarter/message
+  upanupbase/modal:
+    - upanupstarter/modal
   upanupbase/nav:
-    - upanupstarter/nav--breadcrumbs
     - upanupstarter/nav--footer-block
     - upanupstarter/nav--footer
     - upanupstarter/nav--header
     - upanupstarter/nav--main
     - upanupstarter/nav--pager
-    - upanupstarter/nav--section
     - upanupstarter/nav--social
     - upanupstarter/nav--submenu-trigger
+  upanupbase/nav--breadcrumbs:
+    - upanupstarter/nav--breadcrumbs
+  upanupbase/nav--section:
+    - upanupstarter/nav--section
   upanupbase/nav--tabs:
     - upanupstarter/nav--tabs
+  upanupbase/search:
+    - upanupstarter/search
   upanupbase/sidebar_block:
     - upanupstarter/sidebar-accordion
   upanupbase/swiper:
@@ -77,4 +82,4 @@ libraries-extend:
     - upanupstarter/full-calendar
 ckeditor_stylesheets:
   - https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap
-  - css/third-party/ckeditor.styles.css
+  - css/ckeditor.css

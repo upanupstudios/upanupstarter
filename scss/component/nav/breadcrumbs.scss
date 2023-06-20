@@ -1,26 +1,13 @@
-@import "../../base/variables/color";
-@import "../../base/variables/font-weight";
-@import "../../base/variables/margin";
-@import "../../base/mixins/icon";
-@import "../../base/mixins/unset-list";
+@import "../../variables/color";
+@import "../../variables/font-weight";
+@import "../../variables/margin";
+@import "../../mixins/icon";
 
 .nav--breadcrumbs {
-  clear: both;
-  display: block;
   margin: 0 0 $default-margin 0;
-  max-width: 100%;
-  width: 100%;
   ol {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: flex-start;
     gap: 16px;
     li {
-      display: inline-block;
-      margin: 0;
-      padding: 0;
       + li::before {
         @include icon('\f105');
         color: $graphics;

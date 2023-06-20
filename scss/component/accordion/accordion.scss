@@ -1,8 +1,7 @@
-@import "../../base/mixins/button";
-@import "../../base/mixins/icon";
-@import "../../base/variables/color";
-@import "../../base/variables/font-weight";
-@import "../../base/variables/line-width";
+@import "../../mixins/button";
+@import "../../mixins/icon";
+@import "../../variables/color";
+@import "../../variables/font-weight";
 
 .accordion,
 details,
@@ -13,10 +12,7 @@ details,
     @include button--ui(null,true);
     @include button--default;
     max-width: $line-width;
-    position: relative;
-    padding-right: 48px;
     width: 100%;
-    > * {display: inline-block;}
     &::after {
       font-size: 21px;
       line-height: 1;
@@ -34,23 +30,15 @@ details,
       position: absolute;
       top: 14px;
     }
-    a {display: block;}
   }
   &__content {
     border: 1px solid $int-bdc;
-    display: none;
-    max-width: $line-width;
     padding: 16px;
-    width: 100%;
-    > .field__item > *:last-child {margin-bottom: 0;}
   }
   .details-wrapper,
   .webform-element-more--content {
     border: 1px solid $int-bdc;
-    max-width: $line-width;
-    overflow: auto;
     padding: 16px;
-    width: 100%;
   }
 }
 
@@ -58,8 +46,4 @@ details,
 summary[aria-expanded="true"],
 .accordion__trigger[aria-expanded="true"] {
   &::after {transform: rotate(90deg);}
-}
-
-details {
-  summary::before {display: none;}
 }

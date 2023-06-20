@@ -1,7 +1,7 @@
-@import "../base/variables/color";
-@import "../base/variables/container";
-@import "../base/mixins/button";
-@import "../base/mixins/media-queries";
+@import "../../variables/color";
+@import "../../variables/container";
+@import "../../mixins/button";
+@import "../../mixins/media-queries";
 
 .cc_banner {
   background-color: $bg--medium;

@@ -1,6 +1,6 @@
-@import "../../base/variables/color";
-@import "../../base/mixins/button";
-@import "../../base/mixins/media-queries";
+@import "../../variables/color";
+@import "../../mixins/button";
+@import "../../mixins/media-queries";
 
 .nav--main {  
   @include max($breakpoint--l) {

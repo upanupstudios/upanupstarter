@@ -1,4 +1,4 @@
-@import "../../base/mixins/button";
+@import "../../mixins/button";
 
 .accordion-group__toggle {
   @include button--ui('\f0d7',true,180deg);

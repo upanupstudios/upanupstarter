@@ -3,17 +3,14 @@ global:
   css:
     base:
       css/base/elements/button.css: {}
-      css/base/elements/figure.css: {}
-      css/base/elements/iframe.css: {}
-      css/base/elements/img.css: {}
       css/base/elements/table.css: {}
       css/base/typography/blockquote.css: {}
       css/base/typography/copy.css: {}
       css/base/typography/headings.css: {}
       css/base/typography/links.css: {}
       css/base/typography/lists.css: {}
-      css/base/utility/typography/headings.css: {}
-      css/base/utility/typography/line-width.css: {}
+      css/mixins/headings.css: {}
+      css/mixins/line-width.css: {}
       css/base/body.css: {}
       css/base/html.css: {}
       css/base/form/captcha.css: {}
@@ -28,7 +25,6 @@ global:
     layout:
       css/layout/container.css: {}
       css/layout/content.css: {}
-      css/layout/header.css: {}
       css/layout/main.css: {}
       css/layout/sidebar.css: {}
     state:
@@ -155,6 +151,7 @@ message:
   css:
     component:
       css/component/message/message-close.css: {}
+      css/component/message/message-layout.css: {}
       css/component/message/message.css: {}
     state:
       css/state/message/error.css: {}
@@ -231,7 +228,6 @@ search:
   css:
     component:
       css/component/search/autocomplete.css: {}
-      css/component/search/facets-widget-links.css: {}
       css/component/search/form.css: {}
       css/component/search/mobile-search-trigger.css: {}
 sidebar-accordion:
@@ -256,14 +252,14 @@ cookie-consent:
   version: 1.x
   css:
     component:
-      css/third-party/cookie-consent.css: {}
+      css/component/cookie-consent/cookie-consent.css: {}
 full-calendar:
   version: 1.x
   css:
     component:
-      css/third-party/full-calendar.css: {}
+      css/component/full-calendar/full-calendar.css: {}
 tippy:
   version: 1.x
   css:
     component:
-      css/third-party/tippy.css: {}
+      css/component/tippy/tippy.css: {}

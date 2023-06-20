@@ -1,6 +1,6 @@
-@import "../../base/mixins/button";
-@import "../../base/mixins/icon";
-@import "../../base/mixins/media-queries";
+@import "../../mixins/button";
+@import "../../mixins/icon";
+@import "../../mixins/media-queries";
 
 .mobile-search-trigger {
   @include button--emphasis;

@@ -1,8 +1,6 @@
-@import "../../base/variables/line-width";
-@import "../../base/mixins/media-queries";
+@import "../../mixins/media-queries";
 
 .accordion-group {
-  max-width: $line-width;
   > .field__items > .field__item:not(:first-child) {
     margin-top: 8px;
     @include max($breakpoint--m) {margin-top: 16px;}

@@ -1,8 +1,8 @@
-@import "../../base/variables/color";
-@import "../../base/variables/container";
-@import "../../base/mixins/button";
-@import "../../base/mixins/underline";
-@import "../../base/mixins/transition";
+@import "../../variables/color";
+@import "../../variables/container";
+@import "../../mixins/button";
+@import "../../mixins/underline";
+@import "../../mixins/transition";
 
 .pager {
   line-height: 1.5;

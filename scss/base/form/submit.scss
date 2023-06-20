@@ -1,7 +1,11 @@
-@import "../mixins/button";
+@import "../../mixins/button";
+@import "../../variables/margin";
 
 input[type="submit"],
 button[type="submit"] {
   &:not(.webform-button--next, .webform-button--previous, .form-submit) {@include button--default;}
 }
-.form-actions {margin: 32px 0;}
+.form-actions {
+  margin: $default-margin 0;
+  .form-submit {@include button--emphasis;}
+}

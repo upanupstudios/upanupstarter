@@ -1,8 +1,8 @@
-@import "../../base/variables/color";
-@import "../../base/variables/margin";
-@import "../../base/utility/typography/headings";
-@import "../../base/mixins/media-queries";
-@import "../../base/mixins/underline";
+@import "../../variables/color";
+@import "../../variables/margin";
+@import "../../mixins/headings";
+@import "../../mixins/media-queries";
+@import "../../mixins/underline";
 
 .card {
   background-color: $bg;

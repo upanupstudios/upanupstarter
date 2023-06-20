@@ -1,26 +1,15 @@
-@import "../../base/variables/color";
-@import "../../base/mixins/underline";
-@import "../../base/utility/typography/headings";
+@import "../../variables/color";
+@import "../../mixins/underline";
+@import "../../mixins/headings";
 
 .sidebar nav {
   .menu__item-link-wrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: flex-start;
-    justify-content: space-between;
-    min-height: 50px;
-    position: relative;
     > *:not(.submenu-trigger) {
-      flex: 0 1 auto;
-      display: inline-block;
       margin-right: 8px;
       padding: 15px 4px 11px 16px;
-      text-decoration: none;
       &:hover {@include underline;}
     }
     .submenu-trigger {
-      flex: 0 1 auto;
       margin: 4px 4px 0 0;
     }
   }
@@ -30,13 +19,9 @@
   }
   .menu {
     border-top: 1px solid $graphics;
-    display: none;
     .menu__item {
       border-bottom: 1px solid $graphics;
-      margin: 0;
-      position: relative;
       &:last-child {border-bottom: 0;}
-      &.is-open > .menu {display: block;}
       .menu__item-link-wrapper {
         >.is-active {
           &::before {
@@ -54,7 +39,6 @@
     &--level-0 {
       background-color: $bg;
       border-top: 0;
-      display: block;
     }
     &--level-1 {
       background-color: $bg--medium;

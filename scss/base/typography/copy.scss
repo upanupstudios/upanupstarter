@@ -1,16 +1,10 @@
-@import "../variables/color";
-@import "../variables/font-weight";
-@import "../variables/line-width";
-@import "../variables/margin";
+@import "../../variables/color";
+@import "../../variables/font-weight";
+@import "../../variables/line-width";
+@import "../../variables/margin";
 
 p {
-  line-height: 2;
   margin: 0 0 $default-margin 0;
-  max-width: $line-width;
-}
-
-.text-formatted > *:not(div,iframe, table) {
-  max-width: $line-width;
 }
 
 b, strong {font-weight: $font-weight--semibold;}
@@ -20,40 +14,6 @@ hr {
   margin: $default-margin 0;
 }
 
-abbr {
-  &[title] {border-bottom: 0;}
-  text-decoration: underline dotted;
-  text-underline-offset: 4px;
-  text-decoration-thickness: 2px;
-}
-
-address {font-style: normal;}
-
 code, kbd {
   background-color: $bg--medium;
-  border-radius: 3px;
-  padding: 2px 4px;
 }
-
-figure {
-  blockquote {}
-  figcaption {
-    cite {}
-  }
-}
-
-dl {
-  dt {}
-  dd {}
-}
-
-hgroup {
-  h1-h6 {}
-  p {}
-}
-
-// label + meter
-meter {}
-
-// label + progress
-progress {}

@@ -1,8 +1,8 @@
-@import "../../base/variables/color";
-@import "../../base/variables/font-weight";
-@import "../../base/mixins/focus";
-@import "../../base/mixins/icon";
-@import "../../base/mixins/transition";
+@import "../../variables/color";
+@import "../../variables/font-weight";
+@import "../../mixins/focus";
+@import "../../mixins/icon";
+@import "../../mixins/transition";
 
 .submenu-trigger {
   background-color: $int-bgc;

@@ -1,36 +1,14 @@
-@import "../variables/color";
-@import "../mixins/button";
-@import "../mixins/focus";
-@import "../mixins/icon";
-@import "../mixins/transition";
+@import "../../variables/color";
+@import "../../mixins/button";
+@import "../../mixins/focus";
+@import "../../mixins/icon";
 
 .form-text {
-  &::-ms-expand {
-    border: 0;
-    background-color: transparent;
-  }
   &[disabled],
   &[readonly],
   fieldset[disabled] & {
     background-color: $bg--medium;
-    opacity: 1;
   }
-  &[disabled],
-  fieldset[disabled] & {
-    cursor: not-allowed;
-  }
-  textarea {
-    height: auto;
-  }
-}
-
-// Help text
-// Apply to any element you wish to create light text for placement immediately
-// below a form control. Use for general help, formatting, or instructional text.
-.form-item > .description {
-  display: block; // account for any element using help-block
-  margin-top: 5px;
-  margin-bottom: 10px;
 }
 
 .form-wrapper:not(.form-actions) {
@@ -38,39 +16,20 @@
 }
 
 .webform-element-help {
-  background: none;
-  border: 0;
-  height: 44px;
-  margin: 0;
-  position: relative;
-  width: 44px;
-  vertical-align: middle;
   &::before {
     @include icon('\f059');
     color: $link;
     font-size: 21px;
     font-weight: $icon-weight--solid;
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%,-50%);
   }
   &:hover {
-    background: none;
-    border: 0;
     &::before {color: $link--hover;}
-    &:focus {outline: none;}
   }
   &:focus {
-    background: none;
-    border: 0;
     @include focus;
   }
   &:active {
-    background: none;
-    border: 0;
     &::before {color: $link--active;}
-    &:focus {outline: none;}
   }
 }
 
@@ -81,9 +40,6 @@
         background-color: $active-bgc;
         border: 2px solid $active-bdc;
         color: $active-c;
-        height: 44px;
-        @include transition("background-color, border-color, color");
-        width: 44px;
       }
       &::after {
         background-color: $graphics;
@@ -106,17 +62,14 @@
       background-color: $int-bgc--disabled;
     }
     .progress-marker[role="link"] {
-      cursor: pointer;
       &:hover {
         &::before {
           background-color: $int-bgc--hover;
           border-color: $int-bdc--hover;
         }
         &::after {color: $int-c--hover;}
-        &:focus::before {outline: none;}
       }
       &:focus {
-        outline: none;
         &::before {@include focus;}
       }
       &:active {
@@ -125,7 +78,6 @@
           border-color: $int-bdc--active;
         }
         &::after {color: $int-c--active;}
-        &:focus::before {outline: none;}
       }
     }
   }
@@ -134,19 +86,6 @@
 .webform-button--previous {
   @include button--ui(null);
   padding: 13px;
-}
-.webform-scale-options input {
-  + label {
-    border: 0;
-    border-radius: 0px;
-    font-size: initial;
-    line-height: initial;
-    height: auto;
-    width: auto;
-  }
-  &:focus + label {
-    box-shadow: none !important;
-  }
 }
 
 .tabledrag-toggle-weight {@include button--ui('\f0d7',true,180deg);}

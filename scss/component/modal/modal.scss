@@ -1,19 +1,10 @@
-@import "../../base/variables/color";
-@import "../../base/mixins/button";
+@import "../../variables/color";
+@import "../../mixins/button";
 
-.ui-widget-overlay {
-  background: rgba(0,0,0,0.1);
-  opacity: 1;
-}
 .ui-dialog {
   .ui-dialog-titlebar {
     background: $bg--medium;
     border: 1px solid $graphics;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-between;
     font-weight: $font-weight--normal;
     padding: 0px 0px 0px 32px;
     .ui-dialog-title {
@@ -23,18 +14,9 @@
   .ui-dialog-content {
     background: $bg;
     border: 1px solid $graphics;
-    margin: 0;
     padding: 32px;
   }
   .ui-dialog-titlebar-close {
     @include button--ui('\f00d');
-    height: auto;
-    position: relative;
-    right: auto;
-    text-indent: 0;
-    top: auto;
-    width: auto;
-    .ui-button-icon-space,
-    .ui-button-icon {display: none;}
   }
 }

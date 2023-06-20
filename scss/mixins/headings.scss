@@ -1,6 +1,6 @@
-@import "../../variables/font-weight";
-@import "../../variables/margin";
-@import "../../mixins/media-queries";
+@import "../variables/font-weight";
+@import "../variables/margin";
+@import "./media-queries";
 
 @mixin h1 {
   font-size: 2.25rem;

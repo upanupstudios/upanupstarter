@@ -1,7 +1,7 @@
-@import "../../base/variables/color";
-@import "../../base/mixins/focus";
-@import "../../base/mixins/media-queries";
-@import "../../base/mixins/transition";
+@import "../../variables/color";
+@import "../../mixins/focus";
+@import "../../mixins/media-queries";
+@import "../../mixins/transition";
 
 .quicklink {
   background-color: $int-bgc;

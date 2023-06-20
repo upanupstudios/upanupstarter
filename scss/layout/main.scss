@@ -1,5 +1,5 @@
-@import "../base/variables/container";
-@import "../base/mixins/media-queries";
+@import "../variables/container";
+@import "../mixins/media-queries";
 
 main {
   margin: clamp(48px,12.5vw,64px) 0;

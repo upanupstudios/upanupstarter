@@ -1,8 +1,8 @@
-@import "../../base/variables/color";
-@import "../../base/mixins/button";
-@import "../../base/mixins/focus";
-@import "../../base/mixins/media-queries";
-@import "../../base/mixins/visually-hidden";
+@import "../../variables/color";
+@import "../../mixins/button";
+@import "../../mixins/focus";
+@import "../../mixins/media-queries";
+@import "../../mixins/visually-hidden";
 
 .search-form {
   @include max($breakpoint--m) {

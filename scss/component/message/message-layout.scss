@@ -1,0 +1,11 @@
+@import "../../variables/container";
+@import "../../mixins/media-queries";
+
+.messages {
+  &-wrapper {
+    > .container {
+      padding: 0 calc(#{$container-padding} / 2);
+      @include max($breakpoint--l) {padding: 0 $container-padding;}
+    }
+  }
+}

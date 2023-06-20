@@ -1,5 +1,5 @@
-@import "../../base/variables/color";
-@import "../../base/mixins/icon";
+@import "../../variables/color";
+@import "../../mixins/icon";
 
 .messages--error {
   background-color: $error--light;

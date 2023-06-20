@@ -1,9 +1,6 @@
-@import "../variables/font-weight";
-@import "../variables/line-width";
+@import "../../variables/font-weight";
 
 label {
-  display: inline-block;
   font-weight: $font-weight--bold;
-  max-width: $line-width;
   margin-bottom: 8px;
 }

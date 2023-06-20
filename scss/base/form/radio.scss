@@ -1,90 +1,46 @@
-@import "../variables/color";
-@import "../variables/font-weight";
-@import "../mixins/icon";
-@import "../mixins/focus";
+@import "../../variables/color";
+@import "../../variables/font-weight";
+@import "../../mixins/icon";
+@import "../../mixins/focus";
 
-.form-type-radio {
-  display: block;
-  margin: 0 !important;
-  position: relative;
-  width: 100%;
+.form-type-checkbox {
   label.option {
-    background-color: transparent;
     color:$font;
-    display: inline-block;
     font-weight: $font-weight--normal;
-    margin-bottom:0;
     padding: 0.5rem 0.5rem 0.5rem 2rem;
-    position:relative;
-    &::after {
+    &::before {
+      @include icon('\f111');
       color:$font;
-      @include icon("\f111");
-      display:inline-block;
-      font-size: 1.125rem;
       font-weight: $font-weight--normal;
-      left: 0;
-      position:absolute;
-      top: 0.35rem;
     }
   }
 }
 
-input[type=radio] {
-  appearance: none;
-  border: 0;
-  height: 0;
-  left: 0;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  width: 0;
-  &:focus ~ label.option::after {
-    @include focus-input;
+input[type=checkbox] {
+  &:focus ~ label.option::before {
+    @include focus;
   }
   &.error {
-    border: 0;
-    ~ label.option::after {
+    ~ label.option::before {
       color: $error;
     }
   }
-  &:hover, &:active {
-    &:focus {outline: none;}
-  }
   &:checked ~ label.option {
-    &::after {
+    &::before {
       @include icon("\f192");
-      display:inline-block;
       font-weight: $font-weight--normal;
     }
   }
-  &[disabled] ~ label.option::after {
+  &[disabled] ~ label.option::before {
     color: $ui-icon;
     font-weight: $icon-weight--solid;
   }
 }
 
 .form-no-label {
-  input[type=radio] {
-    appearance: radio;
-    height: auto;
-    left: auto;
-    position: relative;
-    top: auto;
-    width: auto;
+  input[type=checkbox] {
     &:focus {
       @include focus;
-      ~ label {outline: none;}
     }
-  }
-}
-
-// Apply same disabled cursor tweak as for inputs
-// Some special care is needed because <label>s don't inherit their parent's `cursor`.
-// Note: Neither radios nor checkboxes can be readonly.
-input[type="radio"] {
-  &[disabled],
-  &.disabled,
-  fieldset[disabled] & {
-    cursor: not-allowed;
   }
 }

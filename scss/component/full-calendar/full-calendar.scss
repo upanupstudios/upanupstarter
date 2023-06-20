@@ -1,8 +1,8 @@
-@import "../base/variables/color";
-@import "../base/mixins/button";
-@import "../base/mixins/focus";
-@import "../base/mixins/media-queries";
-@import "../base/mixins/transition";
+@import "../../variables/color";
+@import "../../mixins/button";
+@import "../../mixins/focus";
+@import "../../mixins/media-queries";
+@import "../../mixins/transition";
 
 .fc {
   &-button-primary {
