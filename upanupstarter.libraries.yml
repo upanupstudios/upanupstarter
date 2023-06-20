@@ -9,11 +9,9 @@ global:
       css/base/typography/headings.css: {}
       css/base/typography/links.css: {}
       css/base/typography/lists.css: {}
-      css/mixins/headings.css: {}
-      css/mixins/line-width.css: {}
+      css/base/utility/typography/line-width.css: {}
       css/base/body.css: {}
       css/base/html.css: {}
-      css/base/form/captcha.css: {}
       css/base/form/checkbox.css: {}
       css/base/form/fieldset.css: {}
       css/base/form/form-elements.css: {}
@@ -28,6 +26,8 @@ global:
       css/layout/main.css: {}
       css/layout/sidebar.css: {}
     state:
+      css/state/admin/toolbar-menu.css: {}
+      css/state/homepage.css: {}
       css/state/login.css: {}
   dependencies:
     - core/jquery
@@ -122,8 +122,6 @@ header:
       css/component/header/menu-wrapper.css: {}
       css/component/header/nav-search-trigger.css: {}
       css/component/header/row.css: {}
-    layout:
-      css/layout/header.css: {}
 hours-block:
   version: 1.x
   css:

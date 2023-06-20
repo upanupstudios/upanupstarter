@@ -1,18 +1,1 @@
-.tippy-box {
-  background: #F2F2F2;
-  border-radius: 0px;
-  color: #333333;
-  padding: 12px;
-}
-.tippy-box[data-placement^=top] .tippy-arrow::before {
-  border-top-color: #F2F2F2;
-}
-.tippy-box[data-placement^=bottom] .tippy-arrow::before {
-  border-bottom-color: #F2F2F2;
-}
-.tippy-box[data-placement^=left] .tippy-arrow::before {
-  border-left-color: #F2F2F2;
-}
-.tippy-box[data-placement^=right] .tippy-arrow::before {
-  border-right-color: #F2F2F2;
-}
+.tippy-box{background:#F2F2F2;border-radius:0px;color:#333333;padding:12px}.tippy-box[data-placement^=top] .tippy-arrow:before{border-top-color:#F2F2F2}.tippy-box[data-placement^=bottom] .tippy-arrow:before{border-bottom-color:#F2F2F2}.tippy-box[data-placement^=left] .tippy-arrow:before{border-left-color:#F2F2F2}.tippy-box[data-placement^=right] .tippy-arrow:before{border-right-color:#F2F2F2}

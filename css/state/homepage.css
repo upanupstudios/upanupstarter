@@ -1,3 +1,1 @@
-.page-node-type-homepage main > .container {
-  padding-left: clamp(16px, 7vw, 112px);
-}
+.page-node-type-homepage main>.container{padding-left:clamp(16px,7vw,112px)}

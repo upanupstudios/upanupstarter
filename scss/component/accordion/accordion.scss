@@ -11,8 +11,6 @@ details,
   .webform-element-more--link {
     @include button--ui(null,true);
     @include button--default;
-    max-width: $line-width;
-    width: 100%;
     &::after {
       font-size: 21px;
       line-height: 1;
