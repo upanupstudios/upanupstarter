@@ -7,7 +7,7 @@
 <main role="main" class="main">
 	{% if page.banner|render is not empty %}
 	{{ attach_library('upanupstarter/banner--fullwidth') }}
-	<div class="banner">{{ page.banner }}</div>
+	<div class="banner banner--page">{{ page.banner }}</div>
 	{% endif %}
 	{% if page.highlighted|render is not empty %}
 	<section class="messages-wrapper">

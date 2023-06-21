@@ -1,1 +1,44 @@
-.lw{max-width:80ch}a{color:#20389D;font-weight:600;text-decoration:underline;text-underline-offset:max(5px,0.2rem,0.2em);-webkit-transition:all 0.2s ease-in-out;transition:all 0.2s ease-in-out;-webkit-transition-property:color;transition-property:color;-webkit-transition-delay:0s;transition-delay:0s;-webkit-transition-duration:0.2s;transition-duration:0.2s}a:hover{color:#0B5B28;text-decoration:underline;text-underline-offset:max(5px,0.2rem,0.2em);text-decoration-thickness:max(3px,0.1875rem,0.12em)}a:hover:focus{outline:none}a:focus{outline:2px dashed #B30036;outline-offset:4px}a:active{color:#5A00A7;text-decoration:underline;text-underline-offset:max(5px,0.2rem,0.2em);text-decoration-thickness:max(3px,0.1875rem,0.12em)}a:active:focus{outline:none}a[target=_blank]:after{font-family:"Font Awesome 6 Pro";content:"\f08e"}
+.lw {
+  max-width: 80ch;
+}
+
+a {
+  color: #20389D;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: max(5px, 0.2rem, 0.2em);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+a:hover {
+  color: #0B5B28;
+  text-decoration: underline;
+  text-underline-offset: max(5px, 0.2rem, 0.2em);
+  text-decoration-thickness: max(3px, 0.1875rem, 0.12em);
+}
+a:hover:focus {
+  outline: none;
+}
+a:focus {
+  outline: 2px dashed #B30036;
+  outline-offset: 4px;
+}
+a:active {
+  color: #5A00A7;
+  text-decoration: underline;
+  text-underline-offset: max(5px, 0.2rem, 0.2em);
+  text-decoration-thickness: max(3px, 0.1875rem, 0.12em);
+}
+a:active:focus {
+  outline: none;
+}
+a[target=_blank]::after {
+  font-family: "Font Awesome 6 Pro";
+  content: "\f08e";
+}

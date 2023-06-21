@@ -39,7 +39,7 @@
     &:focus {outline: none;}
   }
   &:focus {
-    @include focus-light;
+    @include focus--light;
   }
   &:active {
     color: $link--dark--active;

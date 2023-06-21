@@ -9,7 +9,7 @@
   outline: $width $style $color;
   outline-offset: $offset;
 }
-@mixin focus-light(
+@mixin focus--light(
   $width: 2px,
   $style: dashed,
   $color: $focus--light,
@@ -18,7 +18,7 @@
   outline: $width $style $color;
   outline-offset: $offset;
 }
-@mixin focus-input(
+@mixin focus--input(
   $width: 2px,
   $style: solid,
   $color: $focus,

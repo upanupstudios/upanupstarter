@@ -9,6 +9,7 @@
   background-color: $bg--medium !important;
   border-color: $bg--medium !important;
   color: $font !important;
+  pointer-events: none;
   &:hover,
   &:focus,
   &:active {

@@ -1,1 +1,81 @@
-.lw{max-width:80ch}.slider-controls{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}.slider-controls--hidden{display:none}.slider-controls__index{margin:0 16px}.slider-controls__button{display:inline-block;font-weight:600;padding:9px 24px 10px 24px;text-decoration:none;-webkit-transition:all 0.2s ease-in-out;transition:all 0.2s ease-in-out;-webkit-transition-property:background-color,border-color,color;transition-property:background-color,border-color,color;-webkit-transition-delay:0s;transition-delay:0s;-webkit-transition-duration:0.2s;transition-duration:0.2s;background-color:#fff;border:2px solid #20389D;color:#20389D!important;font-size:1.3125rem;height:min(44px,2.75rem);padding:0;text-align:center;width:min(44px,2.75rem)}.slider-controls__button:hover{text-decoration:underline;text-underline-offset:max(5px,0.2rem,0.2em)}.slider-controls__button:hover:focus{outline:none!important}.slider-controls__button:focus{outline:2px dashed #B30036;outline-offset:4px}.slider-controls__button:active{text-decoration:underline;text-underline-offset:max(5px,0.2rem,0.2em)}.slider-controls__button:active:focus{outline:none!important}.slider-controls__button[disabled]{background-color:#F2F2F2!important;border-color:#F2F2F2!important;color:#333333!important}.slider-controls__button[disabled]:active,.slider-controls__button[disabled]:focus,.slider-controls__button[disabled]:hover{background-color:#F2F2F2!important;border-color:#F2F2F2!important;color:#333333!important;text-decoration:none;cursor:not-allowed}.slider-controls__button.is-selected{background-color:#E1F0EF;border-color:#3F8F8B;color:#333333!important}.slider-controls__button:hover{background-color:#F0FFF0;border-color:#0B5B28;color:#0B5B28!important}.slider-controls__button:active{background-color:#ECD1FF;border-color:#5A00A7;color:#5A00A7!important}
+.lw {
+  max-width: 80ch;
+}
+
+.slider-controls {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+.slider-controls--hidden {
+  display: none;
+}
+.slider-controls__index {
+  margin: 0 16px;
+}
+.slider-controls__button {
+  display: inline-block;
+  font-weight: 600;
+  padding: 9px 24px 10px 24px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  transition-property: background-color, border-color, color;
+  transition-delay: 0s;
+  transition-duration: 0.2s;
+  background-color: #fff;
+  border: 2px solid #20389D;
+  color: #20389D !important;
+  font-size: 1.3125rem;
+  height: min(44px, 2.75rem);
+  padding: 0;
+  text-align: center;
+  width: min(44px, 2.75rem);
+}
+.slider-controls__button:hover {
+  text-decoration: underline;
+  text-underline-offset: max(5px, 0.2rem, 0.2em);
+}
+.slider-controls__button:hover:focus {
+  outline: none !important;
+}
+.slider-controls__button:focus {
+  outline: 2px dashed #B30036;
+  outline-offset: 4px;
+}
+.slider-controls__button:active {
+  text-decoration: underline;
+  text-underline-offset: max(5px, 0.2rem, 0.2em);
+}
+.slider-controls__button:active:focus {
+  outline: none !important;
+}
+.slider-controls__button[disabled] {
+  background-color: #F2F2F2 !important;
+  border-color: #F2F2F2 !important;
+  color: #333333 !important;
+  pointer-events: none;
+}
+.slider-controls__button[disabled]:hover, .slider-controls__button[disabled]:focus, .slider-controls__button[disabled]:active {
+  background-color: #F2F2F2 !important;
+  border-color: #F2F2F2 !important;
+  color: #333333 !important;
+  text-decoration: none;
+  cursor: not-allowed;
+}
+.slider-controls__button.is-selected {
+  background-color: #E1F0EF;
+  border-color: #3F8F8B;
+  color: #333333 !important;
+}
+.slider-controls__button:hover {
+  background-color: #F0FFF0;
+  border-color: #0B5B28;
+  color: #0B5B28 !important;
+}
+.slider-controls__button:active {
+  background-color: #ECD1FF;
+  border-color: #5A00A7;
+  color: #5A00A7 !important;
+}

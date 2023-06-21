@@ -1,1 +1,16 @@
-p{margin:0 0 32px 0}b,strong{font-weight:600}hr{border-color:#8C8C8C;margin:32px 0}code,kbd{background-color:#F2F2F2}
+p {
+  margin: 0 0 32px 0;
+}
+
+b, strong {
+  font-weight: 600;
+}
+
+hr {
+  border-color: #8C8C8C;
+  margin: 32px 0;
+}
+
+code, kbd {
+  background-color: #F2F2F2;
+}

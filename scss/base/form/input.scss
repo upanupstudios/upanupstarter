@@ -19,7 +19,7 @@ textarea {
   font-family: $font-family--primary;
   padding: 13px;
   &:focus {
-    @include focus-input;
+    @include focus--input;
   }
   &.error {
     border-color: $error;
@@ -32,5 +32,5 @@ select {
   background-repeat: no-repeat;
   background-size: 12px;
   padding: 13px 48px 13px 13px;
-  &:focus {@include focus-input;}
+  &:focus {@include focus--input;}
 }

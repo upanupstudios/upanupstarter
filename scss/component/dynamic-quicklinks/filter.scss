@@ -9,13 +9,13 @@
       width: 100%;
       &:hover:focus {outline: none;}
       &:active:focus {outline: none;}
-      &:focus {@include focus-light;}
+      &:focus {@include focus--light;}
     }
     + li {margin-top: 19px;}
   }
   &--mobile {
     display: none;
     @include max($breakpoint--l) {display: block;}
-    select:focus {@include focus-light;}
+    select:focus {@include focus--light;}
   }
 }

@@ -1,1 +1,89 @@
-.lw{max-width:80ch}.mobile-search-trigger{display:inline-block;font-weight:600;padding:9px 24px 10px 24px;text-decoration:none;-webkit-transition:all 0.2s ease-in-out;transition:all 0.2s ease-in-out;-webkit-transition-property:background-color,border-color,color;transition-property:background-color,border-color,color;-webkit-transition-delay:0s;transition-delay:0s;-webkit-transition-duration:0.2s;transition-duration:0.2s;background-color:#20389D;border:2px solid #20389D;color:#fff!important;display:none;font-size:16px;height:44px;padding:0;position:relative;width:44px}.mobile-search-trigger:hover{text-decoration:underline;text-underline-offset:max(5px,0.2rem,0.2em)}.mobile-search-trigger:hover:focus{outline:none!important}.mobile-search-trigger:focus{outline:2px dashed #B30036;outline-offset:4px}.mobile-search-trigger:active{text-decoration:underline;text-underline-offset:max(5px,0.2rem,0.2em)}.mobile-search-trigger:active:focus{outline:none!important}.mobile-search-trigger[disabled]{background-color:#F2F2F2!important;border-color:#F2F2F2!important;color:#333333!important}.mobile-search-trigger[disabled]:active,.mobile-search-trigger[disabled]:focus,.mobile-search-trigger[disabled]:hover{background-color:#F2F2F2!important;border-color:#F2F2F2!important;color:#333333!important;text-decoration:none;cursor:not-allowed}.mobile-search-trigger.is-selected{background-color:#E1F0EF;border-color:#3F8F8B;color:#333333!important}.mobile-search-trigger:hover{background-color:#0B5B28;border-color:#0B5B28;color:#fff!important}.mobile-search-trigger:active{background-color:#5A00A7;border-color:#5A00A7;color:#fff!important}@media (max-width:48rem){.mobile-search-trigger{display:block}}.mobile-search-trigger:before{font-family:"Font Awesome 6 Pro";content:"\f002";left:50%;position:absolute;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.mobile-search-trigger[aria-expanded=true]:before{font-family:"Font Awesome 6 Pro";content:"\f00d"}.mobile-search-trigger[aria-expanded=true]+.search-form{display:block}
+.lw {
+  max-width: 80ch;
+}
+
+.mobile-search-trigger {
+  display: inline-block;
+  font-weight: 600;
+  padding: 9px 24px 10px 24px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  transition-property: background-color, border-color, color;
+  transition-delay: 0s;
+  transition-duration: 0.2s;
+  background-color: #20389D;
+  border: 2px solid #20389D;
+  color: #fff !important;
+  display: none;
+  font-size: 16px;
+  height: 44px;
+  padding: 0;
+  position: relative;
+  width: 44px;
+}
+.mobile-search-trigger:hover {
+  text-decoration: underline;
+  text-underline-offset: max(5px, 0.2rem, 0.2em);
+}
+.mobile-search-trigger:hover:focus {
+  outline: none !important;
+}
+.mobile-search-trigger:focus {
+  outline: 2px dashed #B30036;
+  outline-offset: 4px;
+}
+.mobile-search-trigger:active {
+  text-decoration: underline;
+  text-underline-offset: max(5px, 0.2rem, 0.2em);
+}
+.mobile-search-trigger:active:focus {
+  outline: none !important;
+}
+.mobile-search-trigger[disabled] {
+  background-color: #F2F2F2 !important;
+  border-color: #F2F2F2 !important;
+  color: #333333 !important;
+  pointer-events: none;
+}
+.mobile-search-trigger[disabled]:hover, .mobile-search-trigger[disabled]:focus, .mobile-search-trigger[disabled]:active {
+  background-color: #F2F2F2 !important;
+  border-color: #F2F2F2 !important;
+  color: #333333 !important;
+  text-decoration: none;
+  cursor: not-allowed;
+}
+.mobile-search-trigger.is-selected {
+  background-color: #E1F0EF;
+  border-color: #3F8F8B;
+  color: #333333 !important;
+}
+.mobile-search-trigger:hover {
+  background-color: #0B5B28;
+  border-color: #0B5B28;
+  color: #fff !important;
+}
+.mobile-search-trigger:active {
+  background-color: #5A00A7;
+  border-color: #5A00A7;
+  color: #fff !important;
+}
+@media (max-width: 48rem) {
+  .mobile-search-trigger {
+    display: block;
+  }
+}
+.mobile-search-trigger::before {
+  font-family: "Font Awesome 6 Pro";
+  content: "\f002";
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.mobile-search-trigger[aria-expanded=true]::before {
+  font-family: "Font Awesome 6 Pro";
+  content: "\f00d";
+}
+.mobile-search-trigger[aria-expanded=true] + .search-form {
+  display: block;
+}

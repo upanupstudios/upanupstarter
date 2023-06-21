@@ -27,7 +27,7 @@
           border: 0;
           width: 100%;
           &:focus {
-            @include focus-input($offset:-2px);
+            @include focus--input($offset:-2px);
           }
         }
       }

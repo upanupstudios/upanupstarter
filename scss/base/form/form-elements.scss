@@ -45,10 +45,6 @@
         top: calc(50% - 1px);
       }
     }
-    &.is-active:hover .progress-marker::before {
-      background-color: $active-bgc--hover;
-      color: $active-c--hover;
-    }
     &:not(.is-active) .progress-marker::before {
       background-color: $bg;
       border: 2px solid $graphics;
@@ -59,24 +55,33 @@
     &.is-complete:not(.is-active) .progress-marker::before {
       background-color: $int-bgc--disabled;
     }
-    .progress-marker[role="link"] {
-      &:hover {
-        &::before {
-          background-color: $int-bgc--hover;
-          border-color: $int-bdc--hover;
+    &.is-complete {
+      .progress-marker[role="link"] {
+        cursor: pointer;
+        &:hover {
+          &::before {
+            background-color: $int-bgc--hover;
+            border-color: $int-bdc--hover;
+          }
+          &::after {color: $int-c--hover;}
+          &:focus::before {outline: none;}
         }
-        &::after {color: $int-c--hover;}
-      }
-      &:focus {
-        &::before {@include focus;}
-      }
-      &:active {
-        &::before {
-          background-color: $int-bgc--active;
-          border-color: $int-bdc--active;
+        &:focus {
+          outline: none;
+          &::before {@include focus;}
         }
-        &::after {color: $int-c--active;}
+        &:active {
+          &::before {
+            background-color: $int-bgc--active;
+            border-color: $int-bdc--active;
+          }
+          &::after {color: $int-c--active;}
+          &:focus::before {outline: none;}
+        }
       }
+    }
+    &.is-active{
+      pointer-events: none;
     }
   }
 }
@@ -85,5 +90,6 @@
   @include button--ui(null);
   padding: 13px;
 }
+.webform-button--submit {@include button--default;}
 
 .tabledrag-toggle-weight {@include button--ui('\f0d7',true,180deg);}
