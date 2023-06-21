@@ -1,6 +1,6 @@
 # upanupstarter
 
-Upanup's starter theme for all projects. Started from `xtheme` 2.0.4.
+Upanup's starter theme for all projects.
 
 ## Changelog
 
