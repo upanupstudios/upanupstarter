@@ -1,8 +1,5 @@
-@import "../../variables/color";
-@import "../../variables/container";
-@import "../../mixins/button";
-@import "../../mixins/underline";
-@import "../../mixins/transition";
+@import "../../variables/variables";
+@import "../../mixins/mixins";
 
 .pager {
   line-height: 1.5;
@@ -18,7 +15,7 @@
       a {
         text-decoration: none;
         &:hover,
-        &:active {@include underline-hover;}
+        &:active {@include underline--hover;}
       }
       &:not([class*="--"]) {
         a {

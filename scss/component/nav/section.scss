@@ -1,6 +1,5 @@
-@import "../../variables/color";
-@import "../../mixins/underline";
-@import "../../mixins/headings";
+@import "../../variables/variables";
+@import "../../mixins/mixins";
 
 .sidebar nav {
   .menu__item-link-wrapper {

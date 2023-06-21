@@ -1,9 +1,5 @@
-@import "../../variables/color";
-@import "../../variables/container";
-@import "../../variables/font-weight";
-@import "../../variables/margin";
-@import "../../mixins/icon";
-@import "../../mixins/media-queries";
+@import "../../variables/variables";
+@import "../../mixins/mixins";
 
 .banner {
   display: block;

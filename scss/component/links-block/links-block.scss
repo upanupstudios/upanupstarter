@@ -1,7 +1,5 @@
-@import "../../variables/color";
-@import "../../mixins/button";
-@import "../../mixins/media-queries";
-@import "../../mixins/unset-list";
+@import "../../variables/variables";
+@import "../../mixins/mixins";
 
 .links-block {
   &__title {margin-bottom: 16px;}

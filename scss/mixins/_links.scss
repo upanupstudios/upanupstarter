@@ -2,8 +2,7 @@
 @import "./icon";
 @import "./underline";
 @import "./transition";
-@import "../variables/color";
-@import "../variables/font-weight";
+@import "../variables/variables";
 
 @mixin link {
   color: $link;
@@ -12,7 +11,7 @@
   @include transition("color");
   &:hover {
     color: $link--hover;
-    @include underline-hover;
+    @include underline--hover;
     &:focus {outline: none;}
   }
   &:focus {
@@ -20,7 +19,7 @@
   }
   &:active {
     color: $link--active;
-    @include underline-hover;
+    @include underline--hover;
     &:focus {outline: none;}
   }
   &[target="_blank"] {
@@ -36,7 +35,7 @@
   @include transition("color");
   &:hover {
     color: $link--dark--hover;
-    @include underline-hover;
+    @include underline--hover;
     &:focus {outline: none;}
   }
   &:focus {
@@ -44,7 +43,7 @@
   }
   &:active {
     color: $link--dark--active;
-    @include underline-hover;
+    @include underline--hover;
     &:focus {outline: none;}
   }
   &[target="_blank"] {

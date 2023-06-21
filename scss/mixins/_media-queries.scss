@@ -1,4 +1,4 @@
-@import "../variables/breakpoints";
+@import "../variables/variables";
 
 @mixin max($breakpoint) {
   @media (max-width: $breakpoint) {

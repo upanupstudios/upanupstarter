@@ -1,4 +1,4 @@
-@import "../../mixins/button";
+@import "../../mixins/mixins";
 
 .messages__close {
   @include button--ui($icon: '\f00d');

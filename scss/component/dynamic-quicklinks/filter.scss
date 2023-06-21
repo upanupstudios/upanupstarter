@@ -1,6 +1,4 @@
-@import "../../mixins/focus";
-@import "../../mixins/media-queries";
-@import "../../mixins/unset-list";
+@import "../../mixins/mixins";
 
 .dynamic-quicklinks__filter {
   @include unset-list;

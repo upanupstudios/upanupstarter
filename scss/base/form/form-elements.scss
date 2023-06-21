@@ -1,7 +1,5 @@
-@import "../../variables/color";
-@import "../../mixins/button";
-@import "../../mixins/focus";
-@import "../../mixins/icon";
+@import "../../variables/variables";
+@import "../../mixins/mixins";
 
 .form-text {
   &[disabled],

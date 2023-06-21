@@ -1,5 +1,5 @@
-@import "../../mixins/headings";
-@import "../../variables/margin";
+@import "../../mixins/mixins";
+@import "../../variables/variables";
 
 h1, .h1 {@include h1;}
 h2, .h2 {@include h2;}

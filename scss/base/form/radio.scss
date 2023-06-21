@@ -1,7 +1,5 @@
-@import "../../variables/color";
-@import "../../variables/font-weight";
-@import "../../mixins/icon";
-@import "../../mixins/focus";
+@import "../../variables/variables";
+@import "../../mixins/mixins";
 
 .form-type-radio {
   label.option {

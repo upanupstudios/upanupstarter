@@ -1,8 +1,5 @@
-@import "../../variables/color";
-@import "../../variables/font-weight";
-@import "../../variables/margin";
-@import "../../mixins/icon";
-@import "../../mixins/headings";
+@import "../../variables/variables";
+@import "../../mixins/mixins";
 
 .emphasis {
   background-color: $bg--medium;

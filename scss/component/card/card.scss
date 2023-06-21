@@ -1,8 +1,5 @@
-@import "../../variables/color";
-@import "../../variables/margin";
-@import "../../mixins/headings";
-@import "../../mixins/media-queries";
-@import "../../mixins/underline";
+@import "../../variables/variables";
+@import "../../mixins/mixins";
 
 .card {
   background-color: $bg;
@@ -19,7 +16,7 @@
       top: 0;
       width: 100%;
     }
-    &:hover + .card__content a {@include underline-hover;}
+    &:hover + .card__content a {@include underline--hover;}
   }
   &__content {
     border: 1px solid $graphics;

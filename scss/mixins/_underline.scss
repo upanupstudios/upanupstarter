@@ -2,7 +2,7 @@
   text-decoration: underline;
   text-underline-offset: Max(5px, 0.2rem, 0.2em);
 }
-@mixin underline-hover {
+@mixin underline--hover {
   text-decoration: underline;
   text-underline-offset: Max(5px, 0.2rem, 0.2em);
   text-decoration-thickness: Max(3px, 0.1875rem, 0.12em);
