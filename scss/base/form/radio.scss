@@ -3,7 +3,7 @@
 @import "../../mixins/icon";
 @import "../../mixins/focus";
 
-.form-type-checkbox {
+.form-type-radio {
   label.option {
     color:$font;
     font-weight: $font-weight--normal;
@@ -16,7 +16,7 @@
   }
 }
 
-input[type=checkbox] {
+input[type=radio] {
   &:focus ~ label.option::before {
     @include focus;
   }
@@ -38,7 +38,7 @@ input[type=checkbox] {
 }
 
 .form-no-label {
-  input[type=checkbox] {
+  input[type=radio] {
     &:focus {
       @include focus;
     }
