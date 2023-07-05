@@ -1,0 +1,5 @@
+@import "../variables/variables";
+
+@mixin line-width {
+  max-width: $line-width;
+}
