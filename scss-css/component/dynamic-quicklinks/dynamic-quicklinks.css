@@ -1,0 +1,1 @@
+.dynamic-quicklinks{display:flex;flex-direction:row;flex-wrap:nowrap;align-items:stretch;justify-content:flex-start;width:100%}@media(max-width: 64rem){.dynamic-quicklinks{flex-direction:column;transform:translateX(calc(clamp(-112px, -7vw, -16px) *1.5));width:calc(100% + (clamp(16px, 7vw, 112px) * 3))}}

@@ -2,33 +2,32 @@ global:
   version: 1.x
   css:
     base:
-      css/base/elements/button.css: {}
-      css/base/elements/table.css: {}
-      css/base/typography/blockquote.css: {}
-      css/base/typography/copy.css: {}
-      css/base/typography/headings.css: {}
-      css/base/typography/links.css: {}
-      css/base/typography/lists.css: {}
-      css/base/utility/typography/line-width.css: {}
-      css/base/body.css: {}
-      css/base/html.css: {}
-      css/base/form/checkbox.css: {}
-      css/base/form/fieldset.css: {}
-      css/base/form/form-elements.css: {}
-      css/base/form/form-item.css: {}
-      css/base/form/input.css: {}
-      css/base/form/label.css: {}
-      css/base/form/radio.css: {}
-      css/base/form/submit.css: {}
+      scss-css/base/elements/button.css: {}
+      scss-css/base/elements/table.css: {}
+      scss-css/base/typography/blockquote.css: {}
+      scss-css/base/typography/copy.css: {}
+      scss-css/base/typography/headings.css: {}
+      scss-css/base/typography/links.css: {}
+      scss-css/base/typography/lists.css: {}
+      scss-css/base/body.css: {}
+      scss-css/base/html.css: {}
+      scss-css/base/form/checkbox.css: {}
+      scss-css/base/form/fieldset.css: {}
+      scss-css/base/form/form-elements.css: {}
+      scss-css/base/form/form-item.css: {}
+      scss-css/base/form/input.css: {}
+      scss-css/base/form/label.css: {}
+      scss-css/base/form/radio.css: {}
+      scss-css/base/form/submit.css: {}
     layout:
-      css/layout/container.css: {}
-      css/layout/content.css: {}
-      css/layout/main.css: {}
-      css/layout/sidebar.css: {}
+      scss-css/layout/container.css: {}
+      scss-css/layout/content.css: {}
+      scss-css/layout/main.css: {}
+      scss-css/layout/sidebar.css: {}
     state:
-      css/state/admin/toolbar-menu.css: {}
-      css/state/homepage.css: {}
-      css/state/login.css: {}
+      scss-css/state/admin/toolbar-menu.css: {}
+      scss-css/state/homepage.css: {}
+      scss-css/state/login.css: {}
   dependencies:
     - core/jquery
 fonts:
@@ -41,223 +40,223 @@ accordion:
   version: 1.x
   css:
     component:
-      css/component/accordion/accordion-group.css: {}
-      css/component/accordion/accordion.css: {}
+      scss-css/component/accordion/accordion-group.css: {}
+      scss-css/component/accordion/accordion.css: {}
 accordion-group-toggle:
   version: 1.x
   css:
     component:
-      css/component/accordion/accordion-group-toggle.css: {}
+      scss-css/component/accordion/accordion-group-toggle.css: {}
 alerts-banner:
   version: 1.x
   css:
     component:
-      css/component/alerts-banner/alerts-banner.css: {}
-      css/component/alerts-banner/header.css: {}
-      css/component/alerts-banner/slider-wrapper.css: {}
-      css/component/alerts-banner/trigger.css: {}
+      scss-css/component/alerts-banner/alerts-banner.css: {}
+      scss-css/component/alerts-banner/header.css: {}
+      scss-css/component/alerts-banner/slider-wrapper.css: {}
+      scss-css/component/alerts-banner/trigger.css: {}
     theme:
-      css/component/alerts-banner/controls.css: {}
+      scss-css/component/alerts-banner/controls.css: {}
 banner--content:
   version: 1.x
   css:
     component:
-      css/component/banner/content.css: {}
+      scss-css/component/banner/content.css: {}
 banner--fullwidth:
   version: 1.x
   css:
     component:
-      css/component/banner/fullwidth.css: {}
+      scss-css/component/banner/fullwidth.css: {}
 banner--sidebar:
   version: 1.x
   css:
     component:
-      css/component/banner/sidebar.css: {}
+      scss-css/component/banner/sidebar.css: {}
 card:
   version: 1.x
   css:
     component:
-      css/component/card/card.css: {}
+      scss-css/component/card/card.css: {}
 contact-block:
   version: 1.x
   css:
     component:
-      css/component/contact-block/contact-block.css: {}
+      scss-css/component/contact-block/contact-block.css: {}
 content-row:
   version: 1.x
   css:
     component:
-      css/component/content-row/content-row.css: {}
+      scss-css/component/content-row/content-row.css: {}
 dynamic-quicklinks:
   version: 1.x
   css:
     component:
-      css/component/dynamic-quicklinks/content.css: {}
-      css/component/dynamic-quicklinks/dynamic-quicklinks.css: {}
-      css/component/dynamic-quicklinks/filter.css: {}
-      css/component/dynamic-quicklinks/header.css: {}
-      css/component/dynamic-quicklinks/section.css: {}
+      scss-css/component/dynamic-quicklinks/content.css: {}
+      scss-css/component/dynamic-quicklinks/dynamic-quicklinks.css: {}
+      scss-css/component/dynamic-quicklinks/filter.css: {}
+      scss-css/component/dynamic-quicklinks/header.css: {}
+      scss-css/component/dynamic-quicklinks/section.css: {}
     state:
-      css/state/dynamic-quicklinks/is-active.css: {}
+      scss-css/state/dynamic-quicklinks/is-active.css: {}
 emphasis:
   version: 1.x
   css:
     component:
-      css/component/emphasis/emphasis.css: {}
+      scss-css/component/emphasis/emphasis.css: {}
 footer:
   version: 1.x
   css:
     component:
-      css/component/footer/copyright.css: {}
-      css/component/footer/credit.css: {}
-      css/component/footer/footer.css: {}
-      css/component/footer/region.css: {}
+      scss-css/component/footer/copyright.css: {}
+      scss-css/component/footer/credit.css: {}
+      scss-css/component/footer/footer.css: {}
+      scss-css/component/footer/region.css: {}
 header:
   version: 1.x
   css:
     component:
-      css/component/header/header.css: {}
-      css/component/header/logo.css: {}
-      css/component/header/menu-search.css: {}
-      css/component/header/menu-wrapper.css: {}
-      css/component/header/nav-search-trigger.css: {}
-      css/component/header/row.css: {}
+      scss-css/component/header/header.css: {}
+      scss-css/component/header/logo.css: {}
+      scss-css/component/header/menu-search.css: {}
+      scss-css/component/header/menu-wrapper.css: {}
+      scss-css/component/header/nav-search-trigger.css: {}
+      scss-css/component/header/row.css: {}
 hours-block:
   version: 1.x
   css:
     component:
-      css/component/hours-block/hours-block.css: {}
+      scss-css/component/hours-block/hours-block.css: {}
 image-text:
   version: 1.x
   css:
     component:
-      css/component/image-text/image-text.css: {}
+      scss-css/component/image-text/image-text.css: {}
 images-slider:
   version: 1.x
   css:
     component:
-      css/component/images-slider/controls.css: {}
-      css/component/images-slider/slide.css: {}
-      css/component/images-slider/slider.css: {}
+      scss-css/component/images-slider/controls.css: {}
+      scss-css/component/images-slider/slide.css: {}
+      scss-css/component/images-slider/slider.css: {}
 links-block:
   version: 1.x
   css:
     component:
-      css/component/links-block/links-block.css: {}
+      scss-css/component/links-block/links-block.css: {}
 message:
   version: 1.x
   css:
     component:
-      css/component/message/message-close.css: {}
-      css/component/message/message-layout.css: {}
-      css/component/message/message.css: {}
+      scss-css/component/message/message-close.css: {}
+      scss-css/component/message/message-layout.css: {}
+      scss-css/component/message/message.css: {}
     state:
-      css/state/message/error.css: {}
-      css/state/message/info.css: {}
-      css/state/message/status.css: {}
-      css/state/message/warning.css: {}
+      scss-css/state/message/error.css: {}
+      scss-css/state/message/info.css: {}
+      scss-css/state/message/status.css: {}
+      scss-css/state/message/warning.css: {}
 mobile-menu-trigger:
   version: 1.x
   css:
     component:
-      css/component/mobile-menu-trigger/mobile-menu-trigger.css: {}
+      scss-css/component/mobile-menu-trigger/mobile-menu-trigger.css: {}
 modal:
   version: 1.x
   css:
     component:
-      css/component/modal/modal.css: {}
+      scss-css/component/modal/modal.css: {}
 nav--breadcrumbs:
   version: 1.x
   css:
     component:
-      css/component/nav/breadcrumbs.css: {}
+      scss-css/component/nav/breadcrumbs.css: {}
 nav--footer-block:
   version: 1.x
   css:
     component:
-      css/component/nav/footer-block.css: {}
+      scss-css/component/nav/footer-block.css: {}
 nav--footer:
   version: 1.x
   css:
     component:
-      css/component/nav/footer.css: {}
+      scss-css/component/nav/footer.css: {}
 nav--header:
   version: 1.x
   css:
     component:
-      css/component/nav/header.css: {}
+      scss-css/component/nav/header.css: {}
 nav--main:
   version: 1.x
   css:
     component:
-      css/component/nav/main.css: {}
+      scss-css/component/nav/main.css: {}
 nav--pager:
   version: 1.x
   css:
     component:
-      css/component/nav/pager.css: {}
+      scss-css/component/nav/pager.css: {}
 nav--section:
   version: 1.x
   css:
     component:
-      css/component/nav/section.css: {}
+      scss-css/component/nav/section.css: {}
 nav--social:
   version: 1.x
   css:
     component:
-      css/component/nav/social.css: {}
+      scss-css/component/nav/social.css: {}
 nav--submenu-trigger:
   version: 1.x
   css:
     component:
-      css/component/nav/submenu-trigger.css: {}
+      scss-css/component/nav/submenu-trigger.css: {}
 nav--tabs:
   version: 1.x
   css:
     component:
-      css/component/nav/tabs.css: {}
+      scss-css/component/nav/tabs.css: {}
 quicklink:
   version: 1.x
   css:
     component:
-      css/component/quicklink/quicklink.css: {}
+      scss-css/component/quicklink/quicklink.css: {}
 search:
   version: 1.x
   css:
     component:
-      css/component/search/autocomplete.css: {}
-      css/component/search/form.css: {}
-      css/component/search/mobile-search-trigger.css: {}
+      scss-css/component/search/autocomplete.css: {}
+      scss-css/component/search/form.css: {}
+      scss-css/component/search/mobile-search-trigger.css: {}
 sidebar-accordion:
   version: 1.x
   css:
     component:
-      css/component/sidebar-accordion/sidebar-accordion.css: {}
+      scss-css/component/sidebar-accordion/sidebar-accordion.css: {}
 slider:
   version: 1.x
   css:
     component:
-      css/component/slider/controls.css: {}
+      scss-css/component/slider/controls.css: {}
 view:
   version: 1.x
   css:
     component:
-      css/component/view/filters.css: {}
-      css/component/view/list-view/list-view--compact.css: {}
-      css/component/view/list-view/list-view.css: {}
+      scss-css/component/view/filters.css: {}
+      scss-css/component/view/list-view/list-view--compact.css: {}
+      scss-css/component/view/list-view/list-view.css: {}
 # Third-party
 cookie-consent:
   version: 1.x
   css:
     component:
-      css/component/cookie-consent/cookie-consent.css: {}
+      scss-css/component/cookie-consent/cookie-consent.css: {}
 full-calendar:
   version: 1.x
   css:
     component:
-      css/component/full-calendar/full-calendar.css: {}
+      scss-css/component/full-calendar/full-calendar.css: {}
 tippy:
   version: 1.x
   css:
     component:
-      css/component/tippy/tippy.css: {}
+      scss-css/component/tippy/tippy.css: {}
