@@ -9,7 +9,6 @@ global:
       scss-css/base/typography/headings.css: {}
       scss-css/base/typography/links.css: {}
       scss-css/base/typography/lists.css: {}
-      scss-css/base/utility/typography/line-width.css: {}
       scss-css/base/body.css: {}
       scss-css/base/html.css: {}
       scss-css/base/form/checkbox.css: {}
