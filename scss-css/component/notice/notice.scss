@@ -1,0 +1,17 @@
+@import "../../variables/variables";
+
+.notice {
+  background-color: $bg--medium;
+  clear: both;
+  display: block;
+  padding: 32px;
+  width: 100%;
+  &__heading {margin: 0;}
+  > * {
+    margin-bottom: 1rem;
+    &:last-child {margin-bottom: 0;}
+  }
+  &__content {
+    > * > *:last-child {margin-bottom: 0;}
+  }
+}

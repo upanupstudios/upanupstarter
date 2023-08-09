@@ -70,6 +70,8 @@ libraries-extend:
     - upanupstarter/nav--section
   upanupbase/nav--tabs:
     - upanupstarter/nav--tabs
+  upanupbase/notice:
+    - upanupstarter/notice
   upanupbase/search:
     - upanupstarter/search
   upanupbase/sidebar_block:
