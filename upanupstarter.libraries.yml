@@ -215,6 +215,11 @@ nav--tabs:
   css:
     component:
       scss-css/component/nav/tabs.css: {}
+notice:
+  version: 1.x
+  css:
+    component:
+      scss-css/component/notice/notice.css: {}
 quicklink:
   version: 1.x
   css:

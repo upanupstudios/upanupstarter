@@ -34,6 +34,11 @@ Example:
 
 ### [Unreleased]
 
+### [2.1.0] - 2023-08-09
+
+#### Added
+- Added `notice` library for new "notice" component
+
 ### [2.0.0] - 2023-07-05
 
 #### Changed
