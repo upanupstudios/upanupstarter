@@ -90,23 +90,23 @@
   color: $int-c;
   padding: 13px;
   @if($icon) {
-    padding: 13px 34px 13px 13px;
+    padding: 13px 2.125rem 13px 13px;
   }
-  @if($left-icon) {padding: 13px 13px 13px 34px !important;}
+  @if($left-icon) {padding: 13px 13px 13px 2.125rem !important;}
   position: relative;
   &::after {
     @if($icon) {@include icon($icon);}
     font-weight: $icon-weight--solid;
     position: absolute;
-    right: 16px;
+    right: 1rem;
     @if($left-icon) {
-      left: 8px;
+      left: 0.5rem;
       right: auto;
     }
     top: 13px;
   }
   @if($toggle) {
-    padding: 13px 34px 13px 13px;
+    padding: 13px 2.125rem 13px 13px;
     &::after {
       @if($icon) {
         @include icon($icon);
@@ -115,7 +115,7 @@
       }
       font-weight: $icon-weight--solid;
       position: absolute;
-      right: 16px;
+      right: 1rem;
       @if($left-icon) {
         left: 8px;
         right: auto;
@@ -128,7 +128,7 @@
     &[aria-expanded="true"]::after {transform: rotate($rotate) !important;}
   }
   &[data-toggle] {
-    padding: 13px 34px 13px 13px;
+    padding: 13px 2.125rem 13px 13px;
     &::after {
       @if($icon) {
         @include icon($icon);
@@ -137,9 +137,9 @@
       }
       font-weight: $icon-weight--solid;
       position: absolute;
-      right: 16px;
+      right: 1rem;
       @if($left-icon) {
-        left: 16px;
+        left: 1rem;
         right: auto;
       }
       top: 13px;

@@ -15,9 +15,9 @@
   &__button {
     @include button--default;
     font-size: 1.3125rem;
-    height: Min(44px, 2.75rem);
+    height: max(44px, 2.75rem);
     padding: 0;
     text-align: center;
-    width: Min(44px, 2.75rem);
+    width: max(44px, 2.75rem);
   }
 }
