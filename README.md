@@ -34,6 +34,13 @@ Example:
 
 ### [Unreleased]
 
+### [2.2.0] - 2023-08-28
+
+#### Fixed
+- Improved browser font scaling for button--ui mixin
+- Fixed spacing for banner captions
+- Fixed minimum size for slider control buttons
+
 ### [2.1.0] - 2023-08-09
 
 #### Added

@@ -12,7 +12,7 @@
     background-color: $bg--medium;
     bottom: 0;
     left: 0;
-    padding: 13px 24px 13px calc(23px + calc(#{$container-padding} / 2));
+    padding: 13px 24px 13px calc(1.5rem + calc(#{$container-padding} / 2));
     position: absolute;
     z-index: 1;
     @include max($breakpoint--l) {

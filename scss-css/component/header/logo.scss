@@ -1,6 +1,7 @@
 @import "../../variables/variables";
 
 .header__logo {
+  margin-right: 16px;
   a.site-logo {
     &:hover {
       outline: 2px solid $link--hover;
