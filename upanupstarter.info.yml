@@ -84,4 +84,4 @@ libraries-extend:
     - upanupstarter/full-calendar
 ckeditor_stylesheets:
   - https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap
-  - css/ckeditor.css
+  - scss-css/ckeditor.css
