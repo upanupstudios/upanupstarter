@@ -34,6 +34,11 @@ Example:
 
 ### [Unreleased]
 
+### [2.3.0] - 2023-08-29
+
+#### Fixed
+- Fixed imports to compile base element styles into ckeditor.css file
+
 ### [2.2.0] - 2023-08-28
 
 #### Fixed
