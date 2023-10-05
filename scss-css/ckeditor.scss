@@ -10,7 +10,6 @@
 @import "./base/html";
 
 .ck-content {
-
   body {
     font-family: $font-family--primary;
     color: $font;
@@ -20,5 +19,4 @@
     max-width: 900px;
   }
   html, button, input, select, textarea {font-family: $font-family--primary;}
-
 }
