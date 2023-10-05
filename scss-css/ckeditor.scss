@@ -9,12 +9,16 @@
 @import "./base/body";
 @import "./base/html";
 
-body {
-  font-family: $font-family--primary;
-  color: $font;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  width: 100%;
-  max-width: 900px;
+.ck-content {
+
+  body {
+    font-family: $font-family--primary;
+    color: $font;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 100%;
+    max-width: 900px;
+  }
+  html, button, input, select, textarea {font-family: $font-family--primary;}
+
 }
-html, button, input, select, textarea {font-family: $font-family--primary;}
