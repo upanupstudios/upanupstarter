@@ -10,13 +10,11 @@
 @import "./base/html";
 
 .ck-content {
-  body {
-    font-family: $font-family--primary;
-    color: $font;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    width: 100%;
-    max-width: 900px;
-  }
-  html, button, input, select, textarea {font-family: $font-family--primary;}
+  font-family: $font-family--primary;
+  color: $font;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  max-width: 900px;
+  button, input, select, textarea {font-family: $font-family--primary;}
 }
