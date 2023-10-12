@@ -16,4 +16,10 @@
   -moz-osx-font-smoothing: grayscale;
   button, input, select, textarea {font-family: $font-family--primary;}
   > * {max-width: $line-width;}
+
+}
+
+.ck.ck-editor {
+  max-width: min(80ch,900px);
+  width: 100%;
 }
