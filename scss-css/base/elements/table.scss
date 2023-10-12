@@ -1,6 +1,7 @@
 @import "../../variables/variables";
 @import "../../mixins/mixins";
 
+.table table,
 table {
   border-bottom: 2px solid $bg--dark;
   margin: 0 0 $default-margin 0;
