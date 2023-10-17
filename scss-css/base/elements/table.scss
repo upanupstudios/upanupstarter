@@ -26,9 +26,10 @@ table {
     text-align: left;
     @include max($breakpoint--l) {padding: 16px 24px;}
     @include max($breakpoint--m) {padding: 16px;}
-    a {
+    a[href] {
       @include link--dark;
     }
+    a:not(a[href]) {color: $white;}
   }
   td {
     color: $font;
@@ -41,6 +42,7 @@ table {
     margin: 16px 0;
     text-align: left;
   }
+  table {margin: 0 !important;}
 }
 
 .tablesort {

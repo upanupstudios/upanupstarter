@@ -258,7 +258,7 @@ cookie-consent:
 full-calendar:
   version: 1.x
   css:
-    component:
+    theme:
       scss-css/component/full-calendar/full-calendar.css: {}
 tippy:
   version: 1.x
