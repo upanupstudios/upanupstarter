@@ -2,14 +2,64 @@
 @import "../../mixins/mixins";
 
 .fc {
-  &-button-primary {
-    background-color: $int-bgc;
-    border-color: $int-bdc;
-    color: $int-c;
-    @include transition('background-color,border-color,color');
-    &.fc-button-active,
-    &:not(:disabled).fc-button-active {
-      @include is-selected;
+
+  a:not(a[href]) {
+    color: $font;
+    font-weight: $font-weight--normal;
+    cursor: default;
+    text-decoration: none;
+  }
+  th a:not(a[href]) {color: $white;}
+  &-theme-standard .fc-list-day-cushion {
+    a:not(a[href]) {
+      color: $font;
+      font-weight: $font-weight--bold;
+    }
+}
+
+  &-day-grid-event .fc-content {white-space: normal;}
+  &-daygrid-dot-event {
+    flex-wrap: wrap;
+    .fc-event-title {
+      white-space: normal;
+    }
+  }
+
+  .fc {
+    &-button-primary,
+    &-button-primary:not(:disabled).fc-button-active,
+    &-button-primary:not(:disabled):active {
+      background-color: $int-bgc;
+      border-color: $int-bdc;
+      color: $int-c;
+      @include transition('background-color,border-color,color');
+      &.fc-button-active,
+      &:not(:disabled).fc-button-active {
+        @include is-selected;
+        &:hover {
+          background-color: $int-bgc--hover;
+          border-color: $int-bdc--hover;
+          color: $int-c--hover;
+          &:focus {
+            box-shadow: none;
+            outline: none;
+          }
+        }
+        &:focus {
+          box-shadow: none;
+          @include focus;
+        }
+        &:active,
+        &:not(:disabled):active {
+          background-color: $int-bgc--active;
+          border-color: $int-bdc--active;
+          color: $int-c--active;
+          &:focus {
+            box-shadow: none;
+            outline: none;
+          }
+        }
+      }
       &:hover {
         background-color: $int-bgc--hover;
         border-color: $int-bdc--hover;
@@ -34,62 +84,39 @@
         }
       }
     }
-    &:hover {
-      background-color: $int-bgc--hover;
-      border-color: $int-bdc--hover;
-      color: $int-c--hover;
-      &:focus {
-        box-shadow: none;
-        outline: none;
+    &-unthemed {
+      th {border-width: 0;}
+      td {
+        &.fc-today {
+          background: $active-bgc;
+          border-color: $active-bdc;
+        }
       }
     }
-    &:focus {
-      box-shadow: none;
-      @include focus;
-    }
-    &:active,
-    &:not(:disabled):active {
-      background-color: $int-bgc--active;
-      border-color: $int-bdc--active;
-      color: $int-c--active;
-      &:focus {
-        box-shadow: none;
-        outline: none;
+    &-button-group button {text-transform: capitalize;}
+    .fc-scroller {height: 100% !important;}
+    .fc-list-table  {margin-bottom: 0;}
+    @media only screen and (max-width:$breakpoint--m) {
+      .fc-toolbar.fc-header-toolbar {
+        flex-wrap: wrap;
+        gap: 12px 24px;
+        margin-bottom: 0 !important;
+        .fc-center {
+          order: 1;
+          width: 100%;
+        }
+        .fc-left {
+          order: 2;
+          margin-bottom: 16px;
+        }
+        .fc-right {
+          order: 3;
+          margin-bottom: 16px;
+        }
       }
     }
-  }
-  &-unthemed {
-    th {border-width: 0;}
-    td {
-      &.fc-today {
-        background: $active-bgc;
-        border-color: $active-bdc;
-      }
+    .fc-list-item-title .fc-time {
+      display: none;
     }
-  }
-  &-button-group button {text-transform: capitalize;}
-  .fc-scroller {height: 100% !important;}
-  .fc-list-table  {margin-bottom: 0;}
-  @media only screen and (max-width:$breakpoint--m) {
-    .fc-toolbar.fc-header-toolbar {
-      flex-wrap: wrap;
-      gap: 12px 24px;
-      margin-bottom: 0 !important;
-      .fc-center {
-        order: 1;
-        width: 100%;
-      }
-      .fc-left {
-        order: 2;
-        margin-bottom: 16px;
-      }
-      .fc-right {
-        order: 3;
-        margin-bottom: 16px;
-      }
-    }
-  }
-  .fc-list-item-title .fc-time {
-    display: none;
   }
 }

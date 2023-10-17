@@ -34,6 +34,11 @@ Example:
 
 ### [Unreleased]
 
+### [2.4.0] - 2023-10-17
+
+#### Added
+- Added styling for Fullcalendar block
+
 ### [2.3.0] - 2023-08-29
 
 #### Fixed
