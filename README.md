@@ -34,6 +34,11 @@ Example:
 
 ### [Unreleased]
 
+### [2.4.1] - 2023-10-20
+
+#### Changed
+- Changed outline style from `dashed` to `solid`
+
 ### [2.4.0] - 2023-10-17
 
 #### Added

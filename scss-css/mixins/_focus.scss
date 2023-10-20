@@ -2,7 +2,7 @@
 
 @mixin focus(
   $width: 2px,
-  $style: dashed,
+  $style: solid,
   $color: $focus,
   $offset: 4px
 ) {
@@ -11,7 +11,7 @@
 }
 @mixin focus--light(
   $width: 2px,
-  $style: dashed,
+  $style: solid,
   $color: $focus--light,
   $offset: 4px
 ) {
