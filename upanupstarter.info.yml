@@ -38,6 +38,8 @@ libraries-extend:
     - upanupstarter/accordion-group-toggle
   upanupbase/alert:
     - upanupstarter/alerts-banner
+  upanupbase/banner--content:
+    - upanupstarter/banner--content
   upanupbase/card:
     - upanupstarter/card
   upanupbase/content-row:
