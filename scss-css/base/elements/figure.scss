@@ -6,4 +6,7 @@ figure {
     background-color: $bg--medium;
     padding: 16px;
   }
+  &.caption {
+    margin: 0 0 $default-margin 0;
+  }
 }
