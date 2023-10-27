@@ -1,0 +1,9 @@
+@import "../../variables/variables";
+
+figure {
+  img {display: block;}
+  figcaption {
+    background-color: $bg--medium;
+    padding: 16px;
+  }
+}

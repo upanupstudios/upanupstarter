@@ -24,6 +24,8 @@ global:
       scss-css/layout/content.css: {}
       scss-css/layout/main.css: {}
       scss-css/layout/sidebar.css: {}
+    component:
+      scss-css/base/elements/figure.css: {}
     state:
       scss-css/state/admin/toolbar-menu.css: {}
       scss-css/state/homepage.css: {}

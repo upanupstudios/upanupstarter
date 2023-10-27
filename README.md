@@ -34,6 +34,14 @@ Example:
 
 ### [Unreleased]
 
+### [2.5.1] - 2023-10-27
+
+#### Fixed
+- Fixed missing prefixes from last compilation
+
+#### Added
+- Added generic `figure`, `figcaption` styling
+
 ### [2.5.0] - 2023-10-27
 
 #### Fixed
