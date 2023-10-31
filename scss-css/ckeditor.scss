@@ -1,21 +1,21 @@
-@import "./variables/variables";
-@import "./base/elements/button";
-@import "./base/elements/figure";
-@import "./base/elements/table";
-@import "./base/typography/blockquote";
-@import "./base/typography/copy";
-@import "./base/typography/headings";
-@import "./base/typography/links";
-@import "./base/typography/lists";
-@import "./base/body";
-@import "./base/html";
+.ck-content {
 
-body {
+  @import "./variables/variables";
+  @import "./base/elements/button";
+  @import "./base/elements/figure";
+  @import "./base/typography/blockquote";
+  @import "./base/typography/copy";
+  @import "./base/typography/headings";
+  @import "./base/typography/links";
+  @import "./base/typography/lists";
+  @import "./base/body";
+  @import "./base/html";
+
   font-family: $font-family--primary;
   color: $font;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  width: 100%;
-  max-width: 900px;
+  button, input, select, textarea {font-family: $font-family--primary;}
+  > * {max-width: $line-width;}
+
 }
-html, button, input, select, textarea {font-family: $font-family--primary;}

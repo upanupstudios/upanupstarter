@@ -34,6 +34,12 @@ Example:
 
 ### [Unreleased]
 
+### [3.0.0] - 2023-10-31
+
+#### Changed
+- CKEditor styles now target CK5
+- D10 listed as core requirement
+
 ### [2.5.1] - 2023-10-27
 
 #### Fixed
