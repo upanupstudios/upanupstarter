@@ -11,6 +11,8 @@
   @import "./base/body";
   @import "./base/html";
 
+  a[target="_blank"]::after {display: none;}
+
   font-family: $font-family--primary;
   color: $font;
   -webkit-font-smoothing: antialiased;

@@ -34,6 +34,11 @@ Example:
 
 ### [Unreleased]
 
+### [3.0.1] - 2023-11-02
+
+#### Fixed
+- Removed `::after` icon on external links in CKEditor (given that Font Awesome is not loaded there)
+
 ### [3.0.0] - 2023-10-31
 
 #### Changed
