@@ -34,14 +34,14 @@
   text-decoration: none;
   @include transition("background-color, border-color, color");
   &:hover {
-    @include underline;
+    @include underline--hover;
     &:focus {outline: none !important;}
   }
   &:focus {
     @include focus;
   }
   &:active {
-    @include underline;
+    @include underline--hover;
     &:focus {outline: none !important;}
   }
   &[disabled] {@include button--disabled;}

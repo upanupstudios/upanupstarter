@@ -34,6 +34,11 @@ Example:
 
 ### [Unreleased]
 
+### [3.0.2] - 2023-11-03
+
+#### Fixed
+- Fixed button hover so it uses the `underline--hover` mixin
+
 ### [3.0.1] - 2023-11-02
 
 #### Fixed
