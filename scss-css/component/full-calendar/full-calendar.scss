@@ -29,17 +29,17 @@
     &-button-primary,
     &-button-primary:not(:disabled).fc-button-active,
     &-button-primary:not(:disabled):active {
-      background-color: $int-bgc;
+      background-color: $white;
       border-color: $int-bdc;
-      color: $int-c;
+      color: $link;
       @include transition('background-color,border-color,color');
       &.fc-button-active,
       &:not(:disabled).fc-button-active {
         @include is-selected;
         &:hover {
-          background-color: $int-bgc--hover;
+          background-color: $green--lighter;
           border-color: $int-bdc--hover;
-          color: $int-c--hover;
+          color: $link--hover;
           &:focus {
             box-shadow: none;
             outline: none;
@@ -51,9 +51,9 @@
         }
         &:active,
         &:not(:disabled):active {
-          background-color: $int-bgc--active;
+          background-color: $purple--lighter;
           border-color: $int-bdc--active;
-          color: $int-c--active;
+          color: $link--active;
           &:focus {
             box-shadow: none;
             outline: none;
@@ -61,9 +61,9 @@
         }
       }
       &:hover {
-        background-color: $int-bgc--hover;
+        background-color: $green--lighter;
         border-color: $int-bdc--hover;
-        color: $int-c--hover;
+        color: $link--hover;
         &:focus {
           box-shadow: none;
           outline: none;
@@ -75,9 +75,9 @@
       }
       &:active,
       &:not(:disabled):active {
-        background-color: $int-bgc--active;
+        background-color: $purple--lighter;
         border-color: $int-bdc--active;
-        color: $int-c--active;
+        color: $link--active;
         &:focus {
           box-shadow: none;
           outline: none;
@@ -88,8 +88,8 @@
       th {border-width: 0;}
       td {
         &.fc-today {
-          background: $active-bgc;
-          border-color: $active-bdc;
+          background: $teal--light;
+          border-color: $teal;
         }
       }
     }

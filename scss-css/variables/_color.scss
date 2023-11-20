@@ -14,6 +14,7 @@ $purple                 : #5A00A7;
 $purple--light          : #DEB8FF;
 $purple--lighter        : #ECD1FF;
 $teal                   : #3F8F8B;
+$teal--light            : #E1F0EF;
 
 // Status
 $error                  : #BC0000;
@@ -29,7 +30,7 @@ $warning--light         : #FFF8E5;
 $font                   : #333333;
 $font--disabled         : #595959;
 $font--dark--disabled   : #B5B5B5;
-$graphics               : #8C8C8C;
+$border                 : #8C8C8C;
 $ui-icon                : #393939;
 
 // Links
@@ -39,32 +40,6 @@ $link--active           : $purple;
 $link--dark             : $blue--light;
 $link--dark--hover      : $green--light;
 $link--dark--active     : $purple--light;
-
-// Interactive components
-$int-c                  : $link;
-$int-c--hover           : $link--hover;
-$int-c--active          : $link--active;
-$int-bdc                : $link;
-$int-bdc--hover         : $link--hover;
-$int-bdc--active        : $link--active;
-$int-bgc                : $white;
-$int-bgc--hover         : $green--lighter;
-$int-bgc--active        : $purple--lighter;
-$int-c--disabled        : $font;
-$int-bgc--disabled      : #DDD;
-$int-bdc--disabled      : #DDD;
-$int-c--disabled--dark  : #B5B5B5;
-
-// Active indicator
-$active-bgc             : #E1F0EF;
-$active-bdc             : $teal;
-$active-c               : $font;
-$active-bgc--hover      : $teal;
-$active-bdc--hover      : $teal;
-$active-c--hover        : $white;
-$active-bgc--active     : $teal;
-$active-bdc--active     : $teal;
-$active-c--active       : $white;
 
 // Backgrounds
 $bg                     : #FDFDFD;

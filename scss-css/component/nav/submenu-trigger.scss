@@ -2,9 +2,9 @@
 @import "../../mixins/mixins";
 
 .submenu-trigger {
-  background-color: $int-bgc;
+  background-color: $white;
   border: 1px solid transparent;
-  color: $int-c;
+  color: $link;
   cursor: pointer;
   display: inline-block;
   min-height: 42px;
@@ -23,7 +23,7 @@
     @include transition("transform");
   }
   &::after {
-    background-color: $graphics;
+    background-color: $border;
     content:'';
     height: calc(100% - 8px);
     left: -4px;
@@ -35,16 +35,16 @@
   .is-open > .menu__item-link-wrapper > & {
     background-color: darken($bg--medium,10%);
     &:hover {
-      background-color: $int-bgc--hover;
+      background-color: $green--lighter;
       border-color: $int-bdc--hover;
-      color: $int-c--hover;
+      color: $link--hover;
       &:focus {outline: none;}
     }
     &:focus {@include focus;}
     &:active {
-      background-color: $int-bgc--active;
+      background-color: $purple--lighter;
       border-color: $int-bdc--active;
-      color: $int-c--active;
+      color: $link--active;
       &:focus {outline: none;}
     }
   }
@@ -52,16 +52,16 @@
     &::before {transform: translate(-50%,-50%) rotate(90deg);}
   }
   &:hover {
-    background-color: $int-bgc--hover;
+    background-color: $green--lighter;
     border-color: $int-bdc--hover;
-    color: $int-c--hover;
+    color: $link--hover;
     &:focus {outline: none;}
   }
   &:focus {@include focus;}
   &:active {
-    background-color: $int-bgc--active;
+    background-color: $purple--lighter;
     border-color: $int-bdc--active;
-    color: $int-c--active;
+    color: $link--active;
     &:focus {outline: none;}
   }
 }

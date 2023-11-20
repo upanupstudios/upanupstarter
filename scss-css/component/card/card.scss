@@ -19,7 +19,7 @@
     &:hover + .card__content a {@include underline--hover;}
   }
   &__content {
-    border: 1px solid $graphics;
+    border: 1px solid $border;
     padding: clamp(24px,4vw,32px);
   }
   &__title {
@@ -27,7 +27,7 @@
     margin-bottom: calc(#{$default-margin} / 4);
   }
   &--horizontal {
-    border: 1px solid $graphics;
+    border: 1px solid $border;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: flex-start;
@@ -57,7 +57,7 @@
   &.node {
     .card {
       &__image {
-        border-bottom: 1px solid $graphics;
+        border-bottom: 1px solid $border;
         order: -1;
         transform: translate(-17px,-17px);
         width: calc(100% + 34px);

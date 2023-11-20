@@ -34,6 +34,11 @@ Example:
 
 ### [Unreleased]
 
+### [3.1.0] - 2023-11-20
+
+#### Changed
+- Changed color variables: removed `$active-` and `$int-`, replaced w/ named variables (i.e. `$teal`)
+
 ### [3.0.2] - 2023-11-03
 
 #### Fixed

@@ -4,7 +4,7 @@
 .ui-dialog {
   .ui-dialog-titlebar {
     background: $bg--medium;
-    border: 1px solid $graphics;
+    border: 1px solid $border;
     font-weight: $font-weight--normal;
     padding: 0px 0px 0px 32px;
     .ui-dialog-title {
@@ -13,7 +13,7 @@
   }
   .ui-dialog-content {
     background: $bg;
-    border: 1px solid $graphics;
+    border: 1px solid $border;
     padding: 32px;
   }
   .ui-dialog-titlebar-close {

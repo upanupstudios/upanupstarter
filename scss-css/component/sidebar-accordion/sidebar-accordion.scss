@@ -9,7 +9,7 @@
     padding-left: 16px;
     width: 100%;
     &::before {
-      background-color: $graphics;
+      background-color: $border;
       bottom: 0;
       content:'';
       left: 0;
@@ -18,15 +18,15 @@
       width: 100%;
     }
     &:hover {
-      background-color: $int-bgc--hover;
+      background-color: $green--lighter;
       border-color: $int-bdc--hover;
-      color: $int-c--hover;
+      color: $link--hover;
       &:focus {outline: none;}
     }
     &:active {
-      background-color: $int-bgc--active;
+      background-color: $purple--lighter;
       border-color: $int-bdc--active;
-      color: $int-c--active;
+      color: $link--active;
       &:focus {outline: none;}
     }
     h2 {
@@ -41,7 +41,7 @@
       &.field__items {
         padding: 0;
         > * {
-          border-bottom: 1px solid $graphics;
+          border-bottom: 1px solid $border;
           padding: clamp(24px,4vw,32px);
           &:last-child {border-bottom: 0;}
         }

@@ -3,7 +3,7 @@
 
 .alerts-banner {
   background-color: $bg;
-  border: 1px solid $graphics;
+  border: 1px solid $border;
   padding: 0px max(32px,calc(#{$container-padding} / 2));
   &__updated-level {
     display: flex;

@@ -6,16 +6,16 @@ table {
   border-bottom: 2px solid $bg--dark;
   margin: 0 0 $default-margin 0;
   tr {
-    border-bottom: 1px solid $graphics;
+    border-bottom: 1px solid $border;
     &.drag-previous,
     &.drag {
-      background-color: $active-bgc;
+      background-color: $teal--light;
     }
     &.selected {
-      background-color: $active-bgc;
-      outline: 2px solid $active-bdc;
+      background-color: $teal--light;
+      outline: 2px solid $teal;
       outline-offset: -2px;
-      td {background-color: $active-bgc;}
+      td {background-color: $teal--light;}
     }
   }
   th {

@@ -35,35 +35,35 @@
   .progress-step {
     .progress-marker {
       &::before {
-        background-color: $active-bgc;
-        border: 2px solid $active-bdc;
-        color: $active-c;
+        background-color: $teal--light;
+        border: 2px solid $teal;
+        color: $font;
       }
       &::after {
-        background-color: $graphics;
+        background-color: $border;
         height: 2px;
         top: calc(50% - 1px);
       }
     }
     &:not(.is-active) .progress-marker::before {
       background-color: $bg;
-      border: 2px solid $graphics;
+      border: 2px solid $border;
       box-shadow: 0px 0px 0px 1px $bg;
-      color: $active-c;
+      color: $font;
     }
     // Remove hover for non-linked items
     &.is-complete:not(.is-active) .progress-marker::before {
-      background-color: $int-bgc--disabled;
+      background-color: $teal--light;
     }
     &.is-complete {
       .progress-marker[role="link"] {
         cursor: pointer;
         &:hover {
           &::before {
-            background-color: $int-bgc--hover;
+            background-color: $green--lighter;
             border-color: $int-bdc--hover;
           }
-          &::after {color: $int-c--hover;}
+          &::after {color: $link--hover;}
           &:focus::before {outline: none;}
         }
         &:focus {
@@ -72,10 +72,10 @@
         }
         &:active {
           &::before {
-            background-color: $int-bgc--active;
+            background-color: $purple--lighter;
             border-color: $int-bdc--active;
           }
-          &::after {color: $int-c--active;}
+          &::after {color: $link--active;}
           &:focus::before {outline: none;}
         }
       }
