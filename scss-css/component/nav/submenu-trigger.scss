@@ -36,14 +36,14 @@
     background-color: darken($bg--medium,10%);
     &:hover {
       background-color: $green--lighter;
-      border-color: $int-bdc--hover;
+      border-color: $link--hover;
       color: $link--hover;
       &:focus {outline: none;}
     }
     &:focus {@include focus;}
     &:active {
       background-color: $purple--lighter;
-      border-color: $int-bdc--active;
+      border-color: $link--active;
       color: $link--active;
       &:focus {outline: none;}
     }
@@ -53,14 +53,14 @@
   }
   &:hover {
     background-color: $green--lighter;
-    border-color: $int-bdc--hover;
+    border-color: $link--hover;
     color: $link--hover;
     &:focus {outline: none;}
   }
   &:focus {@include focus;}
   &:active {
     background-color: $purple--lighter;
-    border-color: $int-bdc--active;
+    border-color: $link--active;
     color: $link--active;
     &:focus {outline: none;}
   }

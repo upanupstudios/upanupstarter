@@ -19,13 +19,13 @@
     }
     &:hover {
       background-color: $green--lighter;
-      border-color: $int-bdc--hover;
+      border-color: $link--hover;
       color: $link--hover;
       &:focus {outline: none;}
     }
     &:active {
       background-color: $purple--lighter;
-      border-color: $int-bdc--active;
+      border-color: $link--active;
       color: $link--active;
       &:focus {outline: none;}
     }

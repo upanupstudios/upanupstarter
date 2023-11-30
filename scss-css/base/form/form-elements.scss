@@ -61,7 +61,7 @@
         &:hover {
           &::before {
             background-color: $green--lighter;
-            border-color: $int-bdc--hover;
+            border-color: $link--hover;
           }
           &::after {color: $link--hover;}
           &:focus::before {outline: none;}
@@ -73,7 +73,7 @@
         &:active {
           &::before {
             background-color: $purple--lighter;
-            border-color: $int-bdc--active;
+            border-color: $link--active;
           }
           &::after {color: $link--active;}
           &:focus::before {outline: none;}

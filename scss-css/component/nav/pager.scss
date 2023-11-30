@@ -20,7 +20,7 @@
       &:not([class*="--"]) {
         a {
           background-color: $white;
-          border: 1px solid $int-bdc;
+          border: 1px solid $link;
           color: $link;
           display: inline-block;
           min-height: 44px;
@@ -30,13 +30,13 @@
           @include transition("background-color, border-color, color");
           &:hover {
             background-color: $green--lighter;
-            border-color: $int-bdc--hover;
+            border-color: $link--hover;
             color: $link--hover;
             &:focus {outline: none;}
           }
           &:active {
             background-color: $purple--lighter;
-            border-color: $int-bdc--active;
+            border-color: $link--active;
             color: $link--active;
             &:focus {outline: none;}
           }
@@ -45,13 +45,13 @@
           @include is-selected;
           &:hover {
             background-color: $green--lighter;
-            border-color: $int-bdc--hover;
+            border-color: $link--hover;
             color: $link--hover;
             &:focus {outline: none;}
           }
           &:active {
             background-color: $purple--lighter;
-            border-color: $int-bdc--active;
+            border-color: $link--active;
             color: $link--active;
             &:focus {outline: none;}
           }

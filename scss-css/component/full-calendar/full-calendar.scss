@@ -30,7 +30,7 @@
     &-button-primary:not(:disabled).fc-button-active,
     &-button-primary:not(:disabled):active {
       background-color: $white;
-      border-color: $int-bdc;
+      border-color: $link;
       color: $link;
       @include transition('background-color,border-color,color');
       &.fc-button-active,
@@ -38,7 +38,7 @@
         @include is-selected;
         &:hover {
           background-color: $green--lighter;
-          border-color: $int-bdc--hover;
+          border-color: $link--hover;
           color: $link--hover;
           &:focus {
             box-shadow: none;
@@ -52,7 +52,7 @@
         &:active,
         &:not(:disabled):active {
           background-color: $purple--lighter;
-          border-color: $int-bdc--active;
+          border-color: $link--active;
           color: $link--active;
           &:focus {
             box-shadow: none;
@@ -62,7 +62,7 @@
       }
       &:hover {
         background-color: $green--lighter;
-        border-color: $int-bdc--hover;
+        border-color: $link--hover;
         color: $link--hover;
         &:focus {
           box-shadow: none;
@@ -76,7 +76,7 @@
       &:active,
       &:not(:disabled):active {
         background-color: $purple--lighter;
-        border-color: $int-bdc--active;
+        border-color: $link--active;
         color: $link--active;
         &:focus {
           box-shadow: none;

@@ -50,35 +50,35 @@
 @mixin button--default {
   @include button;
   background-color: $white;
-  border: 2px solid $int-bdc;
+  border: 2px solid $link;
   color: $link !important;
   &.is-selected {@include is-selected;}
   &:hover {
     background-color: $green--lighter;
-    border-color: $int-bdc--hover;
+    border-color: $link--hover;
     color: $link--hover !important;
   }
   &:active {
     background-color: $purple--lighter;
-    border-color: $int-bdc--active;
+    border-color: $link--active;
     color: $link--active !important;
   }
 }
 
 @mixin button--emphasis {
   @include button;
-  background-color: $int-bdc;
-  border: 2px solid $int-bdc;
+  background-color: $link;
+  border: 2px solid $link;
   color: $white !important;
   &.is-selected {@include is-selected;}
   &:hover {
-    background-color: $int-bdc--hover;
-    border-color: $int-bdc--hover;
+    background-color: $link--hover;
+    border-color: $link--hover;
     color: $white !important;
   }
   &:active {
-    background-color: $int-bdc--active;
-    border-color: $int-bdc--active;
+    background-color: $link--active;
+    border-color: $link--active;
     color: $white !important;
   }
 }

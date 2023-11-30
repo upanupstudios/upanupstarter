@@ -3,7 +3,7 @@
 
 .quicklink {
   background-color: $white;
-  border: 1px solid $int-bdc;
+  border: 1px solid $link;
   color: $link;
   padding: 16px;
   position: relative;
@@ -37,12 +37,12 @@
   }
   &:hover {
     background-color: $green--lighter;
-    border-color: $int-bdc--hover;
+    border-color: $link--hover;
     color: $link--hover;
   }
   &:active {
     background-color: $purple--lighter;
-    border-color: $int-bdc--active;
+    border-color: $link--active;
     color: $link--active;
   }
 }

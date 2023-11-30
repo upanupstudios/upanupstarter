@@ -3,4 +3,5 @@
 .accordion-group__toggle {
   @include button--ui('\f0d7',true,180deg);
   transform: translateX(-13px);
+  @media print {display: none;}
 }

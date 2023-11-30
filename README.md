@@ -34,6 +34,14 @@ Example:
 
 ### [Unreleased]
 
+### [3.1.1] - 2023-11-30
+
+#### Added
+- Print styling for accordions
+
+#### Fixed
+- Removed straggling `$int` color variables
+
 ### [3.1.0] - 2023-11-20
 
 #### Changed

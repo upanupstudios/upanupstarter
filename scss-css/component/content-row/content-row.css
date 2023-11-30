@@ -1,1 +1,1 @@
-.content-row{margin:clamp(48px,4.6vw,64px) 0}.content-row .field--name-field-row-content:nth-child(2){margin-top:calc(32px * 0.1875)}.content-row .field--name-field-row-component:not(:first-child){margin-top:32px}
+.content-row{margin:clamp(48px,4.6vw,64px) 0}.content-row .field--name-field-row-content:nth-child(2){margin-top:calc(32px*.1875)}.content-row .field--name-field-row-component:not(:first-child){margin-top:32px}

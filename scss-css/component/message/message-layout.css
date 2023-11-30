@@ -1,1 +1,1 @@
-.messages-wrapper>.container{padding:0 calc(clamp(16px, 7vw, 112px) / 2)}@media(max-width: 64rem){.messages-wrapper>.container{padding:0 clamp(16px,7vw,112px)}}
+.messages-wrapper>.container{padding:0 calc(clamp(16px, 7vw, 112px)/2)}@media(max-width: 64rem){.messages-wrapper>.container{padding:0 clamp(16px,7vw,112px)}}
