@@ -34,6 +34,11 @@ Example:
 
 ### [Unreleased]
 
+### [3.1.2] - 2023-12-05
+
+#### Fixed
+- Removed Google Fonts line from `ckeditor5-stylesheets`, added `@import` of fonts in `ckeditor.scss`
+
 ### [3.1.1] - 2023-11-30
 
 #### Added
