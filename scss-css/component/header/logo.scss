@@ -3,6 +3,7 @@
 .header__logo {
   margin-right: 16px;
   a.site-logo {
+    display: flex;
     &:hover {
       outline: 2px solid $link--hover;
       outline-offset: 4px;
