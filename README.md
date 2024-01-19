@@ -34,6 +34,14 @@ Example:
 
 ### [Unreleased]
 
+### [4.0.0] - 2024-01-19
+
+#### Changed
+- Print styling removed from individual files and into new `*--print.scss` files
+- Libraries updated with new `*--print.css` files
+- `upanupstarter.info.yml` updated with new libraries from `upanupbase`
+- Updated `libraries-extend` for `upanupbase/nav`
+
 ### [3.1.2] - 2023-12-05
 
 #### Fixed

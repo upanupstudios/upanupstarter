@@ -1,0 +1,29 @@
+@import "../../mixins/mixins";
+@import "../../variables/variables";
+
+.accordion,
+details,
+.webform-element-more {
+  h2.accordion__heading {
+    @include unset($important:true);
+    @include h2($important:true);
+    color: $font !important;
+  }
+  h3.accordion__heading {
+    @include unset($important:true);
+    @include h3($important:true);
+    color: $font !important;
+  }
+  &__trigger,
+  summary,
+  .webform-element-more--link {
+    @include unset($important:true);
+    all: inherit !important;
+    color: $font !important;
+    &::after {display: none !important;}
+  }
+  &__content {
+    border: 0 !important;
+    padding: 0 !important;
+  }
+}

@@ -1,0 +1,1 @@
+.header{-webkit-box-shadow:none !important;box-shadow:none !important}.header__row{background-color:rgba(0,0,0,0) !important}.header__row--top:has(.alerts-banner__trigger[aria-expanded=false]){display:none !important}.header__row--middle{display:none !important}.header__menu-wrapper{display:none !important}

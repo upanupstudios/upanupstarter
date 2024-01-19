@@ -10,6 +10,7 @@ global:
       scss-css/base/typography/links.css: {}
       scss-css/base/typography/lists.css: {}
       scss-css/base/body.css: {}
+      scss-css/base/body--print.css: { media: print }
       scss-css/base/html.css: {}
       scss-css/base/form/checkbox.css: {}
       scss-css/base/form/fieldset.css: {}
@@ -44,6 +45,7 @@ accordion:
     component:
       scss-css/component/accordion/accordion-group.css: {}
       scss-css/component/accordion/accordion.css: {}
+      scss-css/component/accordion/accordion--print.css: { media: print }
 accordion-group-toggle:
   version: 1.x
   css:
@@ -123,6 +125,7 @@ header:
       scss-css/component/header/menu-wrapper.css: {}
       scss-css/component/header/nav-search-trigger.css: {}
       scss-css/component/header/row.css: {}
+      scss-css/component/header/header--print.css: { media: print }
 hours-block:
   version: 1.x
   css:
@@ -217,6 +220,7 @@ nav--tabs:
   css:
     component:
       scss-css/component/nav/tabs.css: {}
+      scss-css/component/nav/tabs--print.css: { media: print }
 notice:
   version: 1.x
   css:

@@ -4,18 +4,6 @@
 .accordion,
 details,
 .webform-element-more {
-  h2.accordion__heading {
-    @media print {
-      @include unset;
-      @include h2;
-    }
-  }
-  h3.accordion__heading {
-    @media print {
-      @include unset;
-      @include h3;
-    }
-  }
   &__trigger,
   summary,
   .webform-element-more--link {
@@ -24,11 +12,6 @@ details,
     &::after {
       font-size: 21px;
       line-height: 1;
-      @media print {display: none;}
-    }
-    @media print {
-      @include unset;
-      all: inherit;
     }
   }
   .webform-element-more--link {
@@ -47,10 +30,6 @@ details,
   &__content {
     border: 1px solid $link;
     padding: 16px;
-    @media print {
-      border: 0;
-      padding: 0;
-    }
   }
   .details-wrapper,
   .webform-element-more--content {

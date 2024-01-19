@@ -1,77 +1,158 @@
 @import "../variables/variables";
 @import "./media-queries";
 
-@mixin h1 {
-  font-size: 2.25rem;
-  font-weight: $font-weight--bold;
-  line-height: 1.111;
-  margin-bottom: calc(#{$default-margin} * 0.75);
-  margin-top: 0;
-  @include max($breakpoint--m) {
+@mixin h1($important:false) {
+  @if $important {
+    font-size: 2.25rem !important;
+    font-weight: $font-weight--bold !important;
+    line-height: 1.111 !important;
+    margin-bottom: calc(#{$default-margin} * 0.75) !important;
+    margin-top: 0 !important;
+    @include max($breakpoint--m) {
+      font-size: 1.75rem !important;
+      line-height: 1.285 !important;
+      margin-bottom: calc(#{$default-margin} * 0.5) !important;
+    }
+  } @else {
+    font-size: 2.25rem;
+    font-weight: $font-weight--bold;
+    line-height: 1.111;
+    margin-bottom: calc(#{$default-margin} * 0.75);
+    margin-top: 0;
+    @include max($breakpoint--m) {
+      font-size: 1.75rem;
+      line-height: 1.285;
+      margin-bottom: calc(#{$default-margin} * 0.5);
+    }
+  }
+}
+@mixin h2($important:false) {
+  @if $important {
+    font-size: 1.75rem !important;
+    font-weight: $font-weight--bold !important;
+    line-height: 1.107 !important;
+    margin-bottom: calc(#{$default-margin} * 0.1875) !important;
+    margin-top: 0 !important;
+    @include max($breakpoint--m) {
+      font-size: 1.4375rem !important;
+      line-height: 1.26 !important;
+      margin-bottom: calc(#{$default-margin} * 0.3125) !important;
+    }
+  } @else {
     font-size: 1.75rem;
-    line-height: 1.285;
-    margin-bottom: calc(#{$default-margin} * 0.5);
+    font-weight: $font-weight--bold;
+    line-height: 1.107;
+    margin-bottom: calc(#{$default-margin} * 0.1875);
+    margin-top: 0;
+    @include max($breakpoint--m) {
+      font-size: 1.4375rem;
+      line-height: 1.26;
+      margin-bottom: calc(#{$default-margin} * 0.3125);
+    }
   }
 }
-@mixin h2 {
-  font-size: 1.75rem;
-  font-weight: $font-weight--bold;
-  line-height: 1.107;
-  margin-bottom: calc(#{$default-margin} * 0.1875);
-  margin-top: 0;
-  @include max($breakpoint--m) {
-    font-size: 1.4375rem;
-    line-height: 1.26;
-    margin-bottom: calc(#{$default-margin} * 0.3125);
+@mixin h3($important:false) {
+  @if $important {
+    font-size: 1.5625rem !important;
+    font-weight: $font-weight--semibold !important;
+    line-height: 1.36 !important;
+    margin-bottom: calc(#{$default-margin} * 0.1875) !important; 
+    margin-top: 0 !important;
+    @include max($breakpoint--m) {
+      font-size: 1.375rem !important;
+      line-height: 1.318 !important;
+    }
+  } @else {
+    font-size: 1.5625rem;
+    font-weight: $font-weight--semibold;
+    line-height: 1.36;
+    margin-bottom: calc(#{$default-margin} * 0.1875);
+    margin-top: 0;
+    @include max($breakpoint--m) {
+      font-size: 1.375rem;
+      line-height: 1.318;
+    }
   }
 }
-@mixin h3 {
-  font-size: 1.5625rem;
-  font-weight: $font-weight--semibold;
-  line-height: 1.36;
-  margin-bottom: calc(#{$default-margin} * 0.1875); 
-  margin-top: 0;
-  @include max($breakpoint--m) {
+@mixin h4($important:false) {
+  @if $important {
+    font-size: 1.375rem !important;
+    font-weight: $font-weight--semibold !important;
+    line-height: 1.136 !important;
+    margin-bottom: calc(#{$default-margin} * 0.1875) !important;
+    margin-top: 0 !important;
+    @include max($breakpoint--m) {
+      font-size: 1.1875rem !important;
+      line-height: 1.2368 !important;
+    }
+  } @else {
     font-size: 1.375rem;
-    line-height: 1.318;
+    font-weight: $font-weight--semibold;
+    line-height: 1.136;
+    margin-bottom: calc(#{$default-margin} * 0.1875);
+    margin-top: 0;
+    @include max($breakpoint--m) {
+      font-size: 1.1875rem;
+      line-height: 1.2368;
+    }
   }
 }
-@mixin h4 {
-  font-size: 1.375rem;
-  font-weight: $font-weight--semibold;
-  line-height: 1.136;
-  margin-bottom: calc(#{$default-margin} * 0.1875);
-  margin-top: 0;
-  @include max($breakpoint--m) {
+@mixin h5($important:false) {
+  @if $important {
+    font-size: 1.1875rem !important;
+    font-weight: $font-weight--semibold !important;
+    line-height: 1.105 !important;
+    margin-bottom: calc(#{$default-margin} * 0.1875) !important;
+    margin-top: 0 !important;
+    @include max($breakpoint--m) {
+      font-size: 1.0625rem !important;
+      line-height: 1.294 !important;
+    }
+  } @else {
     font-size: 1.1875rem;
-    line-height: 1.2368;
+    font-weight: $font-weight--semibold;
+    line-height: 1.105;
+    margin-bottom: calc(#{$default-margin} * 0.1875);
+    margin-top: 0;
+    @include max($breakpoint--m) {
+      font-size: 1.0625rem;
+      line-height: 1.294;
+    }
   }
 }
-@mixin h5 {
-  font-size: 1.1875rem;
-  font-weight: $font-weight--semibold;
-  line-height: 1.105;
-  margin-bottom: calc(#{$default-margin} * 0.1875);
-  margin-top: 0;
-  @include max($breakpoint--m) {
+@mixin h6($important:false) {
+  @if $important {
+    font-size: 1.0625rem !important;
+    font-weight: $font-weight--bold !important;
+    line-height: 1.117 !important;
+    margin-bottom: calc(#{$default-margin} * 0.1875) !important;
+    margin-top: 0 !important;
+    @include max($breakpoint--m) {
+      font-size: 1rem !important;
+      line-height: 1.3125 !important;
+    }
+  } @else {
     font-size: 1.0625rem;
-    line-height: 1.294;
+    font-weight: $font-weight--bold;
+    line-height: 1.117;
+    margin-bottom: calc(#{$default-margin} * 0.1875);
+    margin-top: 0;
+    @include max($breakpoint--m) {
+      font-size: 1rem;
+      line-height: 1.3125;
+    }
   }
 }
-@mixin h6 {
-  font-size: 1.0625rem;
-  font-weight: $font-weight--bold;
-  line-height: 1.117;
-  margin-bottom: calc(#{$default-margin} * 0.1875);
-  margin-top: 0;
-  @include max($breakpoint--m) {
+@mixin reset-heading($important:false) {
+  @if $important {
+    font-size: 1rem !important;
+    font-weight: $font-weight--normal !important;
+    line-height: inherit !important;
+    margin: 0 !important;
+  } @else {
     font-size: 1rem;
-    line-height: 1.3125;
+    font-weight: $font-weight--normal;
+    line-height: inherit;
+    margin: 0;
   }
-}
-@mixin reset-heading {
-  font-size: 1rem;
-  font-weight: $font-weight--normal;
-  line-height: inherit;
-  margin: 0;
 }

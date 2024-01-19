@@ -63,11 +63,12 @@ libraries-extend:
     - upanupstarter/nav--footer
     - upanupstarter/nav--header
     - upanupstarter/nav--main
-    - upanupstarter/nav--pager
     - upanupstarter/nav--social
     - upanupstarter/nav--submenu-trigger
   upanupbase/nav--breadcrumbs:
     - upanupstarter/nav--breadcrumbs
+  upanupbase/nav--pager:
+    - upanupstarter/nav--pager
   upanupbase/nav--section:
     - upanupstarter/nav--section
   upanupbase/nav--tabs:
@@ -80,6 +81,8 @@ libraries-extend:
     - upanupstarter/sidebar-accordion
   upanupbase/swiper:
     - upanupstarter/slider
+  upanupbase/view:
+    - upanupstarter/view
   upanupbase/cookie-consent:
     - upanupstarter/cookie-consent
   fullcalendar_view/libraries.fullcalendar:
