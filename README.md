@@ -34,6 +34,11 @@ Example:
 
 ### [Unreleased]
 
+### [4.0.1] - 2024-01-19
+
+#### Fixed
+- Added `!important` to `left: auto` and `right: auto` for mobile menu third-level items to stop them from appearing off screen
+
 ### [4.0.0] - 2024-01-19
 
 #### Changed
