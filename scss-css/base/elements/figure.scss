@@ -1,12 +1,12 @@
 @import "../../variables/variables";
 
 figure {
-  img {display: block;}
   figcaption {
     background-color: $bg--medium;
     padding: 16px;
   }
   &.caption {
-    margin: 0 0 $default-margin 0;
+    margin-bottom: $default-margin;
   }
+
 }
