@@ -34,6 +34,15 @@ Example:
 
 ### [Unreleased]
 
+### [4.1.0] - 2024-02-13
+
+#### Fixed
+- Fixed/improved media alignment on images within WYSIWYG
+
+#### Changed
+- Adjusted conditional check for both hours and label in hours block (so each could appear independently)
+
+
 ### [4.0.1] - 2024-01-19
 
 #### Fixed
