@@ -34,14 +34,14 @@ Example:
 
 ### [Unreleased]
 
-### [4.1.0] - 2024-02-13
+### [4.1.0] - 2024-02-14
 
 #### Fixed
-- Fixed/improved media alignment on images within WYSIWYG
+- Fixed/improved <figure> media images where WYSIWYG applies .align-{direction} class (adjusted float, margins and mobile appearance)
 
 #### Changed
 - Adjusted conditional check for both hours and label in hours block (so each could appear independently)
-
+- Added default margin below wysiwyg images without captions
 
 ### [4.0.1] - 2024-01-19
 

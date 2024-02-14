@@ -5,8 +5,11 @@ figure {
     background-color: $bg--medium;
     padding: 16px;
   }
-  &.caption {
-    margin-bottom: $default-margin;
-  }
-
+}
+.text-formatted>.field__item{
+    >figure, >article.media  {
+        &:not(:last-child){
+          margin-bottom: $default-margin;
+        }      
+    }
 }
