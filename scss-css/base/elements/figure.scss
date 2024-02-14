@@ -1,12 +1,15 @@
 @import "../../variables/variables";
 
 figure {
-  img {display: block;}
   figcaption {
     background-color: $bg--medium;
     padding: 16px;
   }
-  &.caption {
-    margin: 0 0 $default-margin 0;
-  }
+}
+.text-formatted>.field__item{
+    >figure, >article.media  {
+        &:not(:last-child){
+          margin-bottom: $default-margin;
+        }      
+    }
 }
