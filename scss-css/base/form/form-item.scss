@@ -3,6 +3,12 @@
 
 .form-item {
   margin: $default-margin 0;
+  &:first-child{
+    margin-top: 0;
+  }
+  &:last-child{
+    margin-bottom: 0;
+  } 
   label,
   legend {
     color:$font;
@@ -18,10 +24,4 @@
       font-weight: $icon-weight--solid;
     }
   }
-}
-
-.form--inline {
-  > .form-item {
-    margin: 24px 0;
-  }
-}
+} 

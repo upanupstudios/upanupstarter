@@ -9,10 +9,6 @@
   }
 }
 
-.form-wrapper:not(.form-actions) {
-  > * {margin: 24px 0;}
-}
-
 .webform-element-help {
   &::before {
     @include icon('\f059');
