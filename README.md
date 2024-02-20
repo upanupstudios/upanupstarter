@@ -34,6 +34,11 @@ Example:
 
 ### [Unreleased]
 
+### [4.1.1] - 2024-02-16
+
+#### Fixed
+- Margin adjustments to improve spacing of webform elements
+
 ### [4.1.0] - 2024-02-14
 
 #### Fixed
