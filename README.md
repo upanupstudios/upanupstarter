@@ -34,6 +34,11 @@ Example:
 
 ### [Unreleased]
 
+### [4.1.2] - 2024-02-29
+
+#### Changed
+- Changed Font Awesome kit js
+
 ### [4.1.1] - 2024-02-16
 
 #### Fixed
