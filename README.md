@@ -34,10 +34,17 @@ Example:
 
 ### [Unreleased]
 
+<<<<<<< HEAD
 ### [4.1.2] - 2024-02-29
 
 #### Changed
 - Changed Font Awesome kit js
+=======
+### [4.2.0] - 2024-03-07
+
+#### Added
+- Added `tabs` library to add styling to similar library in `upanupbase`
+>>>>>>> feature/tabs
 
 ### [4.1.1] - 2024-02-16
 

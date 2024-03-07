@@ -248,6 +248,12 @@ slider:
   css:
     component:
       scss-css/component/slider/controls.css: {}
+tabs:
+  version: 1.x
+  css:
+    theme:
+      scss-css/component/tabs/list.css: {}
+      scss-css/component/tabs/panel.css: {}
 view:
   version: 1.x
   css:

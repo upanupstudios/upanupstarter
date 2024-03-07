@@ -1,0 +1,24 @@
+@import "../../variables/variables";
+
+.tabs-component__list {
+  &-item {
+    background-color: $grey--light;
+    a {padding: 9px 24px 10px 24px;}
+    &--selected {
+      background-color: $white;
+      border: 1px solid $border;
+      border-bottom: 0;
+      position: relative;
+      &::after {
+        content:'';
+        
+        background-color: inherit;
+        bottom: -1px;
+        height: 1px;
+        left: 0;
+        position: absolute;
+        width: 100%;
+      }
+    }
+  }
+}

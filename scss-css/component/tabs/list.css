@@ -1,0 +1,1 @@
+.tabs-component__list-item{background-color:#e5e5e5}.tabs-component__list-item a{padding:9px 24px 10px 24px}.tabs-component__list-item--selected{background-color:#fff;border:1px solid #8c8c8c;border-bottom:0;position:relative}.tabs-component__list-item--selected::after{content:"";background-color:inherit;bottom:-1px;height:1px;left:0;position:absolute;width:100%}
