@@ -34,6 +34,11 @@ Example:
 
 ### [Unreleased]
 
+### [4.2.0] - 2024-03-07
+
+#### Added
+- Added `tabs` library to add styling to similar library in `upanupbase`
+
 ### [4.1.1] - 2024-02-16
 
 #### Fixed
