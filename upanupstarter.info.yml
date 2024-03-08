@@ -83,6 +83,10 @@ libraries-extend:
     - upanupstarter/slider
   upanupbase/tabs:
     - upanupstarter/tabs
+  upanupbase/toc:
+    - upanupstarter/toc
+  upanupbase/toc.back_to_top:
+    - upanupstarter/toc.back_to_top
   upanupbase/view:
     - upanupstarter/view
   upanupbase/cookie-consent:

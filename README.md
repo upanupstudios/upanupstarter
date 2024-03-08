@@ -34,6 +34,11 @@ Example:
 
 ### [Unreleased]
 
+### [4.3.0] - 2024-03-08
+
+#### Added
+- Added libraries for new "table of contents" component
+
 ### [4.2.0] - 2024-03-07
 
 #### Added

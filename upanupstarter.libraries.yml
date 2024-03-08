@@ -254,6 +254,16 @@ tabs:
     theme:
       scss-css/component/tabs/list.css: {}
       scss-css/component/tabs/panel.css: {}
+toc:
+  version: 1.x
+  css:
+    theme:
+      scss-css/component/toc/nav.css: {}
+toc.back_to_top:
+  version: 1.x
+  css:
+    theme:
+      scss-css/component/toc/back-to-top.css: {}
 view:
   version: 1.x
   css:
