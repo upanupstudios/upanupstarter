@@ -2,7 +2,11 @@
 @import "../../mixins/mixins";
 
 input[type="date"],
-input[type="time"] {-webkit-appearance: none;}
+input[type="time"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  min-height: 1.2em;
+}
 
 input[type="text"],
 input[type="email"],
