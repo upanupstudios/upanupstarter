@@ -34,6 +34,11 @@ Example:
 
 ### [Unreleased]
 
+### [4.3.1] - 2024-03-11
+
+#### Added
+- Added appearance styling for webkit and moz to date/time inputs to fix iOS bug
+
 ### [4.3.0] - 2024-03-08
 
 #### Added
