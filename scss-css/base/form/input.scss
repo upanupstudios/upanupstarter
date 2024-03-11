@@ -1,6 +1,9 @@
 @import "../../variables/variables";
 @import "../../mixins/mixins";
 
+input[type="date"],
+input[type="time"] {-webkit-appearance: none;}
+
 input[type="text"],
 input[type="email"],
 input[type="password"],
