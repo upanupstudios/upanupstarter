@@ -34,6 +34,11 @@ Example:
 
 ### [Unreleased]
 
+### [4.4.0] - 2024-03-12
+
+#### Added
+- Library override for `calendar-view.default.css` to apply some slightly opionionated stlying
+
 ### [4.3.1] - 2024-03-11
 
 #### Added

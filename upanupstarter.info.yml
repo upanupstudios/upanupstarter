@@ -95,5 +95,12 @@ libraries-extend:
     - upanupstarter/full-calendar
   fullcalendar_block/fullcalendar:
     - upanupstarter/full-calendar
+
+libraries-override:
+  calendar_view/calendar:
+    css:
+      component:
+        css/calendar-view.default.css: scss-css/component/calendar/calendar-view-default.css
+
 ckeditor5-stylesheets:
   - scss-css/ckeditor.css
