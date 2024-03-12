@@ -34,6 +34,11 @@ Example:
 
 ### [Unreleased]
 
+### [4.4.1] - 2024-03-12
+
+#### Removed
+- Removed bold font weight on smartdate, date fields in content due to collateral
+
 ### [4.4.0] - 2024-03-12
 
 #### Added

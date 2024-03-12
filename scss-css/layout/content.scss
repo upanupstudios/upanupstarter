@@ -30,8 +30,6 @@ body[class*="page-node-type-"]:not(.page-node-type-page).path-node {
         p:last-of-type {margin-bottom: 0;}
       }
     }
-    .field--type-datetime,
-    .field--type-smartdate {font-weight: $font-weight--bold;}
     .file {
       &.file--application-pdf:before {@include icon('\f1c1');}
       &.file--x-office-document:before {@include icon('\f1c2');}
