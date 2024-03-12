@@ -268,6 +268,7 @@ view:
   version: 1.x
   css:
     component:
+      scss-css/component/view/ajax.css: {}
       scss-css/component/view/filters.css: {}
       scss-css/component/view/list-view/list-view--compact.css: {}
       scss-css/component/view/list-view/list-view.css: {}
