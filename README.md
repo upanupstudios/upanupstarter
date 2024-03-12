@@ -34,6 +34,11 @@ Example:
 
 ### [Unreleased]
 
+### [4.4.2] - 2024-03-12
+
+#### Fixed
+- Mobile Safari: Select font color, Date and Time input font color and minimum heights + widths.
+
 ### [4.4.1] - 2024-03-12
 
 #### Removed
