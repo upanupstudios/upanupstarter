@@ -54,6 +54,9 @@
           position: absolute;
           top: 0;
           width: 100%;
+          &[data-drupal-selector*=edit-submit] {
+            padding: 0;
+          }
         }
       }
     }
