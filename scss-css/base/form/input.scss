@@ -25,6 +25,7 @@ textarea {
   border-radius: 0px;
   font-family: $font-family--primary;
   padding: 13px;
+  color: $font;
   &:focus {
     @include focus--input;
   }
