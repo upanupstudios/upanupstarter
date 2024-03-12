@@ -34,6 +34,12 @@ Example:
 
 ### [Unreleased]
 
+### [4.4.3] - 2024-03-12
+
+#### Fixed
+- Removed padding on header search input submit to rectify odd spacing on some sites
+- Added ajax styling so base ajax gif is being used
+
 ### [4.4.2] - 2024-03-12
 
 #### Fixed
