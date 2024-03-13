@@ -27,6 +27,13 @@
           border: 0;
           width: 100%;
           min-height: 44px;
+          padding-right: 32px;
+          &.form-autocomplete:not(.ui-autocomplete-loading) {background-image: none;}
+          &.form-autocomplete.ui-autocomplete-loading {
+            background-image: url('../../../images/throbber-active.gif');
+            background-size: 24px;
+            background-position: calc(100% - 4px) center;
+          }
           &:focus {
             @include focus--input($offset:-2px);
           }
