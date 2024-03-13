@@ -34,6 +34,14 @@ Example:
 
 ### [Unreleased]
 
+### [4.4.4] - 2024-03-13
+
+#### Fixed
+- Corrected line height to `<p>` tags within blockquotes
+
+#### Changed
+- Changed out core search autocomplete ajax throbber to base themed one, and hid when not active
+
 ### [4.4.3] - 2024-03-12
 
 #### Fixed
