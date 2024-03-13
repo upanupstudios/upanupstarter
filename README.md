@@ -34,6 +34,11 @@ Example:
 
 ### [Unreleased]
 
+### [4.4.5] - 2024-03-13
+
+#### Changed
+- Updates to calendar styling
+
 ### [4.4.4] - 2024-03-13
 
 #### Fixed

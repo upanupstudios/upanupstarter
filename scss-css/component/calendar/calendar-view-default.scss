@@ -54,18 +54,12 @@
   border: 1px solid var(--calendar-view-color-grey);
 }
 
-.calendar-view-table thead th {
-  background: var(--calendar-view-color-dark);
-}
-
 .calendar-view-table th {
   width: 100%;
   padding: 1rem 0.5rem;
   font-size: 0.8125rem;
   line-height: 2;
   text-align: center;
-  text-transform: uppercase;
-  color: var(--calendar-view-color-white);
   border-color: transparent;
 }
 
@@ -132,7 +126,24 @@
   border-top: 1px solid var(--calendar-view-color-grey);
   color: var(--calendar-view-color-dark);
   text-decoration: none;
-  &:first-child {border-top: 0;}
+  order: 1;
+  &:first-child:not(.is-multi) {border-top: 0;}
+  &.is-multi {
+    order: 0;
+    &--first {
+      border: 1px solid var(--calendar-view-color-grey);
+      border-right: 0;
+    }
+    &--middle {
+      border: 1px solid var(--calendar-view-color-grey);
+      border-left: 0;
+      border-right: 0;
+    }
+    &--last {
+      border: 1px solid var(--calendar-view-color-grey);
+      border-left: 0;
+    }
+  }
 }
 
 .calendar-view-table .calendar-view-day__row > * {
@@ -229,9 +240,6 @@
     align-self: flex-start;
   }
 
-  .calendar-view-pager {
-    flex-direction: column;
-  }
 }
 
 [data-calendar-view-day]:hover .calendar-view-day__number, [data-calendar-view-day]:active .calendar-view-day__number, [data-calendar-view-day]:focus .calendar-view-day__number {
