@@ -25,6 +25,7 @@
   }
 }
 .cc_message {margin: 0;}
-.cc_btn {
+body:not(.type--dark_site) .cc_btn {
   @include button--ui('\f00d');
 }
+body.type--dark_site .cc_btn {@include button--ui(false);}

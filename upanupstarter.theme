@@ -238,18 +238,12 @@ function upanupstarter_preprocess_block(&$variables) {
 function upanupstarter_page_attachments_alter(array &$attachments) {
   
   if (($node = \Drupal::routeMatch()->getParameter('node')) && is_object($node) && ($node->bundle() == 'dark_site')) {
-    // Conditionally remove an asset.
-    if (in_array('upanupstarter/global', $attachments['#attached']['library'])) {
-      $global = array_search('upanupstarter/global', $attachments['#attached']['library']);
-      $fonts = array_search('upanupstarter/fonts', $attachments['#attached']['library']);
-      $links_block = array_search('upanupstarter/links-block', $attachments['#attached']['library']);
-      $quicklink = array_search('upanupstarter/quicklink', $attachments['#attached']['library']);
-      $tippy = array_search('upanupstarter/tippy', $attachments['#attached']['library']);
-      unset($attachments['#attached']['library'][$global]);
-      unset($attachments['#attached']['library'][$fonts]);
-      unset($attachments['#attached']['library'][$links_block]);
-      unset($attachments['#attached']['library'][$quicklink]);
-      unset($attachments['#attached']['library'][$tippy]);
+    $libraries_array = array('upanupbase/modal','upanupbase/nav','upanupbase/search','upanupbase/accordion','upanupstarter/global','upanupstarter/fonts','upanupstarter/links_block','upanupstarter/quicklink','upanupstarter/tippy');
+    foreach($libraries_array as $library) {
+      if(in_array($library, $attachments['#attached']['library'])) {
+        $library = array_search($library, $attachments['#attached']['library']);
+        unset($attachments['#attached']['library'][$library]);
+      }
     }
   }
   

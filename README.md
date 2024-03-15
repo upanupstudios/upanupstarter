@@ -34,6 +34,11 @@ Example:
 
 ### [Unreleased]
 
+### [4.5.1] - 2024-03-15
+
+#### Added
+- Added `dark-site.scss` to compile the scss/css in the `dark_site` library into one css file for use on a static dark site
+
 ### [4.5.0] - 2024-03-15
 
 #### Added

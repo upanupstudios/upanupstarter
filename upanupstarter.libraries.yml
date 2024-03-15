@@ -104,7 +104,7 @@ dark_site:
       scss-css/base/typography/lists.css: {}
       scss-css/base/body.css: {}
       scss-css/base/body--print.css: { media: print }
-      scss-css/base/html.css: {}
+      scss-css/state/dark-site/html.css: {}
     layout:
       scss-css/layout/container.css: {}
       scss-css/layout/content.css: {}
@@ -118,8 +118,6 @@ dark_site:
       scss-css/state/dark-site/icons.css: {}
     state:
       scss-css/state/admin/toolbar-menu.css: {}
-  dependencies:
-    - core/jquery
 dynamic-quicklinks:
   version: 1.x
   css:
