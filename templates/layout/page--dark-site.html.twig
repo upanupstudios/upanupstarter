@@ -1,0 +1,25 @@
+{{ attach_library('upanupstarter/dark_site') }}
+<header class="header" id="header">
+  <div class="container">
+    <div class="header__logo">{{ page.logo }}</div>
+		{% if node.field_link.0 %}<a href="{{ node.field_link.0.url }}">{{ node.field_link.0.title }}</a>{% endif %}
+  </div>
+</header>
+<main role="main" class="main">
+	{% if page.highlighted|render is not empty %}
+	<section class="messages-wrapper">
+		<div class="container">{{ page.highlighted }}</div>
+	</section>
+	{% endif %}
+  <div class="container">
+		<div class="content content--fw" id="main-content">
+			{{ page.help }}
+			{{ page.content }}
+		</div>
+  </div>
+</main>
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <p class="footer__copyright">&copy; {{ site_name }} {{ "now"|date("Y") }}</p>
+  </div>
+</footer>

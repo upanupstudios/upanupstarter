@@ -91,6 +91,35 @@ content-row:
   css:
     component:
       scss-css/component/content-row/content-row.css: {}
+dark_site:
+  version: 1.x
+  css:
+    base:
+      scss-css/base/elements/button.css: {}
+      scss-css/base/elements/table.css: {}
+      scss-css/base/typography/blockquote.css: {}
+      scss-css/base/typography/copy.css: {}
+      scss-css/base/typography/headings.css: {}
+      scss-css/base/typography/links.css: {}
+      scss-css/base/typography/lists.css: {}
+      scss-css/base/body.css: {}
+      scss-css/base/body--print.css: { media: print }
+      scss-css/base/html.css: {}
+    layout:
+      scss-css/layout/container.css: {}
+      scss-css/layout/content.css: {}
+      scss-css/layout/main.css: {}
+      scss-css/state/dark-site/footer.css: {}
+      scss-css/component/header/header.css: {}
+      scss-css/state/dark-site/header.css: {}
+    component:
+      scss-css/base/elements/figure.css: {}
+      scss-css/component/header/logo.css: {}
+      scss-css/state/dark-site/icons.css: {}
+    state:
+      scss-css/state/admin/toolbar-menu.css: {}
+  dependencies:
+    - core/jquery
 dynamic-quicklinks:
   version: 1.x
   css:

@@ -1,11 +1,12 @@
 @import "../../variables/variables";
 @import "../../mixins/mixins";
-
-.messages {
-  &-wrapper {
-    > .container {
-      padding: 0 calc(#{$container-padding} / 2);
-      @include max($breakpoint--l) {padding: 0 $container-padding;}
+body:not(.type--dark_site) {
+  .messages {
+    &-wrapper {
+      > .container {
+        padding: 0 calc(#{$container-padding} / 2);
+        @include max($breakpoint--l) {padding: 0 $container-padding;}
+      }
     }
   }
 }
