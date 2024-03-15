@@ -34,6 +34,11 @@ Example:
 
 ### [Unreleased]
 
+### [4.5.0] - 2024-03-15
+
+#### Added
+- Templates, styling for 'dark site' nodes
+
 ### [4.4.5] - 2024-03-13
 
 #### Changed
