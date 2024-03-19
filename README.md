@@ -34,6 +34,11 @@ Example:
 
 ### [Unreleased]
 
+### [4.5.2] - 2024-03-19
+
+#### Changed
+- Changed `page--front.html.twig` to `page--homepage.html.twig` to avoid issues with non-_Homepage_ nodes being used as the front page
+
 ### [4.5.1] - 2024-03-15
 
 #### Added
