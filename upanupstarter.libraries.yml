@@ -118,6 +118,8 @@ dark_site:
       scss-css/state/dark-site/icons.css: {}
     state:
       scss-css/state/admin/toolbar-menu.css: {}
+  dependencies:
+    - core/jquery
 dynamic-quicklinks:
   version: 1.x
   css:

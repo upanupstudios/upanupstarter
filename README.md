@@ -34,6 +34,11 @@ Example:
 
 ### [Unreleased]
 
+### [4.5.3] - 2024-03-20
+
+#### Fixed
+- Added jQuery as dependency on `dark_site` library to fix console errors coming from `upanupbase/base` library JS
+
 ### [4.5.2] - 2024-03-19
 
 #### Changed
