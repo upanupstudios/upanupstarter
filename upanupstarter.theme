@@ -238,7 +238,7 @@ function upanupstarter_preprocess_block(&$variables) {
 function upanupstarter_page_attachments_alter(array &$attachments) {
   
   if (($node = \Drupal::routeMatch()->getParameter('node')) && is_object($node) && ($node->bundle() == 'dark_site')) {
-    $libraries_array = array('upanupbase/modal','upanupbase/nav','upanupbase/search','upanupbase/accordion','upanupstarter/global','upanupstarter/fonts','upanupstarter/links_block','upanupstarter/quicklink','upanupstarter/tippy');
+    $libraries_array = array('upanupbase/hidden-sidebar','upanupbase/mobile-search-trigger','upanupbase/view-reset','upanupbase/modal','upanupbase/nav','upanupbase/search','upanupbase/accordion','upanupstarter/global','upanupstarter/fonts','upanupstarter/links_block','upanupstarter/quicklink','upanupstarter/tippy');
     foreach($libraries_array as $library) {
       if(in_array($library, $attachments['#attached']['library'])) {
         $library = array_search($library, $attachments['#attached']['library']);
