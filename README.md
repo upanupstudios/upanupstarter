@@ -34,6 +34,11 @@ Example:
 
 ### [Unreleased]
 
+### [4.5.3] - 2024-03-22
+
+### Fixed
+- Added missing focus appearance for scrollable tables
+
 ### [4.5.2] - 2024-03-19
 
 #### Changed
