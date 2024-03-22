@@ -58,6 +58,10 @@ table {
 /* [ SCROLLABLE ] ----------*/
 .scrollable {
   margin-bottom: $default-margin;
+  >div:focus{ 
+      @include focus;
+      outline-offset: -2px;//due to overflow hidden   
+  }
 }
 
 .tabledrag {
