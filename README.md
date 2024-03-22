@@ -34,6 +34,11 @@ Example:
 
 ### [Unreleased]
 
+### [4.5.4] - 2024-03-22
+
+### Changed
+- Changed dynamic quicklinks filter selector to be more universal (to accommodate new upanupbase a11y markup adjustments)
+
 ### [4.5.3] - 2024-03-22
 
 ### Fixed
