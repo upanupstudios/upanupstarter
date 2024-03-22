@@ -2,9 +2,19 @@
 
 .dynamic-quicklinks__filter {
   @include unset-list;
-  @include max($breakpoint--l) {display: none;}
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+  @include max($breakpoint--l) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
   li {
     margin: 0;
+    width: 100%;
+    @include max($breakpoint--l) {width: auto;}
     > * {
       width: 100%;
       line-height: 1.15;
@@ -12,11 +22,5 @@
       &:active:focus {outline: none;}
       &:focus {@include focus--light;}
     }
-    + li {margin-top: 19px;}
-  }
-  &--mobile {
-    display: none;
-    @include max($breakpoint--l) {display: block;}
-    select:focus {@include focus--light;}
   }
 }

@@ -10,7 +10,7 @@
   width: 100%;
   @include max($breakpoint--l) {
     flex-direction: column;
-    transform: translateX(calc(#{$container-padding--negative} *1.5));
-    width: calc(100% + (#{$container-padding} * 3));
+    transform: translateX($container-padding--negative);
+    width: calc(100% + (#{$container-padding} * 2));
   }
 }

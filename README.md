@@ -34,6 +34,17 @@ Example:
 
 ### [Unreleased]
 
+### [5.0.0] - 2024-03-22
+
+#### Added
+- Removed margin on first content row if it's the next element after the page title
+
+#### Changed
+- Styling updated for new dynamic quicklinks mobile filter markup (same as desktop)
+
+#### Fixed
+- Fixed styling for checkbox, radio elements with title's shown before the input
+
 ### [4.5.4] - 2024-03-22
 
 ### Changed

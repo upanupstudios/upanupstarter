@@ -7,3 +7,5 @@
   }
   .field--name-field-row-component:not(:first-child) {margin-top: $default-margin;}
 }
+
+.block-page-title-block + * > article > .node__content > .content-rows > .content-row:first-child {margin-top: 0;}
