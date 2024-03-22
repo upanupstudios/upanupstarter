@@ -5,8 +5,9 @@
   @include max($breakpoint--l) {display: none;}
   li {
     margin: 0;
-    button {
+    > * {
       width: 100%;
+      line-height: 1.15;
       &:hover:focus {outline: none;}
       &:active:focus {outline: none;}
       &:focus {@include focus--light;}
