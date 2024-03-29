@@ -10,6 +10,7 @@ global:
       scss-css/base/typography/links.css: {}
       scss-css/base/typography/lists.css: {}
       scss-css/base/body.css: {}
+      scss-css/base/body--print.css: { media: print }
       scss-css/base/html.css: {}
       scss-css/base/form/checkbox.css: {}
       scss-css/base/form/fieldset.css: {}
@@ -24,6 +25,8 @@ global:
       scss-css/layout/content.css: {}
       scss-css/layout/main.css: {}
       scss-css/layout/sidebar.css: {}
+    component:
+      scss-css/base/elements/figure.css: {}
     state:
       scss-css/state/admin/toolbar-menu.css: {}
       scss-css/state/homepage.css: {}
@@ -35,13 +38,14 @@ fonts:
     theme:
       '//fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap': { type: external, minified: true }
   js:
-    https://kit.fontawesome.com/5cfddd6fef.js: {}
+    https://kit.fontawesome.com/9b0411e272.js: {}
 accordion:
   version: 1.x
   css:
     component:
       scss-css/component/accordion/accordion-group.css: {}
       scss-css/component/accordion/accordion.css: {}
+      scss-css/component/accordion/accordion--print.css: { media: print }
 accordion-group-toggle:
   version: 1.x
   css:
@@ -87,6 +91,33 @@ content-row:
   css:
     component:
       scss-css/component/content-row/content-row.css: {}
+dark_site:
+  version: 1.x
+  css:
+    base:
+      scss-css/base/elements/button.css: {}
+      scss-css/base/elements/table.css: {}
+      scss-css/base/typography/blockquote.css: {}
+      scss-css/base/typography/copy.css: {}
+      scss-css/base/typography/headings.css: {}
+      scss-css/base/typography/links.css: {}
+      scss-css/base/typography/lists.css: {}
+      scss-css/base/body.css: {}
+      scss-css/base/body--print.css: { media: print }
+      scss-css/state/dark-site/html.css: {}
+    layout:
+      scss-css/layout/container.css: {}
+      scss-css/layout/content.css: {}
+      scss-css/layout/main.css: {}
+      scss-css/state/dark-site/footer.css: {}
+      scss-css/component/header/header.css: {}
+      scss-css/state/dark-site/header.css: {}
+    component:
+      scss-css/base/elements/figure.css: {}
+      scss-css/component/header/logo.css: {}
+      scss-css/state/dark-site/icons.css: {}
+    state:
+      scss-css/state/admin/toolbar-menu.css: {}
 dynamic-quicklinks:
   version: 1.x
   css:
@@ -121,6 +152,7 @@ header:
       scss-css/component/header/menu-wrapper.css: {}
       scss-css/component/header/nav-search-trigger.css: {}
       scss-css/component/header/row.css: {}
+      scss-css/component/header/header--print.css: { media: print }
 hours-block:
   version: 1.x
   css:
@@ -215,6 +247,7 @@ nav--tabs:
   css:
     component:
       scss-css/component/nav/tabs.css: {}
+      scss-css/component/nav/tabs--print.css: { media: print }
 notice:
   version: 1.x
   css:
@@ -242,10 +275,27 @@ slider:
   css:
     component:
       scss-css/component/slider/controls.css: {}
+tabs:
+  version: 1.x
+  css:
+    theme:
+      scss-css/component/tabs/list.css: {}
+      scss-css/component/tabs/panel.css: {}
+toc:
+  version: 1.x
+  css:
+    theme:
+      scss-css/component/toc/nav.css: {}
+toc.back_to_top:
+  version: 1.x
+  css:
+    theme:
+      scss-css/component/toc/back-to-top.css: {}
 view:
   version: 1.x
   css:
     component:
+      scss-css/component/view/ajax.css: {}
       scss-css/component/view/filters.css: {}
       scss-css/component/view/list-view/list-view--compact.css: {}
       scss-css/component/view/list-view/list-view.css: {}
@@ -258,7 +308,7 @@ cookie-consent:
 full-calendar:
   version: 1.x
   css:
-    component:
+    theme:
       scss-css/component/full-calendar/full-calendar.css: {}
 tippy:
   version: 1.x

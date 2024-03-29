@@ -35,6 +35,28 @@ input[type=radio] {
   }
 }
 
+.form-type-radio.form-item-title-before {
+  label {padding: 0.5rem 2rem 0.5rem 0rem;}
+  &:has(input[type=radio]:focus) {
+    label.option::before {@include focus;}
+  }
+  &:has(input[type=radio].error) {
+    label.option::before {color: $error;}
+  }
+  &:has(input[type=radio]:checked) {
+    label.option::before {
+      @include icon("\192");
+      font-weight: $font-weight--normal;
+    }
+  }
+  &:has(input[type=radio][disabled]) {
+    label.option::before {
+      color: $ui-icon;
+      font-weight: $icon-weight--solid;
+    }
+  }
+}
+
 .form-no-label {
   input[type=radio] {
     &:focus {

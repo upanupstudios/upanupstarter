@@ -2,9 +2,9 @@
 @import "../../mixins/mixins";
 
 .quicklink {
-  background-color: $int-bgc;
-  border: 1px solid $int-bdc;
-  color: $int-c;
+  background-color: $white;
+  border: 1px solid $link;
+  color: $link;
   padding: 16px;
   position: relative;
   @include transition("background-color, border-color, color");
@@ -36,13 +36,13 @@
     }
   }
   &:hover {
-    background-color: $int-bgc--hover;
-    border-color: $int-bdc--hover;
-    color: $int-c--hover;
+    background-color: $green--lighter;
+    border-color: $link--hover;
+    color: $link--hover;
   }
   &:active {
-    background-color: $int-bgc--active;
-    border-color: $int-bdc--active;
-    color: $int-c--active;
+    background-color: $purple--lighter;
+    border-color: $link--active;
+    color: $link--active;
   }
 }

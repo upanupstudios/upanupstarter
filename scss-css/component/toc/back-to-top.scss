@@ -1,0 +1,7 @@
+@import "../../mixins/mixins";
+@import "../../variables/variables";
+
+.toc__b2t {
+  @include button--emphasis;
+  margin-top: $default-margin;
+}

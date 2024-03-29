@@ -22,9 +22,9 @@
 }
 
 @mixin is-selected {
-  background-color: $active-bgc;
-  border-color: $active-bdc;
-  color: $active-c !important;
+  background-color: $teal--light;
+  border-color: $teal;
+  color: $font !important;
 }
 
 @mixin button {
@@ -34,14 +34,14 @@
   text-decoration: none;
   @include transition("background-color, border-color, color");
   &:hover {
-    @include underline;
+    @include underline--hover;
     &:focus {outline: none !important;}
   }
   &:focus {
     @include focus;
   }
   &:active {
-    @include underline;
+    @include underline--hover;
     &:focus {outline: none !important;}
   }
   &[disabled] {@include button--disabled;}
@@ -49,36 +49,36 @@
 
 @mixin button--default {
   @include button;
-  background-color: $int-bgc;
-  border: 2px solid $int-bdc;
-  color: $int-c !important;
+  background-color: $white;
+  border: 2px solid $link;
+  color: $link !important;
   &.is-selected {@include is-selected;}
   &:hover {
-    background-color: $int-bgc--hover;
-    border-color: $int-bdc--hover;
-    color: $int-c--hover !important;
+    background-color: $green--lighter;
+    border-color: $link--hover;
+    color: $link--hover !important;
   }
   &:active {
-    background-color: $int-bgc--active;
-    border-color: $int-bdc--active;
-    color: $int-c--active !important;
+    background-color: $purple--lighter;
+    border-color: $link--active;
+    color: $link--active !important;
   }
 }
 
 @mixin button--emphasis {
   @include button;
-  background-color: $int-bdc;
-  border: 2px solid $int-bdc;
+  background-color: $link;
+  border: 2px solid $link;
   color: $white !important;
   &.is-selected {@include is-selected;}
   &:hover {
-    background-color: $int-bdc--hover;
-    border-color: $int-bdc--hover;
+    background-color: $link--hover;
+    border-color: $link--hover;
     color: $white !important;
   }
   &:active {
-    background-color: $int-bdc--active;
-    border-color: $int-bdc--active;
+    background-color: $link--active;
+    border-color: $link--active;
     color: $white !important;
   }
 }
@@ -87,7 +87,7 @@
   @include button;
   background-color: transparent;
   border-color: transparent;
-  color: $int-c;
+  color: $link;
   padding: 13px;
   @if($icon) {
     padding: 13px 2.125rem 13px 13px;
@@ -154,12 +154,12 @@
     &:hover,
     &:active {background-color: transparent !important;}
   }
-  &:hover {color: $int-c--hover;}
-  &:active {color: $int-c--active;}
+  &:hover {color: $link--hover;}
+  &:active {color: $link--active;}
 }
 
 @mixin button--ui--dark($icon) {
   @include button--ui($icon);
   @include link--dark;
-  &[disabled] {color: $int-c--disabled--dark;}
+  &[disabled] {color: $grey;}
 }

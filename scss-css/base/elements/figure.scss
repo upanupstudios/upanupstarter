@@ -1,0 +1,15 @@
+@import "../../variables/variables";
+
+figure {
+  figcaption {
+    background-color: $bg--medium;
+    padding: 16px;
+  }
+}
+.text-formatted>.field__item{
+    >figure, >article.media  {
+        &:not(:last-child){
+          margin-bottom: $default-margin;
+        }      
+    }
+}

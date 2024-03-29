@@ -1,0 +1,25 @@
+a[target="_blank"]::after {
+  content:'(opens in a new tab)' !important;
+  font-family: inherit !important;
+  margin-left: 0.25rem;
+}
+
+.messages {
+  padding: 16px !important;
+  &::before {display: none !important;}
+  &__close {
+    &::after {display: none !important;}
+    margin: -13px !important;
+    padding: 13px !important;
+  }
+}
+
+body[class*="page-node-type-"]:not(.page-node-type-page).path-node {
+  .content .region-content .node__content {
+    .file {
+      &.file--application-pdf:before {display: none !important;}
+      &.file--x-office-document:before {display: none !important;}
+      &.file--x-office-spreadsheet:before {display: none !important;}
+    }
+  }
+}

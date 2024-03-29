@@ -1,0 +1,7 @@
+.toc {
+  &__list {
+    &-item {
+      + .toc__list-item {margin-top: 0.5rem;}
+    }
+  }
+}

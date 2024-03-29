@@ -1,8 +1,8 @@
 @import "../../variables/variables";
 @import "../../mixins/mixins";
 
-.form-type-checkbox {
-  label.option {
+.form-item.form-type-checkbox {
+  label {
     color:$font;
     font-weight: $font-weight--normal;
     padding: 0.5rem 0.5rem 0.5rem 2rem;
@@ -15,23 +15,45 @@
 }
 
 input[type=checkbox] {
-  &:focus ~ label.option::before {
+  &:focus ~ label::before {
     @include focus;
   }
   &.error {
-    ~ label.option::before {
+    ~ label::before {
       color: $error;
     }
   }
-  &:checked ~ label.option {
+  &:checked ~ label {
     &::before {
       @include icon("\f14a");
       font-weight: $font-weight--normal;
     }
   }
-  &[disabled] ~ label.option::before {
+  &[disabled] ~ label::before {
     color: $ui-icon;
     font-weight: $icon-weight--solid;
+  }
+}
+
+.form-item.form-type-checkbox.form-item-title-before {
+  label {padding: 0.5rem 2rem 0.5rem 0rem;}
+  &:has(input[type=checkbox]:focus) {
+    label::before {@include focus;}
+  }
+  &:has(input[type=checkbox].error) {
+    label::before {color: $error;}
+  }
+  &:has(input[type=checkbox]:checked) {
+    label::before {
+      @include icon("\f14a");
+      font-weight: $font-weight--normal;
+    }
+  }
+  &:has(input[type=checkbox][disabled]) {
+    label::before {
+      color: $ui-icon;
+      font-weight: $icon-weight--solid;
+    }
   }
 }
 

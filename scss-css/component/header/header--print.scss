@@ -1,0 +1,9 @@
+.header {
+  box-shadow: none !important;
+  &__row {
+    background-color: transparent !important;
+    &--top:has(.alerts-banner__trigger[aria-expanded="false"]) {display: none !important;}
+    &--middle {display: none !important;}
+  }
+  &__menu-wrapper {display: none !important;}
+}

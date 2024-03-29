@@ -34,6 +34,183 @@ Example:
 
 ### [Unreleased]
 
+### [5.0.0] - 2024-03-22
+
+#### Added
+- Removed margin on first content row if it's the next element after the page title
+
+#### Changed
+- Styling updated for new dynamic quicklinks mobile filter markup (same as desktop)
+
+#### Fixed
+- Fixed styling for checkbox, radio elements with title's shown before the input
+
+### [4.5.4] - 2024-03-22
+
+### Changed
+- Changed dynamic quicklinks filter selector to be more universal (to accommodate new upanupbase a11y markup adjustments)
+
+### [4.5.3] - 2024-03-22
+
+### Fixed
+- Added missing focus appearance for scrollable tables
+
+### [4.5.2] - 2024-03-19
+
+#### Changed
+- Changed `page--front.html.twig` to `page--homepage.html.twig` to avoid issues with non-_Homepage_ nodes being used as the front page
+
+### [4.5.1] - 2024-03-15
+
+#### Added
+- Added `dark-site.scss` to compile the scss/css in the `dark_site` library into one css file for use on a static dark site
+
+### [4.5.0] - 2024-03-15
+
+#### Added
+- Templates, styling for 'dark site' nodes
+
+### [4.4.5] - 2024-03-13
+
+#### Changed
+- Updates to calendar styling
+
+### [4.4.4] - 2024-03-13
+
+#### Fixed
+- Corrected line height to `<p>` tags within blockquotes
+
+#### Changed
+- Changed out core search autocomplete ajax throbber to base themed one, and hid when not active
+
+### [4.4.3] - 2024-03-12
+
+#### Fixed
+- Removed padding on header search input submit to rectify odd spacing on some sites
+- Added ajax styling so base ajax gif is being used
+
+### [4.4.2] - 2024-03-12
+
+#### Fixed
+- Mobile Safari: Select font color, Date and Time input font color and minimum heights + widths.
+
+### [4.4.1] - 2024-03-12
+
+#### Removed
+- Removed bold font weight on smartdate, date fields in content due to collateral
+
+### [4.4.0] - 2024-03-12
+
+#### Added
+- Library override for `calendar-view.default.css` to apply some slightly opionionated stlying
+
+### [4.3.1] - 2024-03-11
+
+#### Added
+- Added appearance styling for webkit and moz to date/time inputs to fix iOS bug
+
+### [4.3.0] - 2024-03-08
+
+#### Added
+- Added libraries for new "table of contents" component
+
+### [4.2.0] - 2024-03-07
+
+#### Added
+- Added `tabs` library to add styling to similar library in `upanupbase`
+
+### [4.1.2] - 2024-02-29
+
+#### Changed
+- Changed Font Awesome kit js
+
+### [4.1.1] - 2024-02-16
+
+#### Fixed
+- Margin adjustments to improve spacing of webform elements
+
+### [4.1.0] - 2024-02-14
+
+#### Fixed
+- Fixed/improved <figure> media images where WYSIWYG applies .align-{direction} class (adjusted float, margins and mobile appearance)
+
+#### Changed
+- Adjusted conditional check for both hours and label in hours block (so each could appear independently)
+- Added default margin below wysiwyg images without captions
+
+### [4.0.1] - 2024-01-19
+
+#### Fixed
+- Added `!important` to `left: auto` and `right: auto` for mobile menu third-level items to stop them from appearing off screen
+
+### [4.0.0] - 2024-01-19
+
+#### Changed
+- Print styling removed from individual files and into new `*--print.scss` files
+- Libraries updated with new `*--print.css` files
+- `upanupstarter.info.yml` updated with new libraries from `upanupbase`
+- Updated `libraries-extend` for `upanupbase/nav`
+
+### [3.1.2] - 2023-12-05
+
+#### Fixed
+- Removed Google Fonts line from `ckeditor5-stylesheets`, added `@import` of fonts in `ckeditor.scss`
+
+### [3.1.1] - 2023-11-30
+
+#### Added
+- Print styling for accordions
+
+#### Fixed
+- Removed straggling `$int` color variables
+
+### [3.1.0] - 2023-11-20
+
+#### Changed
+- Changed color variables: removed `$active-` and `$int-`, replaced w/ named variables (i.e. `$teal`)
+
+### [3.0.2] - 2023-11-03
+
+#### Fixed
+- Fixed button hover so it uses the `underline--hover` mixin
+
+### [3.0.1] - 2023-11-02
+
+#### Fixed
+- Removed `::after` icon on external links in CKEditor (given that Font Awesome is not loaded there)
+
+### [3.0.0] - 2023-10-31
+
+#### Changed
+- CKEditor styles now target CK5
+- D10 listed as core requirement
+
+### [2.5.1] - 2023-10-27
+
+#### Fixed
+- Fixed missing prefixes from last compilation
+
+#### Added
+- Added generic `figure`, `figcaption` styling
+
+### [2.5.0] - 2023-10-27
+
+#### Fixed
+- Fixed swiper js & image-slider css being included when swiper not present
+
+#### Changed
+- Included compatibility for single image to adopt content banner styling
+
+### [2.4.1] - 2023-10-20
+
+#### Changed
+- Changed outline style from `dashed` to `solid`
+
+### [2.4.0] - 2023-10-17
+
+#### Added
+- Added styling for Fullcalendar block
+
 ### [2.3.0] - 2023-08-29
 
 #### Fixed

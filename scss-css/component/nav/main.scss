@@ -12,18 +12,18 @@
   }    
   nav {
     .menu {
-      border-top: 1px solid $graphics;
+      border-top: 1px solid $border;
       display: none;
       &.is-overflowing {
         left: auto;
         right: 0;
         @include max($breakpoint--l) {
-          right: auto;
+          right: auto !important;
         }
         &.menu--level-2 {
           right: 100%;
           @include max($breakpoint--l) {
-            right: auto;
+            right: auto !important;
           }
         }
       }
@@ -55,9 +55,9 @@
         top: 0;
         width: 22rem;
         @include max($breakpoint--l) {
-          border-top: 1px solid $graphics;
+          border-top: 1px solid $border;
           box-shadow: none;
-          left: auto;
+          left: auto !important;
           padding: 0;
           position: relative;
           top: auto;
@@ -78,7 +78,7 @@
       }
       
       .menu__item {
-        border-bottom: 1px solid $graphics;
+        border-bottom: 1px solid $border;
         margin: 0;
         position: relative;
         &:last-child {border-bottom: 0;}
@@ -88,7 +88,7 @@
         &--level-0{
           border-bottom: 0;
           @include max($breakpoint--l) {
-            border-bottom: 1px solid $graphics;
+            border-bottom: 1px solid $border;
             width: 100%;
           }
           &.menu__item--expanded{
@@ -105,7 +105,7 @@
           }
           &.menu__item--active-trail > .menu__item-link-wrapper {
             &::after {
-              background-color: $active-bdc;
+              background-color: $teal;
               bottom: 0;
               content:'';
               height: 3px;
@@ -148,7 +148,7 @@
           }        
           > .is-active {
             &::before {
-              background-color: $active-bdc;
+              background-color: $teal;
               content:'';
               height: calc(100% - 8px);
               left: 0;

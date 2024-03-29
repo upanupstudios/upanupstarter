@@ -1,9 +1,9 @@
 @import "../../variables/variables";
 
 blockquote {
-  border-left: 3px solid $graphics;
+  border-left: 3px solid $border;
   font-size: 1.25rem;
-  line-height: 1.3;
   margin: 0 0 $default-margin 0;
   padding-left: 16px;
+  p {line-height: 1.3;}
 }

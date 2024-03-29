@@ -1,20 +1,25 @@
-@import "./variables/variables";
-@import "./base/elements/button";
-@import "./base/elements/table";
-@import "./base/typography/blockquote";
-@import "./base/typography/copy";
-@import "./base/typography/headings";
-@import "./base/typography/links";
-@import "./base/typography/lists";
-@import "./base/body";
-@import "./base/html";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap');
 
-body {
+.ck-content {
+
+  @import "./variables/variables";
+  @import "./base/elements/button";
+  @import "./base/elements/figure";
+  @import "./base/typography/blockquote";
+  @import "./base/typography/copy";
+  @import "./base/typography/headings";
+  @import "./base/typography/links";
+  @import "./base/typography/lists";
+  @import "./base/body";
+  @import "./base/html";
+
+  a[target="_blank"]::after {display: none;}
+
   font-family: $font-family--primary;
   color: $font;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  width: 100%;
-  max-width: 900px;
+  button, input, select, textarea {font-family: $font-family--primary;}
+  > * {max-width: $line-width;}
+
 }
-html, button, input, select, textarea {font-family: $font-family--primary;}

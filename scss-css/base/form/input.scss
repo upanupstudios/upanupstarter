@@ -1,6 +1,19 @@
 @import "../../variables/variables";
 @import "../../mixins/mixins";
 
+input[type="date"],
+input[type="time"] {
+  min-height: 51px;
+}
+
+input[type="time"] {
+  min-width: 86px;
+}
+
+input[type="date"] {
+  min-width: 111px;
+}
+
 input[type="text"],
 input[type="email"],
 input[type="password"],
@@ -14,10 +27,11 @@ input[type="url"],
 select,
 textarea {
   background: $bg--light;
-  border: 1px solid $graphics;
+  border: 1px solid $border;
   border-radius: 0px;
   font-family: $font-family--primary;
   padding: 13px;
+  color: $font;
   &:focus {
     @include focus--input;
   }

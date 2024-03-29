@@ -8,7 +8,7 @@
     li {
       + li::before {
         @include icon('\f105');
-        color: $graphics;
+        color: $border;
         font-weight: $icon-weight--normal;
         margin-right: 16px;
       }

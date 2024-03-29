@@ -222,6 +222,11 @@ function upanupstarter_preprocess_html(&$variables) {
   }
 }
 
+function upanupstarter_preprocess_page(&$variables) {
+  $config = \Drupal::config('system.site');
+  $variables['site_name'] = $config->get('name');
+}
+
 function upanupstarter_preprocess_block(&$variables) {
   $variables_array = array('social_link_1_icon','social_link_1_link','social_link_1_text','social_link_2_icon','social_link_2_link','social_link_2_text','social_link_3_icon','social_link_3_link','social_link_3_text','social_link_4_icon','social_link_4_link','social_link_4_text','social_link_5_icon','social_link_5_link','social_link_5_text','address','phone_1','phone_2','email_1','email_2','hours_1_label','hours_1','hours_2_label','hours_2','hours_3_label','hours_3');
   foreach($variables_array as &$value) {
@@ -230,6 +235,16 @@ function upanupstarter_preprocess_block(&$variables) {
   }
 }
 
-function upanupstarter_preprocess_views_view(&$variables) {
-  $variables['#attached']['library'][] = 'upanupstarter/view';
+function upanupstarter_page_attachments_alter(array &$attachments) {
+  
+  if (($node = \Drupal::routeMatch()->getParameter('node')) && is_object($node) && ($node->bundle() == 'dark_site')) {
+    $libraries_array = array('upanupbase/hidden-sidebar','upanupbase/mobile-search-trigger','upanupbase/view-reset','upanupbase/modal','upanupbase/nav','upanupbase/search','upanupbase/accordion','upanupstarter/global','upanupstarter/fonts','upanupstarter/links_block','upanupstarter/quicklink','upanupstarter/tippy');
+    foreach($libraries_array as $library) {
+      if(in_array($library, $attachments['#attached']['library'])) {
+        $library = array_search($library, $attachments['#attached']['library']);
+        unset($attachments['#attached']['library'][$library]);
+      }
+    }
+  }
+  
 }

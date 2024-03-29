@@ -17,14 +17,14 @@
     margin-bottom: 16px;
   }
   .menu {
-    border-top: 1px solid $graphics;
+    border-top: 1px solid $border;
     .menu__item {
-      border-bottom: 1px solid $graphics;
+      border-bottom: 1px solid $border;
       &:last-child {border-bottom: 0;}
       .menu__item-link-wrapper {
         >.is-active {
           &::before {
-            background-color: $active-bdc;
+            background-color: $teal;
             content:'';
             height: calc(100% - 8px);
             left: 0;

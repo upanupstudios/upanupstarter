@@ -19,9 +19,9 @@
       }
       &:not([class*="--"]) {
         a {
-          background-color: $int-bgc;
-          border: 1px solid $int-bdc;
-          color: $int-c;
+          background-color: $white;
+          border: 1px solid $link;
+          color: $link;
           display: inline-block;
           min-height: 44px;
           min-width: 44px;
@@ -29,36 +29,36 @@
           text-align: center;
           @include transition("background-color, border-color, color");
           &:hover {
-            background-color: $int-bgc--hover;
-            border-color: $int-bdc--hover;
-            color: $int-c--hover;
+            background-color: $green--lighter;
+            border-color: $link--hover;
+            color: $link--hover;
             &:focus {outline: none;}
           }
           &:active {
-            background-color: $int-bgc--active;
-            border-color: $int-bdc--active;
-            color: $int-c--active;
+            background-color: $purple--lighter;
+            border-color: $link--active;
+            color: $link--active;
             &:focus {outline: none;}
           }
         }
         &.is-active a {
           @include is-selected;
           &:hover {
-            background-color: $int-bgc--hover;
-            border-color: $int-bdc--hover;
-            color: $int-c--hover;
+            background-color: $green--lighter;
+            border-color: $link--hover;
+            color: $link--hover;
             &:focus {outline: none;}
           }
           &:active {
-            background-color: $int-bgc--active;
-            border-color: $int-bdc--active;
-            color: $int-c--active;
+            background-color: $purple--lighter;
+            border-color: $link--active;
+            color: $link--active;
             &:focus {outline: none;}
           }
         }
       }
       &.pager__item--ellipsis {
-        background-color: $int-bgc;
+        background-color: $white;
         display: inline-block;
         min-height: 44px;
         min-width: 44px;

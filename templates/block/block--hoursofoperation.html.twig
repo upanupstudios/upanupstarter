@@ -41,22 +41,22 @@
   {{ title_suffix }}
   {% block content %}
     {{ content }}
-    {% if hours_1 %}
+    {% if hours_1 or hours_1_label  %}
     <div class="hours-block">
       {% if hours_1_label %}<h3 class="h6">{{ hours_1_label }}</h3>{% endif %}
-      <p>{{ hours_1 }}</p>
+     {% if hours_1 %}<p>{{ hours_1 }}</p>{% endif %}
     </div>
     {% endif %}
-    {% if hours_2 %}
+    {% if hours_2 or hours_2_label %}
     <div class="hours-block">
       {% if hours_2_label %}<h3 class="h6">{{ hours_2_label }}</h3>{% endif %}
-      <p>{{ hours_2 }}</p>
+     {% if hours_2 %}<p>{{ hours_2 }}</p>{% endif %}
     </div>
     {% endif %}
-    {% if hours_3 %}
+    {% if hours_3 or hours_3_label %}
     <div class="hours-block">
       {% if hours_3_label %}<h3 class="h6">{{ hours_3_label }}</h3>{% endif %}
-      <p>{{ hours_3 }}</p>
+      {% if hours_3 %}<p>{{ hours_3 }}</p>{% endif %}
     </div>
     {% endif %}
   {% endblock %}

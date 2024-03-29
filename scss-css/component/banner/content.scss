@@ -8,7 +8,7 @@
   position: relative;
   z-index: 0;
   img {display: block;}
-  &__caption {
+  &__caption, figcaption{
     background-color: $bg--medium;
     display: block;
     padding: 13px 24px 13px calc(32px + 1rem);

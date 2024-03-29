@@ -2,7 +2,7 @@
 name: Upanup Starter Theme
 description: Upanup's starter theme
 type: theme
-core_version_requirement: ^8.8 || ^9
+core_version_requirement: ^8.8 || ^9 || ^10
 # Defines the base theme
 base theme: upanupbase
 
@@ -38,6 +38,8 @@ libraries-extend:
     - upanupstarter/accordion-group-toggle
   upanupbase/alert:
     - upanupstarter/alerts-banner
+  upanupbase/banner--content:
+    - upanupstarter/banner--content
   upanupbase/card:
     - upanupstarter/card
   upanupbase/content-row:
@@ -61,11 +63,12 @@ libraries-extend:
     - upanupstarter/nav--footer
     - upanupstarter/nav--header
     - upanupstarter/nav--main
-    - upanupstarter/nav--pager
     - upanupstarter/nav--social
     - upanupstarter/nav--submenu-trigger
   upanupbase/nav--breadcrumbs:
     - upanupstarter/nav--breadcrumbs
+  upanupbase/nav--pager:
+    - upanupstarter/nav--pager
   upanupbase/nav--section:
     - upanupstarter/nav--section
   upanupbase/nav--tabs:
@@ -78,10 +81,26 @@ libraries-extend:
     - upanupstarter/sidebar-accordion
   upanupbase/swiper:
     - upanupstarter/slider
+  upanupbase/tabs:
+    - upanupstarter/tabs
+  upanupbase/toc:
+    - upanupstarter/toc
+  upanupbase/toc.back_to_top:
+    - upanupstarter/toc.back_to_top
+  upanupbase/view:
+    - upanupstarter/view
   upanupbase/cookie-consent:
     - upanupstarter/cookie-consent
   fullcalendar_view/libraries.fullcalendar:
     - upanupstarter/full-calendar
-ckeditor_stylesheets:
-  - https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap
+  fullcalendar_block/fullcalendar:
+    - upanupstarter/full-calendar
+
+libraries-override:
+  calendar_view/calendar:
+    css:
+      component:
+        css/calendar-view.default.css: scss-css/component/calendar/calendar-view-default.css
+
+ckeditor5-stylesheets:
   - scss-css/ckeditor.css
