@@ -1,7 +1,7 @@
 {
     "name": "upanupstudios/upanupstarter",
     "description": "Upanup's starter theme",
-    "type": "drupal-custom-theme",
+    "type": "drupal-theme",
     "license": "GPL-2.0-or-later",
     "authors": [
         {
