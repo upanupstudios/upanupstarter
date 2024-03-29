@@ -1,0 +1,12 @@
+{
+    "name": "upanupstudios/upanupstarter",
+    "description": "Upanup's starter theme",
+    "type": "drupal-custom-theme",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Esrah Boulton"
+        }
+    ],
+    "require": {}
+}
