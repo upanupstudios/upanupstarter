@@ -34,6 +34,11 @@ Example:
 
 ### [Unreleased]
 
+### [6.0.1] - 2024-04-02
+
+#### Fixed
+- Fixed issue where the search form wasn't loading styling from a view filter CSS file
+
 ### [6.0.0] - 2024-04-02
 
 #### Added

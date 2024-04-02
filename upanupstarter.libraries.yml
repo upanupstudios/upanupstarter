@@ -265,6 +265,7 @@ search:
       scss-css/component/search/autocomplete.css: {}
       scss-css/component/search/form.css: {}
       scss-css/component/search/mobile-search-trigger.css: {}
+      scss-css/component/view/filters.css: {}
 sidebar-accordion:
   version: 1.x
   css:
