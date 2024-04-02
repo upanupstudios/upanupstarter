@@ -34,6 +34,14 @@ Example:
 
 ### [Unreleased]
 
+### [6.0.0] - 2024-04-02
+
+#### Added
+- Theme version to `upanupstarter.info.yml`
+
+#### Changed
+- Changed paths from `themes/custom` to `themes/contrib`
+
 ### [5.0.0] - 2024-03-22
 
 #### Added
