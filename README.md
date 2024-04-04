@@ -34,6 +34,11 @@ Example:
 
 ### [Unreleased]
 
+### [6.1.0] - 2024-04-03
+
+#### Changed
+- Changed font family from _Noto Sans_ to _BC Sans_
+
 ### [6.0.1] - 2024-04-02
 
 #### Fixed
