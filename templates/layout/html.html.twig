@@ -39,6 +39,11 @@
     <css-placeholder token="{{ placeholder_token }}">
     <js-placeholder token="{{ placeholder_token }}">
     <link rel="apple-touch-icon" href="/themes/contrib/upanupstarter/images/apple-touch.png" />
+    {% set feedbucket_state = config_pages_field('feedbucket','field_feedbucket_state','full') %}
+    {% set feedbucket_id = config_pages_field('feedbucket','field_feedbucket_id','full') %}
+    {% if feedbucket_state.0['#markup'] ==  '1' %}
+      <script defer src="https://cdn.feedbucket.app/assets/feedbucket.js" data-feedbucket="{{ feedbucket_id.0['#context'].value }}"></script>
+    {% endif %}
   </head>
   <body{{ attributes.addClass(body_classes) }}>
     {#

@@ -34,6 +34,11 @@ Example:
 
 ### [Unreleased]
 
+### [6.2.0] - 2024-03-10
+
+#### Added
+- Added Feedbucket boolean and token in `html.html.twig`
+
 ### [6.1.0] - 2024-04-03
 
 #### Changed
