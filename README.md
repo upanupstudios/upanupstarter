@@ -34,7 +34,12 @@ Example:
 
 ### [Unreleased]
 
-### [6.2.0] - 2024-03-10
+### [6.2.1] - 2024-04-26
+
+#### Fixed
+- Moved BC Sans stuff out of `_font-family.scss` and into it's own file so it can be included in `ckeditor.scss`
+
+### [6.2.0] - 2024-04-10
 
 #### Added
 - Added Feedbucket boolean and token in `html.html.twig`

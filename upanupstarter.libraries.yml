@@ -34,6 +34,9 @@ global:
   dependencies:
     - core/jquery
 fonts:
+  css:
+    base:
+      scss-css/base/typography/font-family.css: {}
   js:
     https://kit.fontawesome.com/9b0411e272.js: {}
 accordion:
