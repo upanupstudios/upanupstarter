@@ -1,6 +1,7 @@
 @import "../variables/variables";
 
 html {
+  color: $font;
   font-family: $font-family--primary;
   line-height: 1.5;
 }
