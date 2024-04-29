@@ -34,6 +34,11 @@ Example:
 
 ### [Unreleased]
 
+### [6.2.2] - 2024-04-26
+
+#### Added
+- Added `color: $font` to the `html.scss` file
+
 ### [6.2.1] - 2024-04-26
 
 #### Fixed
