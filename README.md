@@ -34,6 +34,11 @@ Example:
 
 ### [Unreleased]
 
+### [6.3.1] - 2024-04-30
+
+#### Changed
+- Removed media query from `main-desktop.scss` until better improvement is ready
+
 ### [6.3.0] - 2024-04-30
 
 #### Changed
