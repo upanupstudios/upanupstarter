@@ -34,7 +34,12 @@ Example:
 
 ### [Unreleased]
 
-### [6.2.2] - 2024-04-26
+### [6.3.0] - 2024-04-30
+
+#### Changed
+- Split the `main.scss` folder into `main-desktop.scss` and `main-mobile.scss` files
+
+### [6.2.2] - 2024-04-29
 
 #### Added
 - Added `color: $font` to the `html.scss` file
