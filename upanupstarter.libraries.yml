@@ -221,7 +221,8 @@ nav--main:
   version: 1.x
   css:
     component:
-      scss-css/component/nav/main.css: {}
+      scss-css/component/nav/main-desktop.css: {}
+      scss-css/component/nav/main-mobile.css: {}
 nav--pager:
   version: 1.x
   css:
