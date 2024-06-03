@@ -9,3 +9,5 @@
 }
 
 .block-page-title-block + * > article > .node__content > .content-rows > .content-row:first-child {margin-top: 0;}
+
+.node__content .field--name-field-body ~ .content-rows > .content-row:first-child {margin-top: clamp(16px, 1.6vw, 32px);}
