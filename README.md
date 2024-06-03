@@ -31,8 +31,12 @@ Example:
 #### Security
 - in case of vulnerabilities.
 ```
-
 ### [Unreleased]
+
+### [6.3.2] - 2024-06-03
+
+#### Added
+- Added CSS for margin-top of content rows when the body field is present on detail views
 
 ### [6.3.1] - 2024-04-30
 
