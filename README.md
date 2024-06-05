@@ -33,6 +33,15 @@ Example:
 ```
 ### [Unreleased]
 
+### [6.3.3] - 2024-06-05
+
+#### Added
+- Added psuedo elements to 2nd level desktop menu flyouts to prevent 3rd level menu from closing while moving cursor over
+
+#### Changed
+- Adjusted disabled radio & checkbox colors
+– Adjusted calendar styling to remove double row border
+
 ### [6.3.2] - 2024-06-03
 
 #### Added

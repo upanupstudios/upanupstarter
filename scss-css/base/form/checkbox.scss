@@ -29,9 +29,11 @@ input[type=checkbox] {
       font-weight: $font-weight--normal;
     }
   }
-  &[disabled] ~ label::before {
-    color: $ui-icon;
-    font-weight: $icon-weight--solid;
+  &[disabled] ~ label {
+    color: $font--disabled;
+    &:before {
+      color: $font--disabled;
+    }
   }
 }
 
