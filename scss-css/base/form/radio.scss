@@ -29,9 +29,11 @@ input[type=radio] {
       font-weight: $font-weight--normal;
     }
   }
-  &[disabled] ~ label.option::before {
-    color: $ui-icon;
-    font-weight: $icon-weight--solid;
+  &[disabled] ~ label.option {
+    color: $font--disabled;
+    &:before {
+      color: $font--disabled;
+    }
   }
 }
 

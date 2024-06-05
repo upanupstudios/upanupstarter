@@ -11,7 +11,7 @@
         left: auto;
         right: 0;
         &.menu--level-2 {
-          right: 100%;
+          right: calc(100% + 16px);
         }
       }
       &--level-0{
@@ -83,6 +83,22 @@
           justify-content: space-between;
           min-height: 50px;
           position: relative;
+          @include min($breakpoint--l) {
+            &--level-1 {
+              &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 100%;
+                width: 16px;
+                height: 100%;
+              }
+              &.has-overflow:after {
+                left: auto;
+                right: 100%;
+              }
+            }
+          }
           > *:not(.submenu-trigger) {
             flex: 0 1 auto;
             display: inline-block;
