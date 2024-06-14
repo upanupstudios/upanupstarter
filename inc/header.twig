@@ -28,7 +28,7 @@
         <div class="header__nav-search-trigger">
           <div class="nav nav--header" id="header-menu">{{ page.nav__header }}</div>
           {{ attach_library('upanupbase/mobile_search_trigger')}}
-          <button class="mobile-search-trigger" aria-controls="search-form" aria-expanded="false"><span class="visually-hidden">Open the search form</span></button>
+          <button class="mobile-search-trigger" aria-controls="search-form" aria-expanded="false" aria-label="Open the search form"><span class="visually-hidden">Open the search form</span></button>
         </div>
         <div class="search-form" id="search-form">{{ page.search }}</div>
       </div>
@@ -39,7 +39,7 @@
       <div class="header__logo">{{ page.logo }}</div>
       <div class="header__menu-wrapper" id="main-menu-wrapper">
         {{ attach_library('upanupstarter/mobile-menu-trigger') }}
-        <button class="button button--emphasis mobile-menu-trigger" aria-controls="main-menu" aria-expanded="false">Menu</button>
+        <button class="button button--emphasis mobile-menu-trigger" aria-controls="main-menu" aria-expanded="false" aria-label="Show navigation menu">Menu</button>
         <div class="nav nav--main" id="main-menu">{{ page.nav__main }}</div>
       </div>
     </div>
