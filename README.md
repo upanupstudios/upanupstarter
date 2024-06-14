@@ -33,6 +33,11 @@ Example:
 ```
 ### [Unreleased]
 
+### [6.3.4] - 2024-06-14
+
+#### Changed
+- Changed `header.twig` include to have initial `aria-label` attribute on the mobile menu trigger and mobile search trigger elements
+
 ### [6.3.3] - 2024-06-05
 
 #### Added
@@ -41,11 +46,6 @@ Example:
 #### Changed
 - Adjusted disabled radio & checkbox colors
 – Adjusted calendar styling to remove double row border
-
-### [6.3.3] - 2024-06-14
-
-#### Changed
-- Changed `header.twig` include to have initial `aria-label` attribute on the mobile menu trigger and mobile search trigger elements
 
 ### [6.3.2] - 2024-06-03
 
