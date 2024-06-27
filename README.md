@@ -43,7 +43,6 @@ Example:
 
 #### Fixed
 - Accordion group toggle arrow now faces correct direction
-- Media alignment in WYSIWYG updated to target more generally
 
 ### [6.3.4] - 2024-06-14
 
