@@ -33,6 +33,18 @@ Example:
 ```
 ### [Unreleased]
 
+### [6.3.5] - 2024-06-27
+
+#### added
+- Added meta tag to avoid errant dark mode
+
+#### Changed
+- Styled table caption like an h3
+
+#### Fixed
+- Accordion group toggle arrow now faces correct direction
+- Media alignment in WYSIWYG updated to target more generally
+
 ### [6.3.4] - 2024-06-14
 
 #### Changed

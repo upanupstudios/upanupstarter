@@ -1,6 +1,6 @@
 @import "../../mixins/mixins";
 
 .accordion-group__toggle {
-  @include button--ui('\f0d7',true,180deg);
+  @include button--ui(null,true);
   transform: translateX(-13px);
 }

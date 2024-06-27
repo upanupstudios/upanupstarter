@@ -44,6 +44,7 @@
     {% if feedbucket_state.0['#markup'] ==  '1' and feedbucket_id.0['#context'].value|length > 0 %}
       <script defer src="https://cdn.feedbucket.app/assets/feedbucket.js" data-feedbucket="{{ feedbucket_id.0['#context'].value }}"></script>
     {% endif %}
+    <meta name="color-scheme" content="only light">
   </head>
   <body{{ attributes.addClass(body_classes) }}>
     {#

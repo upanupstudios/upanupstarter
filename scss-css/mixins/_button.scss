@@ -125,7 +125,8 @@
       transform-origin: center;
       @include transition('transform');
     }
-    &[aria-expanded="true"]::after {transform: rotate($rotate) !important;}
+    &[aria-expanded="true"]::after,
+    &[aria-pressed="true"]::after {transform: rotate($rotate) !important;}
   }
   &[data-toggle] {
     padding: 13px 2.125rem 13px 13px;

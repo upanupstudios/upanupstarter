@@ -39,6 +39,7 @@ table {
     @include max($breakpoint--m) {padding: 16px;}
   }
   caption {
+    @include h3;
     margin: 16px 0;
     text-align: left;
   }
