@@ -71,6 +71,8 @@
   @import "./base/body";
   @import "./base/html";
 
+  background-color: $white !important; // Fix for darkmode
+
   a[target="_blank"]::after {display: none;}
 
   font-family: $font-family--primary;

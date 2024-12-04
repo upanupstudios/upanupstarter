@@ -33,6 +33,11 @@ Example:
 ```
 ### [Unreleased]
 
+### [6.3.6] - 2024-12-03
+
+#### Fixed
+- Added white background to `.ck-content` to fix colouring of content within CKEditor when using dark mode
+
 ### [6.3.5] - 2024-06-27
 
 #### added
