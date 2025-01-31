@@ -17,7 +17,7 @@
 #}
 {% block content %}
   {% if site_logo %}
-    <a href="{{ path('<front>') }}" rel="home">
+    <a href="{{ path('<front>') }}" rel="home" class="site-logo">
       <img width="241" height="50" src="{{ site_logo }}" alt="{{ 'Home'|t }}" />
     </a>
   {% endif %}

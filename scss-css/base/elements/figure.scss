@@ -1,15 +1,52 @@
 @import "../../variables/variables";
+@import "../../mixins/mixins";
 
 figure {
   figcaption {
     background-color: $bg--medium;
-    padding: 16px;
+    padding: 8px 16px;
   }
 }
-.text-formatted>.field__item{
-    >figure, >article.media  {
-        &:not(:last-child){
-          margin-bottom: $default-margin;
-        }      
-    }
+
+figure,
+article.media {
+    margin:0;
+    &.align, &.drupal-media-style-align {
+      &-left {
+        margin-right: 24px;
+        margin-left: 0;       
+      }
+      &-right {
+        margin-left: 24px;
+        margin-right: 0;
+      }
+      &-center { 
+          margin-left: auto;
+          margin-right: auto; 
+          .field__item{
+            text-align: center;
+          }
+      }
+      &-left,
+      &-right {
+        margin-top: 5px;
+        max-width: calc($line-width / 2);
+      }
+      &-left,
+      &-center,
+      &-right {
+        clear: both; 
+        @include max($breakpoint--m) {
+          float: initial;
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 100%;
+        }
+      }
+    }  
+    &[class^='align-'],&[class^='drupal-media-style-align-'],&.caption, &.drupal-media{
+      &:not(:last-child){
+        margin-bottom: $default-margin;
+      } 
+    } 
 }

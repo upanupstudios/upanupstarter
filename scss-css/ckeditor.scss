@@ -81,5 +81,7 @@
   -moz-osx-font-smoothing: grayscale;
   button, input, select, textarea {font-family: $font-family--primary;}
   > * {max-width: $line-width;}
+  figure.ck-widget *{margin:0!important;}//cke bug fix
+
 
 }

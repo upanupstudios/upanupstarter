@@ -33,6 +33,19 @@ Example:
 ```
 ### [Unreleased]
 
+### [6.3.7] - 2025-01-31
+
+#### Fixed
+- Glitch from D10.3 that removed hook for system message templates/styling. Added community recommended fix.
+- Missing .site-logo class on logo template
+- Adjusted page template to fix content not going full width when sidebar empty
+- Moved paragraph line-height and max-width within copy.scss to upanupstarter to become included in ckeditor styling
+- Fixes to figure/media styling to improve consistency with ckeditor, adjustments/bug fixes to margins
+#### Added
+- FDK compatible button classes: .button--default-fdk and .button--emphasis-fdk
+#### Changed
+- Changed $line-width to match upanupstarter, 80ch -> 75ch
+
 ### [6.3.6] - 2024-12-03
 
 #### Fixed
