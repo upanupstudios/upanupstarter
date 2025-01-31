@@ -1,0 +1,252 @@
+.cc_banner {
+  background-color: #F2F2F2;
+  border: 1px solid #8C8C8C;
+  bottom: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  left: 50%;
+  padding: 11px calc(clamp(16px, 7vw, 112px) / 2);
+  position: fixed;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  max-width: min(100vw - clamp(16px, 7vw, 112px), 1600px - clamp(16px, 7vw, 112px));
+  width: 100%;
+  z-index: 1000;
+}
+@media (max-width: 48rem) {
+  .cc_banner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 16px calc(clamp(16px, 7vw, 112px) / 2);
+  }
+}
+
+.cc_message {
+  margin: 0;
+}
+
+body:not(.type--dark_site) .cc_btn {
+  display: inline-block;
+  font-weight: 700;
+  padding: 9px 24px 10px 24px;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition-property: background-color, border-color, color;
+  transition-property: background-color, border-color, color;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  background-color: transparent;
+  border-color: transparent;
+  color: #20389D;
+  padding: 13px;
+  padding: 13px 2.125rem 13px 13px;
+  position: relative;
+}
+body:not(.type--dark_site) .cc_btn:hover {
+  text-decoration: underline;
+  text-underline-offset: max(5px, 0.2rem, 0.2em);
+  text-decoration-thickness: max(3px, 0.1875rem, 0.12em);
+}
+body:not(.type--dark_site) .cc_btn:hover:focus {
+  outline: none !important;
+}
+body:not(.type--dark_site) .cc_btn:focus {
+  outline: 2px solid #B30036;
+  outline-offset: 4px;
+}
+body:not(.type--dark_site) .cc_btn:active {
+  text-decoration: underline;
+  text-underline-offset: max(5px, 0.2rem, 0.2em);
+  text-decoration-thickness: max(3px, 0.1875rem, 0.12em);
+}
+body:not(.type--dark_site) .cc_btn:active:focus {
+  outline: none !important;
+}
+body:not(.type--dark_site) .cc_btn[disabled] {
+  background-color: #F2F2F2 !important;
+  border-color: #F2F2F2 !important;
+  color: #333333 !important;
+  pointer-events: none;
+}
+body:not(.type--dark_site) .cc_btn[disabled]:hover, body:not(.type--dark_site) .cc_btn[disabled]:focus, body:not(.type--dark_site) .cc_btn[disabled]:active {
+  background-color: #F2F2F2 !important;
+  border-color: #F2F2F2 !important;
+  color: #333333 !important;
+  text-decoration: none;
+  cursor: not-allowed;
+}
+body:not(.type--dark_site) .cc_btn::after {
+  font-family: "Font Awesome 6 Pro";
+  content: "\f00d";
+  font-weight: 900;
+  position: absolute;
+  right: 1rem;
+  top: 13px;
+}
+body:not(.type--dark_site) .cc_btn[data-toggle] {
+  padding: 13px 2.125rem 13px 13px;
+}
+body:not(.type--dark_site) .cc_btn[data-toggle]::after {
+  font-family: "Font Awesome 6 Pro";
+  content: "\f00d";
+  font-weight: 900;
+  position: absolute;
+  right: 1rem;
+  top: 13px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+body:not(.type--dark_site) .cc_btn[data-toggle][aria-expanded=true]::after {
+  -webkit-transform: rotate(90deg) !important;
+          transform: rotate(90deg) !important;
+}
+body:not(.type--dark_site) .cc_btn[disabled] {
+  background-color: transparent !important;
+}
+body:not(.type--dark_site) .cc_btn[disabled]:hover, body:not(.type--dark_site) .cc_btn[disabled]:active {
+  background-color: transparent !important;
+}
+body:not(.type--dark_site) .cc_btn:hover {
+  color: #0B5B28;
+}
+body:not(.type--dark_site) .cc_btn:active {
+  color: #5A00A7;
+}
+
+body.type--dark_site .cc_btn {
+  display: inline-block;
+  font-weight: 700;
+  padding: 9px 24px 10px 24px;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition-property: background-color, border-color, color;
+  transition-property: background-color, border-color, color;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  background-color: transparent;
+  border-color: transparent;
+  color: #20389D;
+  padding: 13px;
+  position: relative;
+}
+body.type--dark_site .cc_btn:hover {
+  text-decoration: underline;
+  text-underline-offset: max(5px, 0.2rem, 0.2em);
+  text-decoration-thickness: max(3px, 0.1875rem, 0.12em);
+}
+body.type--dark_site .cc_btn:hover:focus {
+  outline: none !important;
+}
+body.type--dark_site .cc_btn:focus {
+  outline: 2px solid #B30036;
+  outline-offset: 4px;
+}
+body.type--dark_site .cc_btn:active {
+  text-decoration: underline;
+  text-underline-offset: max(5px, 0.2rem, 0.2em);
+  text-decoration-thickness: max(3px, 0.1875rem, 0.12em);
+}
+body.type--dark_site .cc_btn:active:focus {
+  outline: none !important;
+}
+body.type--dark_site .cc_btn[disabled] {
+  background-color: #F2F2F2 !important;
+  border-color: #F2F2F2 !important;
+  color: #333333 !important;
+  pointer-events: none;
+}
+body.type--dark_site .cc_btn[disabled]:hover, body.type--dark_site .cc_btn[disabled]:focus, body.type--dark_site .cc_btn[disabled]:active {
+  background-color: #F2F2F2 !important;
+  border-color: #F2F2F2 !important;
+  color: #333333 !important;
+  text-decoration: none;
+  cursor: not-allowed;
+}
+body.type--dark_site .cc_btn::after {
+  font-weight: 900;
+  position: absolute;
+  right: 1rem;
+  top: 13px;
+}
+body.type--dark_site .cc_btn[data-toggle] {
+  padding: 13px 2.125rem 13px 13px;
+}
+body.type--dark_site .cc_btn[data-toggle]::after {
+  font-family: "Font Awesome 6 Pro";
+  content: "\f0da";
+  font-weight: 900;
+  position: absolute;
+  right: 1rem;
+  top: 13px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+body.type--dark_site .cc_btn[data-toggle][aria-expanded=true]::after {
+  -webkit-transform: rotate(90deg) !important;
+          transform: rotate(90deg) !important;
+}
+body.type--dark_site .cc_btn[disabled] {
+  background-color: transparent !important;
+}
+body.type--dark_site .cc_btn[disabled]:hover, body.type--dark_site .cc_btn[disabled]:active {
+  background-color: transparent !important;
+}
+body.type--dark_site .cc_btn:hover {
+  color: #0B5B28;
+}
+body.type--dark_site .cc_btn:active {
+  color: #5A00A7;
+}

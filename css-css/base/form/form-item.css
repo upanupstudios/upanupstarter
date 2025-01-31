@@ -1,0 +1,25 @@
+.form-item {
+  margin: 32px 0;
+}
+.form-item:first-child {
+  margin-top: 0;
+}
+.form-item:last-child {
+  margin-bottom: 0;
+}
+.form-item label,
+.form-item legend {
+  color: #333333;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+}
+.form-item--error-message {
+  background-color: #FDEBEB;
+  padding: 13px 12px 12px 36px;
+}
+.form-item--error-message::before {
+  font-family: "Font Awesome 6 Pro";
+  content: "\f06a";
+  color: #BC0000;
+  font-weight: 900;
+}

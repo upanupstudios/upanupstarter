@@ -1,0 +1,17 @@
+.messages--error {
+  background-color: #FDEBEB;
+}
+.messages--error::before {
+  font-family: "Font Awesome 6 Pro";
+  content: "\f071";
+  color: #BC0000;
+}
+
+.messages--info {
+  background-color: #EDF6FA;
+}
+.messages--info::before {
+  font-family: "Font Awesome 6 Pro";
+  content: "\f05a";
+  color: #5F7C8B;
+}

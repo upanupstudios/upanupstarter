@@ -1,0 +1,193 @@
+.pager {
+  line-height: 1.5;
+  margin: clamp(16px, clamp(16px, 7vw, 112px) / 2, 48px) 16px;
+}
+.pager ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 8px;
+}
+.pager ul li a {
+  text-decoration: none;
+}
+.pager ul li a:hover, .pager ul li a:active {
+  text-decoration: underline;
+  text-underline-offset: max(5px, 0.2rem, 0.2em);
+  text-decoration-thickness: max(3px, 0.1875rem, 0.12em);
+}
+.pager ul li:not([class*="--"]) a {
+  background-color: #fff;
+  border: 1px solid #20389D;
+  color: #20389D;
+  display: inline-block;
+  min-height: 44px;
+  min-width: 44px;
+  padding: 11px 4px 10px 4px;
+  text-align: center;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition-property: background-color, border-color, color;
+  transition-property: background-color, border-color, color;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+.pager ul li:not([class*="--"]) a:hover {
+  background-color: #F0FFF0;
+  border-color: #0B5B28;
+  color: #0B5B28;
+}
+.pager ul li:not([class*="--"]) a:hover:focus {
+  outline: none;
+}
+.pager ul li:not([class*="--"]) a:active {
+  background-color: #ECD1FF;
+  border-color: #5A00A7;
+  color: #5A00A7;
+}
+.pager ul li:not([class*="--"]) a:active:focus {
+  outline: none;
+}
+.pager ul li:not([class*="--"]).is-active a {
+  background-color: #E1F0EF;
+  border-color: #3F8F8B;
+  color: #333333 !important;
+}
+.pager ul li:not([class*="--"]).is-active a:hover {
+  background-color: #F0FFF0;
+  border-color: #0B5B28;
+  color: #0B5B28;
+}
+.pager ul li:not([class*="--"]).is-active a:hover:focus {
+  outline: none;
+}
+.pager ul li:not([class*="--"]).is-active a:active {
+  background-color: #ECD1FF;
+  border-color: #5A00A7;
+  color: #5A00A7;
+}
+.pager ul li:not([class*="--"]).is-active a:active:focus {
+  outline: none;
+}
+.pager ul li.pager__item--ellipsis {
+  background-color: #fff;
+  display: inline-block;
+  min-height: 44px;
+  min-width: 44px;
+  padding: 11px 4px 10px 4px;
+  text-align: center;
+}
+.pager ul li.pager__item--first a, .pager ul li.pager__item--previous a, .pager ul li.pager__item--next a, .pager ul li.pager__item--last a {
+  display: inline-block;
+  font-weight: 700;
+  padding: 9px 24px 10px 24px;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition-property: background-color, border-color, color;
+  transition-property: background-color, border-color, color;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  background-color: transparent;
+  border-color: transparent;
+  color: #20389D;
+  padding: 13px;
+  position: relative;
+}
+.pager ul li.pager__item--first a:hover, .pager ul li.pager__item--previous a:hover, .pager ul li.pager__item--next a:hover, .pager ul li.pager__item--last a:hover {
+  text-decoration: underline;
+  text-underline-offset: max(5px, 0.2rem, 0.2em);
+  text-decoration-thickness: max(3px, 0.1875rem, 0.12em);
+}
+.pager ul li.pager__item--first a:hover:focus, .pager ul li.pager__item--previous a:hover:focus, .pager ul li.pager__item--next a:hover:focus, .pager ul li.pager__item--last a:hover:focus {
+  outline: none !important;
+}
+.pager ul li.pager__item--first a:focus, .pager ul li.pager__item--previous a:focus, .pager ul li.pager__item--next a:focus, .pager ul li.pager__item--last a:focus {
+  outline: 2px solid #B30036;
+  outline-offset: 4px;
+}
+.pager ul li.pager__item--first a:active, .pager ul li.pager__item--previous a:active, .pager ul li.pager__item--next a:active, .pager ul li.pager__item--last a:active {
+  text-decoration: underline;
+  text-underline-offset: max(5px, 0.2rem, 0.2em);
+  text-decoration-thickness: max(3px, 0.1875rem, 0.12em);
+}
+.pager ul li.pager__item--first a:active:focus, .pager ul li.pager__item--previous a:active:focus, .pager ul li.pager__item--next a:active:focus, .pager ul li.pager__item--last a:active:focus {
+  outline: none !important;
+}
+.pager ul li.pager__item--first a[disabled], .pager ul li.pager__item--previous a[disabled], .pager ul li.pager__item--next a[disabled], .pager ul li.pager__item--last a[disabled] {
+  background-color: #F2F2F2 !important;
+  border-color: #F2F2F2 !important;
+  color: #333333 !important;
+  pointer-events: none;
+}
+.pager ul li.pager__item--first a[disabled]:hover, .pager ul li.pager__item--first a[disabled]:focus, .pager ul li.pager__item--first a[disabled]:active, .pager ul li.pager__item--previous a[disabled]:hover, .pager ul li.pager__item--previous a[disabled]:focus, .pager ul li.pager__item--previous a[disabled]:active, .pager ul li.pager__item--next a[disabled]:hover, .pager ul li.pager__item--next a[disabled]:focus, .pager ul li.pager__item--next a[disabled]:active, .pager ul li.pager__item--last a[disabled]:hover, .pager ul li.pager__item--last a[disabled]:focus, .pager ul li.pager__item--last a[disabled]:active {
+  background-color: #F2F2F2 !important;
+  border-color: #F2F2F2 !important;
+  color: #333333 !important;
+  text-decoration: none;
+  cursor: not-allowed;
+}
+.pager ul li.pager__item--first a::after, .pager ul li.pager__item--previous a::after, .pager ul li.pager__item--next a::after, .pager ul li.pager__item--last a::after {
+  font-weight: 900;
+  position: absolute;
+  right: 1rem;
+  top: 13px;
+}
+.pager ul li.pager__item--first a[data-toggle], .pager ul li.pager__item--previous a[data-toggle], .pager ul li.pager__item--next a[data-toggle], .pager ul li.pager__item--last a[data-toggle] {
+  padding: 13px 2.125rem 13px 13px;
+}
+.pager ul li.pager__item--first a[data-toggle]::after, .pager ul li.pager__item--previous a[data-toggle]::after, .pager ul li.pager__item--next a[data-toggle]::after, .pager ul li.pager__item--last a[data-toggle]::after {
+  font-family: "Font Awesome 6 Pro";
+  content: "\f0da";
+  font-weight: 900;
+  position: absolute;
+  right: 1rem;
+  top: 13px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+.pager ul li.pager__item--first a[data-toggle][aria-expanded=true]::after, .pager ul li.pager__item--previous a[data-toggle][aria-expanded=true]::after, .pager ul li.pager__item--next a[data-toggle][aria-expanded=true]::after, .pager ul li.pager__item--last a[data-toggle][aria-expanded=true]::after {
+  -webkit-transform: rotate(90deg) !important;
+          transform: rotate(90deg) !important;
+}
+.pager ul li.pager__item--first a[disabled], .pager ul li.pager__item--previous a[disabled], .pager ul li.pager__item--next a[disabled], .pager ul li.pager__item--last a[disabled] {
+  background-color: transparent !important;
+}
+.pager ul li.pager__item--first a[disabled]:hover, .pager ul li.pager__item--first a[disabled]:active, .pager ul li.pager__item--previous a[disabled]:hover, .pager ul li.pager__item--previous a[disabled]:active, .pager ul li.pager__item--next a[disabled]:hover, .pager ul li.pager__item--next a[disabled]:active, .pager ul li.pager__item--last a[disabled]:hover, .pager ul li.pager__item--last a[disabled]:active {
+  background-color: transparent !important;
+}
+.pager ul li.pager__item--first a:hover, .pager ul li.pager__item--previous a:hover, .pager ul li.pager__item--next a:hover, .pager ul li.pager__item--last a:hover {
+  color: #0B5B28;
+}
+.pager ul li.pager__item--first a:active, .pager ul li.pager__item--previous a:active, .pager ul li.pager__item--next a:active, .pager ul li.pager__item--last a:active {
+  color: #5A00A7;
+}
