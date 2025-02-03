@@ -1,5 +1,7 @@
 <?php
 
+use Drupal\Core\Render\Element\StatusMessages;
+
 function upanupstarter_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\FormStateInterface &$form_state, $form_id = NULL) {
   // Work-around for a core bug affecting admin themes. See issue #943212.
   if (isset($form_id)) {
@@ -233,6 +235,13 @@ function upanupstarter_preprocess_block(&$variables) {
     ${$value} = theme_get_setting($value);
     $variables[$value] = ${$value};
   }
+}
+
+function upanupstarter_preprocess_block__system_messages_block(&$variables)
+{
+  //fix glitch from 10.3 removing system message hook
+  $variables['content'] = StatusMessages::renderMessages();
+  $variables['#cache']['max-age'] = 1;
 }
 
 function upanupstarter_page_attachments_alter(array &$attachments) {
