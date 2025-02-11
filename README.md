@@ -31,7 +31,12 @@ Example:
 #### Security
 - in case of vulnerabilities.
 ```
-### [Unreleased]
+### [6.3.8] - 2025-02-11
+
+#### Fixed
+- Alignment styling fixes for link wrapped wysiwyg media
+- Removed external link icon from being appended to linked images
+- Removed hyphenated word breaks from paragraph text
 
 ### [6.3.7] - 2025-01-31
 
