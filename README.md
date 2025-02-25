@@ -33,6 +33,13 @@ Example:
 ```
 ### [Unreleased]
 
+### [6.3.8] - 2025-02-25
+
+#### Changed
+- Adjusted all banner type (fullwidth, content and sidebar) styling as per base Figma design updates
+- Adjusted card pseudo styling as per base Figma design updates
+- Adjusted horizontal card styling to include 1:1 image variant
+
 ### [6.3.7] - 2025-01-31
 
 #### Fixed
