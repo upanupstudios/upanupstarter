@@ -14,13 +14,13 @@ article.media {
     &.align, &.drupal-media-style-align {
       &-left {
         margin-right: 24px;
-        margin-left: 0;       
+        margin-left: 0;     
       }
       &-right {
         margin-left: 24px;
         margin-right: 0;
       }
-      &-center { 
+      &-center {
           margin-left: auto;
           margin-right: auto; 
           .field__item{
@@ -48,5 +48,14 @@ article.media {
       &:not(:last-child){
         margin-bottom: $default-margin;
       } 
-    } 
+    }
+}
+.text-formatted>a:has(>figure,>article.media){
+  /*link wrapping aligned images*/
+  &:not(:last-child){
+    margin-bottom: $default-margin;
+  }
+  &:focus img{
+    @include focus;
+  }
 }
