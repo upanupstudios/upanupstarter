@@ -11,9 +11,13 @@
   &__caption {
     background-color: $bg--medium;
     display: block;
-    padding: 13px 24px 13px calc(32px + 1rem);
+    padding: 11px 24px 11px calc(34px + 1.0625rem);
     position: relative;
     width: 100%;
+    border: 1px solid $border;
+    @include max($breakpoint--l) {
+      padding: 11px 16px 11px calc(26px + 1.0625rem);
+    }
     &::before {
       @include icon('\f030');
       color: $ui-icon;
@@ -22,6 +26,8 @@
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
+      font-size: 1.0625rem;
+      @include max($breakpoint--l) {left: 16px;}
     }
   }
 }

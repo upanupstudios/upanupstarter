@@ -5,6 +5,23 @@
   background-color: $bg;
   display: flex;
   flex-direction: column;
+  @include transition('background-color, border-color');
+  &:has(a:hover) {
+    background-color: $green--lighter;
+    border-color: $link--hover;
+    .card {
+      &__title a {color: $link--hover !important;}
+      &__content {border-color: $link--hover;}
+    }
+  }
+  &:has(a:active) {
+    background-color: $purple--lighter;
+    border-color: $link--active;
+    .card {
+      &__title a {color: $link--active !important;}
+      &__content {border-color: $link--active;}
+    }
+  }
   &__image {
     position: relative;
     img {display: block;}
@@ -21,6 +38,7 @@
   &__content {
     border: 1px solid $border;
     padding: clamp(24px,4vw,32px);
+    @include transition('border-color');
   }
   &__title {
     @include h5;
@@ -54,6 +72,28 @@
       }
     }
   }
+  // Horizontal 1:1 variant
+  // &--horizontal {
+  //   flex-direction: row;
+  //   @include max($breakpoint--m) {
+  //     flex-direction: column;
+  //   }
+  //   .card {
+  //     &__image {
+  //       flex: 0 1 35%;
+  //       @include max($breakpoint--m) {
+  //         img {
+  //           width: 100%;
+  //           aspect-ratio: 16 / 9;
+  //           object-fit: cover;
+  //         }
+  //       }
+  //     }
+  //     &__content {
+  //       flex-grow: 1;
+  //     }
+  //   }
+  // }
   &.node {
     .card {
       &__image {
