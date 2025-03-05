@@ -4,6 +4,7 @@ p {
   margin: 0 0 $default-margin 0;
   line-height: 2;
   max-width: $line-width;
+  hyphens: none;
 }
 
 b, strong {font-weight: $font-weight--semibold;}
