@@ -14,7 +14,7 @@
   --calendar-view-color-lighter: #f8f8f8;
   --calendar-view-color-light: #ddd;
   --calendar-view-color-grey: #ccc;
-  --calendar-view-color-gray: #555;
+  --calendar-view-color-gray: #444;
   --calendar-view-color-evil: #666;
   --calendar-view-color-dark: #333;
   --calendar-view-day-rows-gap: 0.5rem;
@@ -123,7 +123,7 @@
   padding-top: var(--calendar-event-padding);
 }
 .past .calendar-view-day {
-  opacity: 0.7;
+  opacity: 0.75;
 }
 
 .calendar-view-day__rows {
