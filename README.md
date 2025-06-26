@@ -31,6 +31,12 @@ Example:
 #### Security
 - in case of vulnerabilities.
 ```
+
+### [6.3.10] - 2025-06-24
+
+#### Changed
+- Adjusted calendar styling to improve appearance, alignment and consistency
+
 ### [6.3.9] - 2025-03-05
 
 #### Fixed
