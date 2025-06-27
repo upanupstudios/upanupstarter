@@ -50,12 +50,25 @@ article.media {
       } 
     }
 }
-.text-formatted>a:has(>figure,>article.media){
-  /*link wrapping aligned images*/
-  &:not(:last-child){
-    margin-bottom: $default-margin;
+.text-formatted{
+  &,>.field__item{
+      >article.media{
+        &:not(:last-child){
+          margin-bottom: $default-margin;
+        }
+        p:empty{
+          display: none;//bug fix
+        }
+      }
+      >a:has(>figure,>article.media){
+        /*link wrapping aligned images*/
+        &:not(:last-child){
+          margin-bottom: $default-margin;
+        }
+        &:focus img{
+          @include focus;
+        }
+      }
   }
-  &:focus img{
-    @include focus;
-  }
+ 
 }

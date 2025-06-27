@@ -24,10 +24,10 @@ body[class*="page-node-type-"]:not(.page-node-type-page).path-node {
   .content .region-content .node__content {
     > * {
       margin-bottom: 16px;
-      &:last-of-type {margin-bottom: 0;}
+      &:last-child{margin-bottom: 0;}
       &.field--type-text-with-summary,
       &.field--type-text-long {
-        p:last-of-type {margin-bottom: 0;}
+        p:last-child{margin-bottom: 0;}
       }
     }
     .file {

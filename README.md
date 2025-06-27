@@ -32,6 +32,11 @@ Example:
 - in case of vulnerabilities.
 ```
 
+### [6.3.11] - 2025-06-27
+
+#### Fixed
+- Minor margin fixes on wyswiyg images, non-page node elements
+
 ### [6.3.10] - 2025-06-24
 
 #### Changed
