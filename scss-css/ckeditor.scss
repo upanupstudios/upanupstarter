@@ -58,8 +58,7 @@
        url("../fonts/2023_01_01_BCSans-LightItalic_2f.woff") format("woff");
 }
 
-.ck-content {
-
+.ck .ck-content {
   @import "./variables/variables";
   @import "./base/elements/button";
   @import "./base/elements/figure";
@@ -77,11 +76,8 @@
 
   font-family: $font-family--primary;
   color: $font;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   button, input, select, textarea {font-family: $font-family--primary;}
   > * {max-width: $line-width;}
-  figure.ck-widget *{margin:0!important;}//cke bug fix
-
+  figure.ck-widget:not(.table) *{margin:0!important;}//cke bug fix
 
 }

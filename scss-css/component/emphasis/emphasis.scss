@@ -15,7 +15,7 @@
     top: clamp(24px,4vw,32px);
   }
   blockquote {
-    border-left: 0;
+    border-left: 0!important;
     @include h4;
     font-weight: $font-weight--bold;
     line-height: 1.272;

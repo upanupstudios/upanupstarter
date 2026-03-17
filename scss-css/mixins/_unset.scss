@@ -1,9 +1,5 @@
-@mixin unset($important:false) {
-  @if $important {
-    all: unset !important;
-  } @else {
-    all: unset;
-  }
+@mixin unset($important:null) {
+    all: unset $important;
 }
 
 @mixin unset-list {
