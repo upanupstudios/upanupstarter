@@ -5,19 +5,19 @@
 details,
 .webform-element-more {
   h2.accordion__heading {
-    @include unset($important:true);
-    @include h2($important:true);
+    @include unset(!important);
+    @include h2(!important);
     color: $font !important;
   }
   h3.accordion__heading {
-    @include unset($important:true);
-    @include h3($important:true);
+    @include unset(!important);
+    @include h3(!important);
     color: $font !important;
   }
   &__trigger,
   summary,
   .webform-element-more--link {
-    @include unset($important:true);
+    @include unset(!important);
     all: inherit !important;
     color: $font !important;
     &::after {display: none !important;}

@@ -25,6 +25,9 @@
   &[target="_blank"]:not(:has(>figure,>article.media)) {
     &::after {
       @include icon('\f08e');
+      padding-left: 0.25rem; 
+      display: inline-block;
+      text-decoration: none;    
     }
   }
 }

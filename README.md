@@ -32,6 +32,16 @@ Example:
 - in case of vulnerabilities.
 ```
 
+### [6.4.0] - 2026-03-31
+
+#### Changed
+- Refactored heading mixins to remove repeating css
+#### Fixed
+- Improved styling accuracy from wysiwyg to on-page render
+- Fixed default-critical.scss outdated path to menu css
+- Added space beside external link icon and removed underline
+- Fixed css from mistakenly removing margin between body field and first content row
+
 ### [6.3.11] - 2025-06-27
 
 #### Fixed
