@@ -32,10 +32,10 @@ Example:
 - in case of vulnerabilities.
 ```
 
-### [6.4.0] - 2026-03-17
+### [6.4.0] - 2026-03-31
 
 #### Changed
-- Altered heading mixins to avoid repeating css
+- Refactored heading mixins to remove repeating css
 #### Fixed
 - Improved styling accuracy from wysiwyg to on-page render
 - Fixed default-critical.scss outdated path to menu css
